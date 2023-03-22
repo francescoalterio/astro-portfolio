@@ -9,27 +9,27 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout>
   <header class="flex items-center mt-20">
     <div class="flex flex-col gap-5 flex-1">
-      <h1 class="text-7xl font-bold">Hi, my name is Francesco Alterio</h1>
-      <p class="text-customGray-900 text-3xl">
-        I am a Fullstack developer currently based in Cumaná, Venezuela.
-      </p>
-      <div class="flex gap-2">
+      <div class="flex">
         <RolPill>
           <Icon name="mdi:web" class="w-5" />
           Web Frontend
         </RolPill>
-        <RolPill>
-          <Icon name="mdi:server" class="w-5" />
-          Backend
-        </RolPill>
-        <RolPill>
-          <Icon name="mdi:cellphone-cog" class="w-5" />
-          Mobile
-        </RolPill>
       </div>
+      <h1 class="text-7xl font-bold">Hi, my name is Francesco Alterio</h1>
+      <div class="h-2 w-16 bg-primaryLight"></div>
+      <p class="text-gray-300 text-xl">
+        I am a Fullstack developer currently based in Cumaná, Venezuela.
+      </p>
+      <div class="flex gap-2"></div>
     </div>
-    <div class="px-20">
-      <img src="/assets/yo-sin-fondo.png" alt="" class="w-[30rem] rounded-md" />
+    <div class="px-20 relative">
+      <div class="bg-customGray-400 rounded-full absolute w-[30rem] h-[30rem]">
+      </div>
+      <img
+        src="/assets/yo-sin-fondo.png"
+        alt=""
+        class="w-[30rem] rounded-md relative z-10"
+      />
     </div>
   </header>
   <main class="mt-32">
