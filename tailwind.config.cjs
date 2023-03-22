@@ -7,6 +7,7 @@ module.exports = {
         primary: "#7611a6",
         primaryLight: "#c561f6",
         primaryDark: "#1c0056",
+        primaryHover: "hsla(281, 81%, 36%, 0.33)",
         customGray: {
           100: "#090b11",
           200: "#141925",
@@ -18,6 +19,9 @@ module.exports = {
           800: "#a3acc8",
           900: "#c3cadb",
         },
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

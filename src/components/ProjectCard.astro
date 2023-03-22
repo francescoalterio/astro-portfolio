@@ -1,0 +1,21 @@
+---
+interface Props {
+  id: number;
+  name: string;
+  fileName: string;
+  technologies: string[];
+}
+
+const { name, fileName, technologies } = Astro.props;
+const imageURL = `/assets/projects/${fileName}`;
+const firstTwoTechs = technologies.slice(0, 2);
+---
+
+<div>
+  <img src={imageURL} alt="" />
+  <h4 class="w-full text-center">{name}</h4>
+  <div class="flex justify-center gap-1">
+    {firstTwoTechs.map((x) => <div>{x}</div>)}
+  </div>
+  <button class="w-full text-center">More details</button>
+</div>

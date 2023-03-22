@@ -1,7 +1,44 @@
 ---
+import { Icon } from "astro-icon";
+import PrimaryButton from "../components/PrimaryButton.astro";
+import ProjectList from "../components/ProjectList.astro";
+import RolPill from "../components/RolPill.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <h1>Portfolio</h1>
+  <header class="flex items-center mt-20">
+    <div class="flex flex-col gap-5 flex-1">
+      <h1 class="text-7xl font-bold">Hi, my name is Francesco Alterio</h1>
+      <p class="text-customGray-900 text-3xl">
+        I am a Fullstack developer currently based in Cumaná, Venezuela.
+      </p>
+      <div class="flex gap-2">
+        <RolPill>
+          <Icon name="mdi:web" class="w-5" />
+          Web Frontend
+        </RolPill>
+        <RolPill>
+          <Icon name="mdi:server" class="w-5" />
+          Backend
+        </RolPill>
+        <RolPill>
+          <Icon name="mdi:cellphone-cog" class="w-5" />
+          Mobile
+        </RolPill>
+      </div>
+    </div>
+    <div class="px-20">
+      <img src="/assets/yo-sin-fondo.png" alt="" class="w-[30rem] rounded-md" />
+    </div>
+  </header>
+  <main class="mt-32">
+    <section>
+      <div class="flex justify-between items-center">
+        <h2 class="text-6xl font-bold">Projects</h2>
+        <PrimaryButton>View All</PrimaryButton>
+      </div>
+      <ProjectList />
+    </section>
+  </main>
 </BaseLayout>

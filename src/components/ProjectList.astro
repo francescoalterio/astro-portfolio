@@ -1,0 +1,17 @@
+---
+import projects from "../../db/projects.json";
+import ProjectCard from "./ProjectCard.astro";
+---
+
+<div class="flex justify-between gap-5">
+  {
+    projects.map((project) => (
+      <ProjectCard
+        id={project.id}
+        name={project.name}
+        fileName={project.fileName}
+        technologies={project.technologies}
+      />
+    ))
+  }
+</div>

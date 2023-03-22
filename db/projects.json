@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "Smite Filter",
+    "fileName": "smitefilter.png",
+    "alt": "img-smitefilter",
+    "description": "Filter of gods for the video game Smite using Javscript vanilla",
+    "preview": ["https://francescoalterio.github.io/smitefilter/"],
+    "repository": ["https://github.com/francescoalterio/smitefilter"],
+    "technologies": ["Javascript", "HTML", "CSS"],
+    "isFavorite": false
+  },
+  {
+    "id": 2,
+    "name": "React Calculator",
+    "fileName": "react-calculator.png",
+    "alt": "img-react-calculator",
+    "description": "Calculator developed with React.",
+    "preview": ["https://react-calculator-fran.netlify.app"],
+    "repository": ["https://github.com/francescoalterio/react-calculator"],
+    "technologies": ["Javascript", "React.js", "Tailwindcss"],
+    "isFavorite": false
+  },
+  {
+    "id": 3,
+    "name": "React Cryptocurrency List",
+    "fileName": "crypto-list.png",
+    "alt": "img-crypto-list",
+    "description": "List of the most famous cryptocurrencies and their prices.",
+    "preview": [
+      "https://stackblitz.com/edit/cryptocurrencylist?file=src%2FApp.js"
+    ],
+    "repository": [
+      "https://github.com/francescoalterio/react-cryptocurrencylist"
+    ],
+    "technologies": ["Javascript", "React.js", "CSS"],
+    "isFavorite": false
+  }
+]

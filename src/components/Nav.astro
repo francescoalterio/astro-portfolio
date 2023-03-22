@@ -3,17 +3,32 @@ import { Icon } from "astro-icon";
 ---
 
 <nav class="flex flex-1 justify-between">
-  <a href="" class="flex justify-center items-center"
-    ><Icon name="mdi:code-array" class="w-5 text-primary" />Francesco Alterio</a
+  <a href="" class="flex justify-center items-center text-2xl font-bold gap-3"
+    ><Icon name="mdi:code-array" class="w-6 text-primary" />Francesco Alterio</a
   >
-  <div class="flex justify-center items-center">
-    <a href="">Projects</a>
-    <a href=""> Skills</a>
-    <a href="">About</a>
+  <div
+    class="flex justify-center items-center rounded-full bg-customGray-200 p-2 gap-6"
+  >
+    <a
+      href=""
+      class="text-customGray-800 font-semibold hover:bg-primaryHover rounded-full py-2 px-4"
+      >Projects</a
+    >
+    <a
+      href=""
+      class="text-customGray-800 font-semibold hover:bg-primaryHover rounded-full py-2 px-4"
+    >
+      Skills</a
+    >
+    <a
+      href=""
+      class="text-customGray-800 font-semibold hover:bg-primaryHover rounded-full py-2 px-4"
+      >About</a
+    >
   </div>
-  <div class="flex justify-center items-center">
-    <a href=""><Icon name="mdi:linkedin" class="w-5 text-primaryLight" /></a>
-    <a href=""> <Icon name="mdi:github" class="w-5 text-primaryLight" /></a>
-    <a href=""><Icon name="mdi:twitter" class="w-5 text-primaryLight" /></a>
+  <div class="flex justify-center items-center gap-3">
+    <a href=""><Icon name="mdi:linkedin" class="w-7 text-primaryLight" /></a>
+    <a href=""> <Icon name="mdi:github" class="w-7 text-primaryLight" /></a>
+    <a href=""><Icon name="mdi:twitter" class="w-7 text-primaryLight" /></a>
   </div>
 </nav>
