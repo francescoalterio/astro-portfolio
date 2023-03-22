@@ -11,15 +11,8 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Portfolio</title>
   </head>
-  <body class="bg-customGray-100 text-white px-20 py-10">
-    <img
-      src="/assets/backgrounds/bg-main-top.jpg"
-      alt="gradient background"
-      class="absolute w-fill top-0 left-0 z-0"
-    />
-    <div class="z-10 relative">
-      <Nav />
-      <slot />
-    </div>
+  <body class="bg-customGray-300 text-white px-20 py-10">
+    <Nav />
+    <slot />
   </body>
 </html>

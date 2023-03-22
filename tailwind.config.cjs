@@ -4,20 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#7611a6",
-        primaryLight: "#c561f6",
-        primaryDark: "#1c0056",
+        primary: "#ffaf29",
+        primaryLight: "#ffc25c",
         primaryHover: "hsla(281, 81%, 36%, 0.33)",
         customGray: {
-          100: "#090b11",
-          200: "#141925",
-          300: "#283044",
-          400: "#3d4663",
-          500: "#505d84",
-          600: "#6474a2",
-          700: "#8490b5",
-          800: "#a3acc8",
-          900: "#c3cadb",
+          100: "#424657",
+          200: "#333646",
+          300: "#252734",
+          400: "#222430",
         },
       },
       fontFamily: {
