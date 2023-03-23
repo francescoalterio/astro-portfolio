@@ -7,19 +7,27 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <header class="bg-customGray-200 md:px-20 lg:px-28 flex items-center pt-20">
-    <div class="flex flex-col gap-5 flex-1">
+  <header
+    class="bg-customGray-200 px-6 sm:px-12 md:px-16 lg:px-28 flex flex-col lg:flex-row items-center pt-20"
+  >
+    <div
+      class="flex flex-col gap-5 flex-1 items-center text-center lg:items-start lg:text-start"
+    >
       <div class="flex">
         <RolPill>
-          <Icon name="mdi:xml" class="w-5" />
+          <Icon name="mdi:xml" class="w-4" />
           Fullstack Developer
         </RolPill>
       </div>
-      <h1 class="lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold">
+      <h1
+        class="text-5xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold"
+      >
         Hi, my name is Francesco Alterio
       </h1>
       <div class="h-2 w-16 bg-primaryLight"></div>
-      <p class="text-gray-300 lg:text-lg xl:text-xl 2xl:text-2xl">
+      <p
+        class="text-gray-300 text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl"
+      >
         I am a Fullstack developer currently based in Cumaná, Venezuela.
       </p>
       <div class="flex gap-2"></div>
@@ -27,16 +35,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <img
       src="/assets/presentation.png"
       alt=""
-      class="lg:w-[25rem] xl:w-[32rem] 2xl:w-[38rem] rounded-md relative z-10"
+      class="lg:w-[25rem] xl:w-[32rem] 2xl:w-[38rem]"
     />
   </header>
 </BaseLayout>
 <main class="">
-  <section class="bg-customGray-300 lg:px-28 py-10">
+  <section class="bg-customGray-300 px-6 sm:px-12 md:px-16 lg:px-28 py-10">
     <div class="flex justify-between items-center">
       <h2 class="text-6xl font-bold">Projects</h2>
-      <PrimaryButton>View All</PrimaryButton>
     </div>
-    <ProjectList />
   </section>
 </main>

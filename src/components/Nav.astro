@@ -2,13 +2,15 @@
 import { Icon } from "astro-icon";
 ---
 
-<nav class="bg-customGray-200 flex flex-1 justify-between lg:px-28 pt-10">
+<nav
+  class="bg-customGray-200 flex flex-1 justify-between px-6 sm:px-12 md:px-16 lg:px-28 pt-10"
+>
   <a
     href=""
     class="flex justify-center items-center md:text-2xl lg:text-xl xl:text-2xl font-bold gap-2"
     >Francesco <span class="font-normal text-gray-200">Alterio</span></a
   >
-  <div class="sm:hidden lg:flex justify-center items-center gap-6">
+  <div class="hidden lg:flex justify-center items-center gap-6">
     <a
       href=""
       class="text-customGray-800 hover:text-primaryLight rounded-full py-2 px-4 font-semibold"
@@ -26,7 +28,7 @@ import { Icon } from "astro-icon";
       >About</a
     >
   </div>
-  <div class="sm:hidden lg:flex justify-center items-center lg:gap-8 xl:gap-10">
+  <div class="hidden lg:flex justify-center items-center lg:gap-8 xl:gap-10">
     <a href="" class="flex gap-3 text-gray-300 items-center"
       ><Icon name="mdi:linkedin" class="w-7 text-white" /> Linkedin</a
     >
@@ -37,7 +39,7 @@ import { Icon } from "astro-icon";
       <Icon name="mdi:email-outline" class="w-7 text-primaryLight" />
     </button>
   </div>
-  <button class="lg:hidden bg-customGray-200 p-3 rounded-full">
+  <button class="lg:hidden bg-customGray-100 p-3 rounded-full">
     <Icon name="mdi:menu-open" class="w-5 text-primaryLight" />
   </button>
 </nav>
