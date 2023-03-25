@@ -1,4 +1,4 @@
-interface Project {
+export interface Project {
   id: number;
   name: string;
   fileName: string;
@@ -8,4 +8,10 @@ interface Project {
   repository: string[];
   technologies: string[];
   isFavorite: boolean;
+}
+
+export interface Technology {
+  name: string;
+  fileName: string;
+  documentationURL: string;
 }

@@ -1,0 +1,18 @@
+---
+import { Technology } from "../types";
+
+interface Props extends Technology {}
+
+const { name, fileName, docuemntationURL } = Astro.props;
+---
+
+<a
+  href={docuemntationURL}
+  class="block w-32 h-32 rounded-md cursor-pointer transition-all hover:transform hover:scale-110"
+>
+  <img
+    src={`/assets/technologies/${fileName}`}
+    alt=""
+    class="w-full rounded-3xl"
+  />
+</a>

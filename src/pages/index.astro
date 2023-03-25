@@ -1,9 +1,11 @@
 ---
 import { Icon } from "astro-icon";
-import PrimaryButton from "../components/PrimaryButton.astro";
 import ProjectList from "../components/ProjectList.astro";
 import RolPill from "../components/RolPill.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Skills from "../../db/skills.json";
+import SkillSection from "../components/SkillSection.astro";
 ---
 
 <BaseLayout>
@@ -45,5 +47,21 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <h2 class="text-4xl">My Projects</h2>
     </div>
     <ProjectList />
+  </section>
+  <section class="px-6 sm:px-12 md:px-16 lg:px-28 py-10">
+    <h2 class="text-4xl">Skills</h2>
+    <div class="flex flex-col gap-16">
+      <SkillSection title="Languages" skills={Skills.languages} />
+      <SkillSection
+        title="Frameworks and Libraries"
+        skills={Skills.frameworksAndLibraries}
+      />
+      <SkillSection
+        title="Styling and Structuring"
+        skills={Skills.stylingAndStructuring}
+      />
+      <SkillSection title="Testing" skills={Skills.testing} />
+      <SkillSection title="Databases" skills={Skills.databases} />
+    </div>
   </section>
 </main>

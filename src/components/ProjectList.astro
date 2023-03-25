@@ -1,17 +1,32 @@
 ---
 import projects from "../../db/projects.json";
-import ProjectCard from "./ProjectCard.astro";
+import ProjectCardLeft from "./ProjectCardLeft.astro";
+import ProjectCardRight from "./ProjectCardRight.astro";
 ---
 
-<div class="flex justify-between gap-x-10 gap-y-16 flex-wrap mt-10">
+<div class="flex flex-col gap-y-16 mt-10">
   {
-    projects.map((project) => (
-      <ProjectCard
-        id={project.id}
-        name={project.name}
-        fileName={project.fileName}
-        technologies={project.technologies}
-      />
-    ))
+    projects.map((project, index) => {
+      const isEven = index % 2 === 0;
+      return isEven ? (
+        <ProjectCardRight
+          id={project.id}
+          name={project.name}
+          fileName={project.fileName}
+          technologies={project.technologies}
+          description={project.description}
+          projectType={project.projectType}
+        />
+      ) : (
+        <ProjectCardLeft
+          id={project.id}
+          name={project.name}
+          fileName={project.fileName}
+          technologies={project.technologies}
+          description={project.description}
+          projectType={project.projectType}
+        />
+      );
+    })
   }
 </div>

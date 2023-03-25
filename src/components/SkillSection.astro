@@ -1,0 +1,27 @@
+---
+import { Technology } from "../types";
+
+import Skill from "./Skill.astro";
+
+interface Props {
+  title: string;
+  skills: Technology[];
+}
+
+const { title, skills } = Astro.props;
+---
+
+<section class="w-full flex flex-col items-center gap-10">
+  <h3 class="text-3xl">{title}</h3>
+  <div class="flex gap-10 w-3/6 flex-wrap justify-center">
+    {
+      skills.map(({ name, fileName, documentationURL }) => (
+        <Skill
+          name={name}
+          fileName={fileName}
+          documentationURL={documentationURL}
+        />
+      ))
+    }
+  </div>
+</section>

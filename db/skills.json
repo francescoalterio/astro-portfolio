@@ -21,7 +21,7 @@
       "documentationURL": "https://www.python.org/"
     }
   ],
-  "frameworks-and-libraries": [
+  "frameworksAndLibraries": [
     {
       "name": "Node.js",
       "fileName": "node.png",
@@ -68,7 +68,7 @@
       "documentationURL": "https://vuejs.org/"
     }
   ],
-  "styling-and-structuring": [
+  "stylingAndStructuring": [
     {
       "name": "HTML",
       "fileName": "html.svg",

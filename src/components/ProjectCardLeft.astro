@@ -1,0 +1,47 @@
+---
+import { Icon } from "astro-icon";
+import RolPill from "./RolPill.astro";
+import projectTypes from "../../db/projectTypes.json";
+
+interface Props {
+  id: number;
+  name: string;
+  fileName: string;
+  description: string;
+  projectType: string;
+  technologies: string[];
+}
+
+const { name, fileName, technologies, description, projectType } = Astro.props;
+const imageURL = `/assets/projects/${fileName}`;
+const firstTwoTechs = technologies.slice(0, 2);
+---
+
+<div class="flex flex-1 relative">
+  <div
+    class="flex flex-col items-start justify-center gap-y-8 px-5 absolute h-full left-0 w-1/2"
+  >
+    <RolPill bgColor={projectTypes[projectType.toLowerCase()].color}>
+      <Icon name={projectTypes[projectType.toLowerCase()].icon} class="w-5" />
+      {projectType}
+    </RolPill>
+    <h4 class="text-2xl font-semibold">{name}</h4>
+    <p class="bg-customGray-200 p-6 rounded-sm">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, provident
+      totam eius, tempora doloremque obcaecati, quaerat nobis nihil autem
+      laborum atque temporibus vitae ut officia assumenda nesciunt adipisci
+      cumque ipsam!
+    </p>
+    <div class="flex justify-center gap-1">
+      {
+        firstTwoTechs.map((x) => (
+          <div class=" bg-customGray-100 whitespace-nowrap px-3 py-1 rounded-sm text-xs">
+            {x}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+  <div class="w-2/5"></div>
+  <img src={imageURL} alt="" class="w-3/5 rounded-sm" />
+</div>
