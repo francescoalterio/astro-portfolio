@@ -1,0 +1,107 @@
+{
+  "languages": [
+    {
+      "name": "Javascript",
+      "fileName": "javascript.png",
+      "documentationURL": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "name": "Typescript",
+      "fileName": "typescript.png",
+      "documentationURL": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "PHP",
+      "fileName": "php.png",
+      "documentationURL": "https://www.php.net/manual/en/intro-whatis.php"
+    },
+    {
+      "name": "Python",
+      "fileName": "python.png",
+      "documentationURL": "https://www.python.org/"
+    }
+  ],
+  "frameworks-and-libraries": [
+    {
+      "name": "Node.js",
+      "fileName": "node.png",
+      "documentationURL": "https://nodejs.org/en"
+    },
+    {
+      "name": "React",
+      "fileName": "react.png",
+      "documentationURL": "https://react.dev/"
+    },
+    {
+      "name": "Next.js",
+      "fileName": "next.png",
+      "documentationURL": "https://nextjs.org/"
+    },
+    {
+      "name": "React Native",
+      "fileName": "react.png",
+      "documentationURL": "https://reactnative.dev/"
+    },
+    {
+      "name": "Redux",
+      "fileName": "redux.png",
+      "documentationURL": "https://redux.js.org/"
+    },
+    {
+      "name": "React Navigation",
+      "fileName": "react-navigation.png",
+      "documentationURL": "https://reactnavigation.org/"
+    },
+    {
+      "name": "Express",
+      "fileName": "express.png",
+      "documentationURL": "https://expressjs.com/"
+    },
+    {
+      "name": "Astro",
+      "fileName": "astro.png",
+      "documentationURL": "https://astro.build/"
+    },
+    {
+      "name": "Vue",
+      "fileName": "vue.png",
+      "documentationURL": "https://vuejs.org/"
+    }
+  ],
+  "styling-and-structuring": [
+    {
+      "name": "HTML",
+      "fileName": "html.svg",
+      "documentationURL": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+    },
+    {
+      "name": "CSS",
+      "fileName": "css.svg",
+      "documentationURL": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "name": "Tailwindcss",
+      "fileName": "tailwindcss.png",
+      "documentationURL": "https://tailwindcss.com/"
+    }
+  ],
+  "testing": [
+    {
+      "name": "Jest",
+      "fileName": "jest.png",
+      "documentationURL": "https://jestjs.io/"
+    },
+    {
+      "name": "React Testing Library",
+      "fileName": "testing-library.png",
+      "documentationURL": "https://testing-library.com/docs/react-testing-library/intro/"
+    }
+  ],
+  "databases": [
+    {
+      "name": "Firebase",
+      "fileName": "firebase.png",
+      "documentationURL": "https://firebase.google.com/?gclid=CjwKCAjw2rmWBhB4EiwAiJ0mtWoGToqePmnPSACjkRRFf7J2n6JzXoJkwSj88GymbZw6Bd6EgSysExoCT2AQAvD_BwE&gclsrc=aw.ds&hl=es-419"
+    }
+  ]
+}
