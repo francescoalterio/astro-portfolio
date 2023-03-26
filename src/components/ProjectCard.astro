@@ -17,10 +17,12 @@ interface Props {
 const { name, fileName, technologies, description, projectType, isEven } =
   Astro.props;
 const imageURL = `/assets/projects/${fileName}`;
-const firstTwoTechs = technologies.slice(0, 4);
+const firstThreeTechs = technologies.slice(0, 3);
 
 const container = isEven ? "" : "flex-row-reverse";
 const dataContainer = isEven ? " items-end  right-0" : " items-start left-0";
+
+const shortDescription = description.split(" ").slice(0, 20).join(" ");
 ---
 
 <div class={`flex flex-1 relative ${container}`}>
@@ -28,26 +30,37 @@ const dataContainer = isEven ? " items-end  right-0" : " items-start left-0";
     <img src={imageURL} alt="" class="w-full rounded-md" />
   </div>
   <div
-    class={`flex flex-col justify-center gap-y-8 px-5 absolute h-full w-2/5 w- ${dataContainer}`}
+    class={`flex flex-col justify-center lg:gap-y-4 xl:gap-y-8 px-5 absolute h-full w-2/5 w- ${dataContainer}`}
   >
     <RolPill bgColor={projectTypes[projectType.toLowerCase()].color}>
       <Icon name={projectTypes[projectType.toLowerCase()].icon} class="w-5" />
       {projectType}
     </RolPill>
     <h4 class="text-2xl font-semibold">{name}</h4>
-    <p class="bg-customGray-200 p-6 rounded-md w-[120%]">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, nulla!
-      Ipsam placeat, consectetur atque sed ad dolores tenetur assumenda sapiente
-      consequatur quasi, facilis exercitationem saepe dignissimos eligendi
-      asperiores nulla nostrum.
+    <p
+      class="bg-customGray-200 lg:p-4 xl:p-6 rounded-md lg:w-[140%] xl:w-[130%] 2xl:w-[120%]"
+    >
+      {
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, nulla!Ipsam placeat, consectetur atque sed ad dolores tenetur assumenda sapiente consequatur quasi, facilis exercitationem saepe dignissimos eligendi asperiores nulla nostrum."
+          .split(" ")
+          .slice(0, 20)
+          .join(" ")
+      }...
     </p>
     <div class="flex justify-center gap-1">
       {
-        firstTwoTechs.map((x) => (
+        firstThreeTechs.map((x) => (
           <div class=" bg-customGray-100 whitespace-nowrap px-3 py-1 rounded-sm text-xs">
             {x}
           </div>
         ))
+      }
+      {
+        technologies.length > 3 && (
+          <div class=" bg-customGray-100 whitespace-nowrap px-3 py-1 rounded-sm text-xs">
+            ...
+          </div>
+        )
       }
     </div>
     <BorderedAnchor href="">Learn More</BorderedAnchor>
