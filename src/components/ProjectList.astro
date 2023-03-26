@@ -1,12 +1,26 @@
 ---
 import projects from "../../db/projects.json";
+import { projectFilter } from "../types";
 import ProjectCardLeft from "./ProjectCardLeft.astro";
 import ProjectCardRight from "./ProjectCardRight.astro";
+
+interface Props {
+  projectFilter: projectFilter;
+}
+
+const { projectFilter } = Astro.props;
+
+const filteredProjects =
+  projectFilter === "All"
+    ? projects
+    : projectFilter === "isFavorite"
+    ? projects.filter((x) => x.isFavorite)
+    : projects.filter((x) => x.technologies.includes(projectFilter));
 ---
 
 <div class="flex flex-col gap-y-16 mt-10">
   {
-    projects.map((project, index) => {
+    filteredProjects.reverse().map((project, index) => {
       const isEven = index % 2 === 0;
       return isEven ? (
         <ProjectCardRight

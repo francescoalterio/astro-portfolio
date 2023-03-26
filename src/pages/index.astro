@@ -6,6 +6,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 import Skills from "../../db/skills.json";
 import SkillSection from "../components/SkillSection.astro";
+import PrimaryButton from "../components/PrimaryButton.astro";
 ---
 
 <BaseLayout>
@@ -42,13 +43,18 @@ import SkillSection from "../components/SkillSection.astro";
   </header>
 </BaseLayout>
 <main class="">
-  <section class="bg-customGray-300 px-6 sm:px-12 md:px-16 lg:px-28 py-10">
+  <section
+    class="bg-customGray-300 px-6 sm:px-12 md:px-16 lg:px-28 py-10 flex flex-col gap-16"
+  >
     <div class="flex justify-between items-center">
       <h2 class="text-4xl">My Projects</h2>
     </div>
-    <ProjectList />
+    <ProjectList projectFilter="isFavorite" />
+    <div class="w-full flex">
+      <PrimaryButton bgColor={"customGray-100"}>See all projects</PrimaryButton>
+    </div>
   </section>
-  <section class="px-6 sm:px-12 md:px-16 lg:px-28 py-10">
+  <section class="px-6 sm:px-12 md:px-16 lg:px-28 py-10 gap-10">
     <h2 class="text-4xl">Skills</h2>
     <div class="flex flex-col gap-16">
       <SkillSection title="Languages" skills={Skills.languages} />

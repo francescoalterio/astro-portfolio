@@ -4,7 +4,8 @@ export interface Project {
   fileName: string;
   alt: string;
   description: string;
-  preview: string[];
+  preview?: string[];
+  app?: string[];
   repository: string[];
   technologies: string[];
   isFavorite: boolean;
@@ -15,3 +16,11 @@ export interface Technology {
   fileName: string;
   documentationURL: string;
 }
+
+export type projectFilter =
+  | "isFavorite"
+  | "All"
+  | "Javascript"
+  | "Typescript"
+  | "PHP"
+  | "Python";
