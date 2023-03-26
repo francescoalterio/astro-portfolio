@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon";
 import RolPill from "./RolPill.astro";
 import projectTypes from "../../db/projectTypes.json";
+import BorderedAnchor from "./BorderedAnchor.astro";
 
 interface Props {
   id: number;
@@ -53,5 +54,6 @@ const dataContainer = isEven ? " items-end  right-0" : " items-start left-0";
         ))
       }
     </div>
+    <BorderedAnchor href="">Learn More</BorderedAnchor>
   </div>
 </div>

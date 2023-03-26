@@ -1,0 +1,22 @@
+---
+interface Props {
+  href: string;
+  size?: "small" | "large";
+  isFull?: boolean;
+}
+
+const { href } = Astro.props;
+
+const size = Astro.props.size || "small";
+const isFull = Astro.props.isFull || false;
+
+const sizeStyling = size === "small" ? "px-4 py-2" : "px-6 py-4 text-lg";
+const fullStyling = isFull ? "flex-1" : "";
+---
+
+<a
+  href={href}
+  class={`border border-primaryLight rounded-md text-primaryLight px-4 py-2 transition-all hover:bg-opacity-10 hover:bg-primary ${sizeStyling} ${fullStyling}`}
+>
+  <slot />
+</a>

@@ -4,15 +4,13 @@ import { Technology } from "../types";
 interface Props extends Technology {}
 
 const { name, fileName, docuemntationURL } = Astro.props;
+
+const after = "";
 ---
 
 <a
   href={docuemntationURL}
-  class="block w-32 h-32 rounded-md cursor-pointer transition-all hover:transform hover:scale-110"
+  class="block w-32 h-32 bg-customGray-300 p-5 rounded-md cursor-pointer transition-all hover:transform hover:scale-110"
 >
-  <img
-    src={`/assets/technologies/${fileName}`}
-    alt=""
-    class="w-full rounded-3xl"
-  />
+  <img src={`/assets/technologies/${fileName}`} alt="" class="w-full" />
 </a>
