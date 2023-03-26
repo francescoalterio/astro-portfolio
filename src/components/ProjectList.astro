@@ -1,8 +1,7 @@
 ---
 import projects from "../../db/projects.json";
 import { projectFilter } from "../types";
-import ProjectCardLeft from "./ProjectCardLeft.astro";
-import ProjectCardRight from "./ProjectCardRight.astro";
+import ProjectCard from "./ProjectCard.astro";
 
 interface Props {
   projectFilter: projectFilter;
@@ -22,23 +21,15 @@ const filteredProjects =
   {
     filteredProjects.reverse().map((project, index) => {
       const isEven = index % 2 === 0;
-      return isEven ? (
-        <ProjectCardRight
+      return (
+        <ProjectCard
           id={project.id}
           name={project.name}
           fileName={project.fileName}
           technologies={project.technologies}
           description={project.description}
           projectType={project.projectType}
-        />
-      ) : (
-        <ProjectCardLeft
-          id={project.id}
-          name={project.name}
-          fileName={project.fileName}
-          technologies={project.technologies}
-          description={project.description}
-          projectType={project.projectType}
+          isEven={isEven}
         />
       );
     })
