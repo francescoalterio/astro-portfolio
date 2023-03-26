@@ -23,16 +23,22 @@ const dataContainer = isEven ? " items-end  right-0" : " items-start left-0";
 ---
 
 <div class={`flex flex-1 relative ${container}`}>
-  <img src={imageURL} alt="" class="w-3/5 rounded-sm" />
+  <div class="bg-primaryLight w-3/5 rounded-md">
+    <img
+      src={imageURL}
+      alt=""
+      class="w-full rounded-md filter grayscale opacity-50 transition-all hover:grayscale-0 hover:opacity-100 cursor-pointer"
+    />
+  </div>
   <div
-    class={`flex flex-col justify-center gap-y-8 px-5 absolute h-full w-1/2 ${dataContainer}`}
+    class={`flex flex-col justify-center gap-y-8 px-5 absolute h-full w-2/5 w- ${dataContainer}`}
   >
     <RolPill bgColor={projectTypes[projectType.toLowerCase()].color}>
       <Icon name={projectTypes[projectType.toLowerCase()].icon} class="w-5" />
       {projectType}
     </RolPill>
     <h4 class="text-2xl font-semibold">{name}</h4>
-    <p class="bg-customGray-200 p-6 rounded-sm">
+    <p class="bg-customGray-200 p-6 rounded-md w-[120%]">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, nulla!
       Ipsam placeat, consectetur atque sed ad dolores tenetur assumenda sapiente
       consequatur quasi, facilis exercitationem saepe dignissimos eligendi
