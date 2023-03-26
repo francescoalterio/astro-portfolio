@@ -18,17 +18,15 @@ const { name, fileName, technologies, description, projectType, isEven } =
 const imageURL = `/assets/projects/${fileName}`;
 const firstTwoTechs = technologies.slice(0, 4);
 
-const container = isEven
-  ? "flex flex-1 relative"
-  : "flex flex-1 relative flex-row-reverse";
-const dataContainer = isEven
-  ? "flex flex-col items-end justify-center gap-y-8 px-5 absolute h-full right-0 w-1/2"
-  : "flex flex-col items-start justify-center gap-y-8 px-5 absolute h-full left-0 w-1/2";
+const container = isEven ? "" : "flex-row-reverse";
+const dataContainer = isEven ? " items-end  right-0" : " items-start left-0";
 ---
 
-<div class={container}>
+<div class={`flex flex-1 relative ${container}`}>
   <img src={imageURL} alt="" class="w-3/5 rounded-sm" />
-  <div class={dataContainer}>
+  <div
+    class={`flex flex-col justify-center gap-y-8 px-5 absolute h-full w-1/2 ${dataContainer}`}
+  >
     <RolPill bgColor={projectTypes[projectType.toLowerCase()].color}>
       <Icon name={projectTypes[projectType.toLowerCase()].icon} class="w-5" />
       {projectType}
