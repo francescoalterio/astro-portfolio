@@ -24,12 +24,8 @@ const dataContainer = isEven ? " items-end  right-0" : " items-start left-0";
 ---
 
 <div class={`flex flex-1 relative ${container}`}>
-  <div class="bg-primaryLight w-3/5 rounded-md">
-    <img
-      src={imageURL}
-      alt=""
-      class="w-full rounded-md filter grayscale opacity-50 transition-all hover:grayscale-0 hover:opacity-100 cursor-pointer"
-    />
+  <div class="w-3/5 rounded-md">
+    <img src={imageURL} alt="" class="w-full rounded-md" />
   </div>
   <div
     class={`flex flex-col justify-center gap-y-8 px-5 absolute h-full w-2/5 w- ${dataContainer}`}
