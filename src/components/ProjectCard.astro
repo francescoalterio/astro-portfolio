@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon";
+import { Picture } from "@astrojs/image/components";
 import RolPill from "./RolPill.astro";
 import projectTypes from "../../db/projectTypes.json";
 import BorderedAnchor from "./BorderedAnchor.astro";
@@ -8,13 +9,14 @@ interface Props {
   id: number;
   name: string;
   fileName: string;
+  alt: string;
   description: string;
   projectType: string;
   technologies: string[];
   isEven: boolean;
 }
 
-const { name, fileName, technologies, description, projectType, isEven } =
+const { name, fileName, technologies, alt, description, projectType, isEven } =
   Astro.props;
 const imageURL = `/assets/projects/${fileName}`;
 const firstThreeTechs = technologies.slice(0, 3);
@@ -27,7 +29,13 @@ const shortDescription = description.split(" ").slice(0, 20).join(" ");
 
 <div class={`flex flex-1 relative ${container}`}>
   <div class="w-3/5 rounded-md">
-    <img src={imageURL} alt="" class="w-full rounded-md" />
+    <Picture
+      src={imageURL}
+      widths={[1200]}
+      aspectRatio="16:9"
+      sizes="1200px"
+      alt={alt}
+    />
   </div>
   <div
     class={`flex flex-col justify-center lg:gap-y-4 xl:gap-y-8 px-5 absolute h-full w-2/5 w- ${dataContainer}`}
