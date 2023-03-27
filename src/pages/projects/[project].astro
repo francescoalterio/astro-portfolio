@@ -1,0 +1,32 @@
+---
+import projects from "../../../db/projects.json";
+import { Project } from "../../types";
+export function getStaticPaths() {
+  const toReturn = projects.map(({ id }) => {
+    return {
+      params: {
+        project: id,
+      },
+    };
+  });
+
+  projects.forEach((x) => console.log(x.projectType));
+  return toReturn;
+}
+
+const { project: projectID } = Astro.params;
+
+const {
+  name,
+  fileName,
+  alt,
+  projectType,
+  description,
+  preview,
+  app,
+  repository,
+  technologies,
+} = projects.find((x) => Number(projectID) === x.id) as Project;
+---
+
+<div>{name}</div>

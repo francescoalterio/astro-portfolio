@@ -6,7 +6,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 import Skills from "../../db/skills.json";
 import SkillSection from "../components/SkillSection.astro";
-import PrimaryButton from "../components/PrimaryButton.astro";
+import PrimaryAnchor from "../components/PrimaryAnchor.astro";
 ---
 
 <BaseLayout>
@@ -51,23 +51,29 @@ import PrimaryButton from "../components/PrimaryButton.astro";
     </div>
     <ProjectList projectFilter="isFavorite" />
     <div class="w-full flex">
-      <PrimaryButton bgColor={"customGray-100"}>See all projects</PrimaryButton>
+      <PrimaryAnchor bgColor={"customGray-100"} href="/projects">
+        See all projects
+      </PrimaryAnchor>
     </div>
   </section>
-  <section class="px-6 sm:px-12 md:px-16 lg:px-28 py-10 gap-10">
+  <section class="px-6 sm:px-12 md:px-16 lg:px-28 py-10 flex flex-col gap-10">
     <h2 class="text-4xl">Skills</h2>
-    <div class="flex flex-col gap-16">
-      <SkillSection title="Languages" skills={Skills.languages} />
-      <SkillSection
-        title="Frameworks and Libraries"
-        skills={Skills.frameworksAndLibraries}
-      />
-      <SkillSection
-        title="Styling and Structuring"
-        skills={Skills.stylingAndStructuring}
-      />
-      <SkillSection title="Testing" skills={Skills.testing} />
-      <SkillSection title="Databases" skills={Skills.databases} />
+    <div class="flex gap-16">
+      <div class="flex flex-col gap-16 flex-1">
+        <SkillSection title="Languages" skills={Skills.languages} />
+        <SkillSection
+          title="Styling and Structuring"
+          skills={Skills.stylingAndStructuring}
+        />
+        <SkillSection title="Databases" skills={Skills.databases} />
+      </div>
+      <div class="flex flex-col gap-16 flex-1">
+        <SkillSection
+          title="Frameworks and Libraries"
+          skills={Skills.frameworksAndLibraries}
+        />
+        <SkillSection title="Testing" skills={Skills.testing} />
+      </div>
     </div>
   </section>
 </main>

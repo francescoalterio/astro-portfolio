@@ -1,6 +1,7 @@
 export interface Project {
   id: number;
   name: string;
+  projectType: projectType;
   fileName: string;
   alt: string;
   description: string;
@@ -24,3 +25,12 @@ export type projectFilter =
   | "Typescript"
   | "PHP"
   | "Python";
+
+export type projectType =
+  | "Web"
+  | "Mobile"
+  | "Fullstack"
+  | "Library"
+  | "Framework"
+  | "API"
+  | "Desktop";
