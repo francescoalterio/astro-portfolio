@@ -18,6 +18,10 @@ export interface Technology {
   documentationURL: string;
 }
 
+export interface TechnologyWithType extends Technology {
+  type: technologyType;
+}
+
 export type projectFilter =
   | "isFavorite"
   | "All"
@@ -34,3 +38,10 @@ export type projectType =
   | "Framework"
   | "API"
   | "Desktop";
+
+export type technologyType =
+  | "languages"
+  | "frameworks-and-libraries"
+  | "styling-and-structuring"
+  | "testing"
+  | "databases";

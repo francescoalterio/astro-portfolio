@@ -1,0 +1,13 @@
+{
+  "languages": { "icon": "mdi:code-braces", "color": "#5b29ff" },
+  "frameworks-and-libraries": {
+    "icon": "mdi:resource-description-framework",
+    "color": "#31ad52"
+  },
+  "styling-and-structuring": {
+    "icon": "mdi:format-line-style",
+    "color": "#ff298d"
+  },
+  "testing": { "icon": "carbon:chemistry", "color": "#ff3e29" },
+  "databases": { "icon": "mdi:database", "color": "#ffc25c" }
+}

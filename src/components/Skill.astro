@@ -1,15 +1,38 @@
 ---
+import { Picture } from "@astrojs/image/components";
 import { Icon } from "astro-icon";
-import { Technology } from "../types";
+import { Technology, technologyType } from "../types";
+import RolPill from "./RolPill.astro";
+import technologyTypes from "../../db/technologyTypes.json";
+import { capitalizeText } from "../utils/capitalizeText";
 
-interface Props extends Technology {}
+interface Props extends Technology {
+  type: technologyType;
+}
 
-const { name, fileName, docuemntationURL } = Astro.props;
+const { name, fileName, documentationURL, type } = Astro.props;
+
+const formattingTypeName = capitalizeText(type);
 ---
 
 <a
-  href={docuemntationURL}
-  class="block w-28 bg-customGray-200 p-5 rounded-md cursor-pointer transition-all border-primaryLight hover:transform hover:scale-110 hover:border"
+  href={documentationURL}
+  class="flex flex-col gap-5 items-center w-56 cursor-pointer py-5 transition-all hover:bg-customGray-100 hover:rounded-md"
+  target="_blank"
 >
-  <img src={`/assets/technologies/${fileName}`} alt="" class="w-full" />
+  <Picture
+    src={`/assets/technologies/${fileName}`}
+    widths={[112]}
+    aspectRatio="1:1"
+    sizes="112px"
+    alt={`${name}-logo`}
+  />
+  <p class="text-lg font-semibold">
+    {name}
+  </p>
+
+  <RolPill bgColor={technologyTypes[type].color}>
+    <Icon name={technologyTypes[type].icon} class="w-4" />
+    <p class="text-xs">{formattingTypeName}</p>
+  </RolPill>
 </a>
