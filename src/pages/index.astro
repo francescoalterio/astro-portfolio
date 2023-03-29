@@ -3,17 +3,22 @@ import { Icon } from "astro-icon";
 import ProjectList from "../components/ProjectList.astro";
 import RolPill from "../components/RolPill.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import projects from "../../db/projects.json";
 
 import PrimaryAnchor from "../components/PrimaryAnchor.astro";
 import { getAllSkillsInOneArray } from "../utils/getAllSkillsInOneArray";
 import Skill from "../components/Skill.astro";
+import PresentationCard from "../components/PresentationCard.astro";
+import PersonalDataCard from "../components/PersonalDataCard.astro";
+import { NumberOfRepos } from "../components/NumberOfRepos";
+import Section from "../components/Section.astro";
 
 const allSkills = getAllSkillsInOneArray();
 ---
 
 <BaseLayout>
   <header
-    class="bg-customGray-200 px-6 sm:px-12 md:px-16 lg:px-28 flex flex-col lg:flex-row items-center pt-20"
+    class="backgroundPer px-6 sm:px-12 md:px-16 lg:px-28 flex flex-col lg:flex-row items-center pt-20"
   >
     <div
       class="flex flex-col gap-5 flex-1 items-center text-center lg:items-start lg:text-start"
@@ -44,9 +49,76 @@ const allSkills = getAllSkillsInOneArray();
     />
   </header>
   <main class="">
-    <section
-      class="bg-customGray-300 px-6 sm:px-12 md:px-16 lg:px-28 py-10 flex flex-col gap-16"
+    <Section background="dark" className=" pt-36 flex gap-48 pb-56">
+      <div class="flex flex-col flex-1 gap-2">
+        <PresentationCard
+          title="Lorem"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing."
+          secondDescription="lorem erwe pipe"
+          icon="mdi:resource-description-framework"
+        />
+        <PresentationCard
+          title="Lorem"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing."
+          secondDescription="lorem erwe pipe"
+          icon="mdi:resource-description-framework"
+        />
+        <PresentationCard
+          title="Lorem"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing."
+          secondDescription="lorem erwe pipe"
+          icon="mdi:resource-description-framework"
+        />
+      </div>
+      <div class="flex-1 flex flex-col gap-10">
+        <p class="text-xs text-gray-400">Introduce</p>
+        <h2 class="text-6xl font-semibold">Hi, welcome to my portfolio</h2>
+        <p class="text-2xl italic">Every dream begins with a story</p>
+        <p class="text-gray-400 text-sm leading-7">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+          nesciunt, officia autem ipsam ea ipsum. Incidunt nobis quaerat veniam
+          fugit cumque? Vel velit culpa ipsum? Ducimus suscipit itaque ratione
+          exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Commodi repudiandae repellat ipsum corporis quibusdam autem
+          atque voluptates nisi, nesciunt accusantium enim. Sit, sed laboriosam
+          error sapiente qui voluptates minima quibusdam?
+        </p>
+      </div>
+    </Section>
+    <Section
+      background="light"
+      className="relative py-10 flex flex-col gap-16 pt-56"
     >
+      <div class="absolute top-[-9rem] left-0 flex gap-5 w-full justify-center">
+        <PersonalDataCard icon="mdi:github">
+          <p class="text-2xl font-semibold">
+            More than <NumberOfRepos client:load /> repos
+          </p>
+          <a
+            href="https://github.com/francescoalterio"
+            target="_blank"
+            class="text-sm underline text-gray-400">Go to github</a
+          >
+        </PersonalDataCard>
+        <PersonalDataCard primary icon="mdi:code-braces">
+          <p class="text-2xl font-semibold">
+            More than <span>{projects.length}</span> projects
+          </p>
+          <a
+            href="/projects"
+            target="_blank"
+            class="text-sm underline font-semibold">See all</a
+          >
+        </PersonalDataCard>
+        <PersonalDataCard icon="mdi:youtube">
+          <p class="text-2xl font-semibold">Youtube channel</p>
+          <a
+            href="https://www.youtube.com/@francescox5989/videos"
+            target="_blank"
+            class="text-sm underline text-gray-400">Go to youtube</a
+          >
+        </PersonalDataCard>
+      </div>
       <div class="flex justify-between items-center">
         <h2 class="text-4xl">My Projects</h2>
       </div>
@@ -56,8 +128,8 @@ const allSkills = getAllSkillsInOneArray();
           See all projects
         </PrimaryAnchor>
       </div>
-    </section>
-    <section class="px-6 sm:px-12 md:px-16 lg:px-28 py-10 flex flex-col gap-10">
+    </Section>
+    <Section background="dark" className="py-10 flex flex-col gap-10">
       <h2 class="text-4xl my-5">Skills</h2>
       <div class="flex flex-wrap gap-10 justify-center">
         {
@@ -71,6 +143,6 @@ const allSkills = getAllSkillsInOneArray();
           ))
         }
       </div>
-    </section>
+    </Section>
   </main>
 </BaseLayout>

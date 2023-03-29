@@ -1,0 +1,16 @@
+---
+interface Props {
+  background: "light" | "dark";
+  className: string;
+}
+
+const { background, className } = Astro.props;
+---
+
+<section
+  class={`${
+    background === "light" ? "bg-customGray-200" : "bg-customGray-300"
+  } px-6 sm:px-12 md:px-16 lg:px-28 ${className}`}
+>
+  <slot />
+</section>

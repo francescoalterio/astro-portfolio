@@ -1,0 +1,21 @@
+---
+import { Icon } from "astro-icon";
+
+interface Props {
+  primary?: boolean;
+  icon: string;
+}
+
+const { primary, icon } = Astro.props;
+---
+
+<div
+  class={`w-72 h-72 ${
+    primary ? "bg-primary" : "bg-customGray-100"
+  } flex gap-6 pt-36 p-11 items-start`}
+>
+  <Icon name={icon} class="w-16" />
+  <div class="flex flex-col gap-4">
+    <slot />
+  </div>
+</div>
