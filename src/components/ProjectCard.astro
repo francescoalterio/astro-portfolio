@@ -16,8 +16,16 @@ interface Props {
   isEven: boolean;
 }
 
-const { name, fileName, technologies, alt, description, projectType, isEven } =
-  Astro.props;
+const {
+  id,
+  name,
+  fileName,
+  technologies,
+  alt,
+  description,
+  projectType,
+  isEven,
+} = Astro.props;
 const imageURL = `/assets/projects/${fileName}`;
 const firstThreeTechs = technologies.slice(0, 3);
 
@@ -71,6 +79,6 @@ const shortDescription = description.split(" ").slice(0, 20).join(" ");
         )
       }
     </div>
-    <BorderedAnchor href="">Learn More</BorderedAnchor>
+    <BorderedAnchor href={`/projects/${id}`}>Learn More</BorderedAnchor>
   </div>
 </div>

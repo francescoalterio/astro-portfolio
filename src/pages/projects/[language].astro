@@ -1,0 +1,69 @@
+---
+export function getStaticPaths() {
+  return [
+    { params: { language: "isfavorite" } },
+    { params: { language: "all" } },
+    { params: { language: "javascript" } },
+    { params: { language: "typescript" } },
+    { params: { language: "php" } },
+    { params: { language: "python" } },
+  ];
+}
+
+const names = {
+  isfavorite: "isFavorite",
+  all: "All",
+  javascript: "Javascript",
+  typescript: "Typescript",
+  php: "PHP",
+  python: "Python",
+};
+
+import ProjectList from "../../components/ProjectList.astro";
+import Section from "../../components/Section.astro";
+import { Icon } from "astro-icon";
+import ProjectFilterAnchor from "../../components/ProjectFilterAnchor.astro";
+
+const language = Astro.params.language;
+---
+
+<main>
+  <header class="bg-customGray-300 flex flex-col items-center gap-16 py-10">
+    <h1 class="text-white text-5xl font-bold">{names[language]} Projects</h1>
+    <ul
+      class="flex justify-center gap-4 bg-customGray-100 py-2 px-6 rounded-md"
+    >
+      <ProjectFilterAnchor
+        name="all"
+        iconName="ic:baseline-all-inbox"
+        page={language}
+      />
+      <ProjectFilterAnchor
+        name="javascript"
+        iconName="mdi:language-javascript"
+        page={language}
+      />
+      <ProjectFilterAnchor
+        name="typescript"
+        iconName="mdi:language-typescript"
+        page={language}
+      />
+      <ProjectFilterAnchor
+        name="php"
+        iconName="mdi:language-php"
+        page={language}
+      />
+      <ProjectFilterAnchor
+        name="python"
+        iconName="mdi:language-python"
+        page={language}
+      />
+    </ul>
+  </header>
+  <Section
+    background="dark"
+    className=" flex flex-col gap-16 text-white min-h-[1500px] pb-10"
+  >
+    <ProjectList projectFilter={names[language]} />
+  </Section>
+</main>
