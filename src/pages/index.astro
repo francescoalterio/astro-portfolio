@@ -49,7 +49,10 @@ const allSkills = getAllSkillsInOneArray();
     />
   </header>
   <main class="">
-    <Section background="dark" className=" pt-36 flex gap-48 pb-56">
+    <Section
+      background="dark"
+      className=" pt-36 flex lg:gap-20 xl:gap-32 2xl:gap-48 pb-56"
+    >
       <div class="flex flex-col flex-1 gap-2">
         <PresentationCard
           title="Lorem"
@@ -70,19 +73,27 @@ const allSkills = getAllSkillsInOneArray();
           icon="mdi:resource-description-framework"
         />
       </div>
-      <div class="flex-1 flex flex-col gap-10">
+      <div class="flex-1 flex flex-col lg:gap-8 xl:gap-10">
         <p class="text-xs text-gray-400">Introduce</p>
-        <h2 class="text-6xl font-semibold">Hi, welcome to my portfolio</h2>
+        <h2 class="lg:text-5xl xl:text-6xl font-semibold">
+          Hi, welcome to my portfolio
+        </h2>
         <p class="text-2xl italic">Every dream begins with a story</p>
-        <p class="text-gray-400 text-sm leading-7">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-          nesciunt, officia autem ipsam ea ipsum. Incidunt nobis quaerat veniam
-          fugit cumque? Vel velit culpa ipsum? Ducimus suscipit itaque ratione
-          exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Commodi repudiandae repellat ipsum corporis quibusdam autem
-          atque voluptates nisi, nesciunt accusantium enim. Sit, sed laboriosam
-          error sapiente qui voluptates minima quibusdam?
-        </p>
+        <div class="flex flex-col gap-2">
+          <p class="text-gray-400 text-sm leading-7">
+            Hi, my name is Francesco Alterio and I'm a Fullstack developer. I
+            started in the Web programming world at the beginning of 2021 and
+            since then I have created more than 20 projects with different
+            technologies. When I discovered software development I found my
+            great passion, a world full of wonderful possibilities.
+          </p>
+          <p class="text-gray-400 text-sm leading-7">
+            My first encounter with programming was in 2020 when I decided to
+            get into video game programming as a hobby, a year later I wanted to
+            take software development professionally, choosing web programming
+            as my starting point.
+          </p>
+        </div>
       </div>
     </Section>
     <Section
@@ -143,6 +154,9 @@ const allSkills = getAllSkillsInOneArray();
           ))
         }
       </div>
+    </Section>
+    <Section background="light">
+      <div></div>
     </Section>
   </main>
 </BaseLayout>

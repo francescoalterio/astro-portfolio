@@ -11,12 +11,14 @@ interface Props {
 const { title, description, secondDescription, icon } = Astro.props;
 ---
 
-<div class="bg-customGray-200 rounded-md flex flex-col p-10 gap-1">
+<div
+  class="bg-customGray-200 rounded-md flex flex-col lg:p-6 xl:p-10 gap-1 lg:flex-1"
+>
   <div class="flex flex-1 justify-between">
     <p class="text-2xl text-primaryLight">{title}</p>
     <Icon name={icon} class="w-7 text-primaryLight" />
   </div>
-  <div class="flex flex-col justify-between gap-6">
+  <div class="flex flex-col justify-between gap-6 w-4/5 flex-1">
     <p class="text-gray-300 text-sm">{description}</p>
     <p class="text-sm">{secondDescription}</p>
   </div>
