@@ -5,9 +5,15 @@ export interface Project {
   fileName: string;
   alt: string;
   description: string;
-  preview?: string[];
-  app?: string[];
-  repository: string[];
+  preview: {
+    name: string;
+    url: string;
+  }[];
+
+  repository: {
+    name: string;
+    url: string;
+  }[];
   technologies: string[];
   isFavorite: boolean;
 }

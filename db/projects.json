@@ -6,8 +6,18 @@
     "alt": "img-smitefilter",
     "projectType": "Web",
     "description": "Filter of gods for the video game Smite using Javscript vanilla",
-    "preview": ["https://francescoalterio.github.io/smitefilter/"],
-    "repository": ["https://github.com/francescoalterio/smitefilter"],
+    "preview": [
+      {
+        "name": "Preview",
+        "url": "https://francescoalterio.github.io/smitefilter/"
+      }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/smitefilter"
+      }
+    ],
     "technologies": ["Javascript", "HTML", "CSS"],
     "isFavorite": false
   },
@@ -18,8 +28,15 @@
     "alt": "img-react-calculator",
     "projectType": "Web",
     "description": "Calculator developed with React.",
-    "preview": ["https://react-calculator-fran.netlify.app"],
-    "repository": ["https://github.com/francescoalterio/react-calculator"],
+    "preview": [
+      { "name": "Preview", "url": "https://react-calculator-fran.netlify.app" }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/react-calculator"
+      }
+    ],
     "technologies": ["Javascript", "React.js", "Tailwindcss"],
     "isFavorite": false
   },
@@ -31,10 +48,16 @@
     "projectType": "Web",
     "description": "List of the most famous cryptocurrencies and their prices.",
     "preview": [
-      "https://stackblitz.com/edit/cryptocurrencylist?file=fileName%2FApp.js"
+      {
+        "name": "Preview",
+        "url": "https://stackblitz.com/edit/cryptocurrencylist?file=fileName%2FApp.js"
+      }
     ],
     "repository": [
-      "https://github.com/francescoalterio/react-cryptocurrencylist"
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/react-cryptocurrencylist"
+      }
     ],
     "technologies": ["Javascript", "React.js", "CSS"],
     "isFavorite": false
@@ -46,8 +69,18 @@
     "alt": "img-money-converter",
     "projectType": "Web",
     "description": "Converter from one currency to another.",
-    "preview": ["https://stackblitz.com/edit/react-e9kmsj?file=README.md"],
-    "repository": ["https://github.com/francescoalterio/money-converter"],
+    "preview": [
+      {
+        "name": "Preview",
+        "url": "https://stackblitz.com/edit/react-e9kmsj?file=README.md"
+      }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/money-converter"
+      }
+    ],
     "technologies": ["Javascript", "React.js, CSS"],
     "isFavorite": false
   },
@@ -58,8 +91,18 @@
     "alt": "img-quizz-app",
     "projectType": "Web",
     "description": "App of questions of various categories.",
-    "preview": ["https://stackblitz.com/edit/react-scdye8?file=README.md"],
-    "repository": ["https://github.com/francescoalterio/quiz-app"],
+    "preview": [
+      {
+        "name": "Preview",
+        "url": "https://stackblitz.com/edit/react-scdye8?file=README.md"
+      }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/quiz-app"
+      }
+    ],
     "technologies": ["Javascript", "React.js", "CSS"],
     "isFavorite": false
   },
@@ -70,8 +113,15 @@
     "alt": "img-francescopomodoro",
     "projectType": "Web",
     "description": "Clock pomodoro to increase the productivity of your study using React",
-    "preview": ["https://francescopomodoro.netlify.app/"],
-    "repository": ["https://github.com/francescoalterio/pomodoro-timer"],
+    "preview": [
+      { "name": "Preview", "url": "https://francescopomodoro.netlify.app/" }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/pomodoro-timer"
+      }
+    ],
     "technologies": ["Javascript", "React.js", "CSS"],
     "isFavorite": false
   },
@@ -82,8 +132,18 @@
     "alt": "img-api-joke",
     "projectType": "Web",
     "description": "Consuming joke API with react.",
-    "preview": ["https://stackblitz.com/edit/react-e6wwrx?file=README.md"],
-    "repository": ["https://github.com/francescoalterio/react-API-Joke"],
+    "preview": [
+      {
+        "name": "Preview",
+        "url": "https://stackblitz.com/edit/react-e6wwrx?file=README.md"
+      }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/react-API-Joke"
+      }
+    ],
     "technologies": ["Javascript", "React.js", "CSS"],
     "isFavorite": false
   },
@@ -94,8 +154,13 @@
     "alt": "img-studypanel",
     "projectType": "Web",
     "description": "Study panel for Web programming. It has a user system using Firebase and stores each of the technologies that you are learning and those learned.",
-    "preview": ["https://studypanel.vercel.app/"],
-    "repository": ["https://github.com/francescoalterio/react-study-panel"],
+    "preview": [{ "name": "Preview", "url": "https://studypanel.vercel.app/" }],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/react-study-panel"
+      }
+    ],
     "technologies": ["Javascript", "React.js", "Tailwindcss", "Firebase"],
 
     "isFavorite": true
@@ -109,8 +174,14 @@
     "description": "Program that allows you to send files of any type between a PC and a mobile. You only need to start the server on the machine which has the core of the entire ecosystem, the app being the client with which to interact.",
     "preview": [],
     "repository": [
-      "https://github.com/francescoalterio/dualsend-mobileapp",
-      "https://github.com/francescoalterio/dualsend-backend"
+      {
+        "name": "App",
+        "url": "https://github.com/francescoalterio/dualsend-mobileapp"
+      },
+      {
+        "name": "Backend",
+        "url": "https://github.com/francescoalterio/dualsend-backend"
+      }
     ],
     "technologies": [
       "Javascript",
@@ -128,10 +199,18 @@
     "alt": "img-project-manager",
     "projectType": "Mobile",
     "description": "Manage and manage your projects and tasks in an easy and fast way. The app is the easiest and fastest way to manage your projects and tasks, from simple tasks to important tasks, speeding up your work and increasing your productivity. 1. Creation of projects 2. Task creation 3. Increased productivity 4. Acceleration of work 5. Daily organization 6. Detailed description of tasks and projects 7. Completion of projects and tasks.",
-    "app": [
-      "https://play.google.com/store/apps/details?id=com.francescox5.projectmanager"
+    "preview": [
+      {
+        "name": "View app",
+        "url": "https://play.google.com/store/apps/details?id=com.francescox5.projectmanager"
+      }
     ],
-    "repository": ["https://github.com/francescoalterio/project-manager"],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/project-manager"
+      }
+    ],
     "technologies": [
       "Javascript",
       "React Native",
@@ -148,10 +227,18 @@
     "alt": "img-pokebook",
     "projectType": "Mobile",
     "description": "The application has information on each existing Pokemon in all the games of the main saga. Pokedex: A pokedex has a source of accurate and detailed information on each of the pokemon and their abilities, all in one place. Features: PokeBook has a specific search section to easily find the pokemon or ability you want to search for! Have a pokemon filter using their types (Fire, Water, ...etc). The pokedex stores your last searches to avoid forgetting and easy access to previously found pokemon. - Skill Dex - Learn all the information about the skills - Look what pokemon has what abilities - You don't have to worry about forgetting the names of the skills, PokeBook will save it for you - Dex of Types - Filter pokemons by their types to learn more in depth.",
-    "app": [
-      "https://play.google.com/store/apps/details?id=com.franstudios.pokebook"
+    "preview": [
+      {
+        "name": "View app",
+        "url": "https://play.google.com/store/apps/details?id=com.franstudios.pokebook"
+      }
     ],
-    "repository": ["https://github.com/francescoalterio/pokebook"],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/pokebook"
+      }
+    ],
     "technologies": [
       "Javascript",
       "React Native",
@@ -169,10 +256,18 @@
     "alt": "img-o",
     "projectType": "Mobile",
     "description": "IP Finder app allows you to locate the IP location of any IP address.IP Finder allows you to locate and search any IP anywhere in the world for free. The app provides you with a lot of information about the located IP such as location, time zone, etc.",
-    "app": [
-      "https://play.google.com/store/apps/details?id=com.franstudios.ipfinder"
+    "preview": [
+      {
+        "name": "View app",
+        "url": "https://play.google.com/store/apps/details?id=com.franstudios.ipfinder"
+      }
     ],
-    "repository": ["https://github.com/francescoalterio/ip-finder"],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/ip-finder"
+      }
+    ],
     "technologies": ["Javascript", "React Native", "React Navigation", "CSS"],
     "isFavorite": false
   },
@@ -183,8 +278,15 @@
     "alt": "img-fran-studios",
     "projectType": "Web",
     "description": "Fran Studios was born from the idea of creating a personal brand on mobile application development. Simple, pleasant apps that solve user problems directly, whether they are tools or entertainment.",
-    "preview": ["https://franstudios.vercel.app/"],
-    "repository": ["https://github.com/francescoalterio/fran-studios"],
+    "preview": [
+      { "name": "Preview", "url": "https://franstudios.vercel.app/" }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/fran-studios"
+      }
+    ],
     "technologies": ["Javascript", "Next.js", "CSS"],
     "isFavorite": true
   },
@@ -195,10 +297,18 @@
     "alt": "img-o",
     "projectType": "Mobile",
     "description": "Cocktail Recipe App is a mobile application that helps you find cocktail recipes and drink recipes.",
-    "app": [
-      "https://play.google.com/store/apps/details?id=com.franstudios.cocktaillibrary"
+    "preview": [
+      {
+        "name": "View app",
+        "url": "https://play.google.com/store/apps/details?id=com.franstudios.cocktaillibrary"
+      }
     ],
-    "repository": ["https://github.com/francescoalterio/cocktails-app"],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/cocktails-app"
+      }
+    ],
     "technologies": [
       "Javascript",
       "React Native",
@@ -217,7 +327,10 @@
     "description": "Login APP is my first backend project with Typescript, it is a study project where I learned to use a relational database such as SQLite and an ORM as prism, I also wanted to improve my knowledge in typescript. The app is based on a simple login/register with a home where you can create and delete posts, the curious thing about the app is that it has a session cookie so you don't have to log in every time you enter the app.",
     "preview": [],
     "repository": [
-      "https://github.com/francescoalterio/login-api-express-typescript"
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/login-api-express-typescript"
+      }
     ],
     "technologies": ["Typescript", "Express", "SQLite", "Prisma"],
     "isFavorite": false
@@ -229,8 +342,13 @@
     "alt": "img-franeditor",
     "projectType": "Web",
     "description": "Fran Editor is a Javascript code editor on a web. The code is executed every time a change is made without the need to save and each console.log is reflected in a console on the right side of the editor. The app is built with Monaco Editor, the same editor that VS Code uses",
-    "preview": ["https://franeditor.vercel.app/"],
-    "repository": ["https://github.com/francescoalterio/fran-editor"],
+    "preview": [{ "name": "Preview", "url": "https://franeditor.vercel.app/" }],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/fran-editor"
+      }
+    ],
     "technologies": ["Javascript", "React.js", "CSS"],
     "isFavorite": true
   },
@@ -243,7 +361,10 @@
     "description": "Calculator developed with Python and Tkinter.",
     "preview": [],
     "repository": [
-      "https://github.com/francescoalterio/fran-calculator-python"
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/fran-calculator-python"
+      }
     ],
     "technologies": ["Python", "TKinter"],
     "isFavorite": false
@@ -256,9 +377,17 @@
     "projectType": "Library",
     "description": "Mini test library inspired by jest.",
     "preview": [
-      "https://www.npmjs.com/package/fran-testing-library?activeTab=readme"
+      {
+        "name": "Preview",
+        "url": "https://www.npmjs.com/package/fran-testing-library?activeTab=readme"
+      }
     ],
-    "repository": ["https://github.com/francescoalterio/fran-testing-library"],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/fran-testing-library"
+      }
+    ],
     "technologies": ["Javascript", "Node.js"],
     "isFavorite": false
   },
@@ -269,8 +398,15 @@
     "alt": "img-gymtimer",
     "projectType": "Web",
     "description": "Timers for exercise, both simple and supersets.",
-    "preview": ["https://fran-gym-timer.netlify.app/"],
-    "repository": ["https://github.com/francescoalterio/gym-timer"],
+    "preview": [
+      { "name": "Preview", "url": "https://fran-gym-timer.netlify.app/" }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/gym-timer"
+      }
+    ],
     "technologies": ["Javascript", "React.js", "Tailwindcss"],
     "isFavorite": true
   },
@@ -282,10 +418,16 @@
     "projectType": "Fullstack",
     "description": "Simulation of login with PHP and MySQL.",
     "preview": [
-      "https://francescoalteriog.000webhostapp.com/login-form-simulation"
+      {
+        "name": "Preview",
+        "url": "https://francescoalteriog.000webhostapp.com/login-form-simulation"
+      }
     ],
     "repository": [
-      "https://github.com/francescoalterio/login-form-simulation-php"
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/login-form-simulation-php"
+      }
     ],
     "technologies": ["PHP", "MySQL"],
     "isFavorite": false
@@ -297,8 +439,18 @@
     "alt": "img-php-calculator",
     "projectType": "Web",
     "description": "Calculator created only with PHP.",
-    "preview": ["https://francescoalteriog.000webhostapp.com/calculator-php/"],
-    "repository": ["https://github.com/francescoalterio/calculator-php"],
+    "preview": [
+      {
+        "name": "Preview",
+        "url": "https://francescoalteriog.000webhostapp.com/calculator-php/"
+      }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/calculator-php"
+      }
+    ],
     "technologies": ["PHP"],
     "isFavorite": false
   },
@@ -309,8 +461,18 @@
     "alt": "img-crud-php",
     "projectType": "Fullstack",
     "description": "Basic Task List, create, complete, edit and delete tasks.",
-    "preview": ["https://francescoalteriog.000webhostapp.com/crud-php/"],
-    "repository": ["https://github.com/francescoalterio/CRUD-PHP"],
+    "preview": [
+      {
+        "name": "Preview",
+        "url": "https://francescoalteriog.000webhostapp.com/crud-php/"
+      }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/CRUD-PHP"
+      }
+    ],
     "technologies": ["PHP", "MySQL", "Bootstrap"],
     "isFavorite": false
   },
@@ -321,8 +483,13 @@
     "alt": "img-users-api-laravel",
     "projectType": "API",
     "description": "Random Users API built with Laravel. Perfect for testing any frontend.",
-    "preview": ["https://users-api.fly.dev/"],
-    "repository": ["https://github.com/francescoalterio/users-api-php"],
+    "preview": [{ "name": "Preview", "url": "https://users-api.fly.dev/" }],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/users-api-php"
+      }
+    ],
     "technologies": ["PHP", "Laravel", "Bootstrap"],
     "isFavorite": false
   },
@@ -333,8 +500,15 @@
     "alt": "img-skywind",
     "projectType": "Framework",
     "description": "Skywind makes it easy to create web pages with Server Side Rendering and Javascript. Its simplicity and low dependencies allow it to be run on any node server. Skywind allows you to granulate your pages into small components that can be reused anywhere on your website.It has a very intuitive, powerful and easy to learn routing system, it also allows you to create APIs using node's HTTP module.",
-    "preview": ["https://www.npmjs.com/package/skywind"],
-    "repository": ["https://github.com/francescoalterio/skywind"],
+    "preview": [
+      { "name": "Preview", "url": "https://www.npmjs.com/package/skywind" }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/skywind"
+      }
+    ],
     "technologies": ["Javascript", "Node.js"],
     "isFavorite": true
   },
@@ -345,8 +519,18 @@
     "alt": "img-snakegame",
     "projectType": "Web",
     "description": "Classic snake game using object-oriented programming in Typescript.",
-    "preview": ["https://francescoalterio.github.io/snake-game-compiled/"],
-    "repository": ["https://github.com/francescoalterio/snake-game"],
+    "preview": [
+      {
+        "name": "Preview",
+        "url": "https://francescoalterio.github.io/snake-game-compiled/"
+      }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/snake-game"
+      }
+    ],
     "technologies": ["Typescript", "HTML"],
     "isFavorite": false
   },
@@ -357,8 +541,15 @@
     "alt": "img-project-manager-vue",
     "projectType": "Web",
     "description": "CRUD project manager with Vue.js",
-    "preview": ["https://fran-project-manager.vercel.app/"],
-    "repository": ["https://github.com/francescoalterio/web-project-manager"],
+    "preview": [
+      { "name": "Preview", "url": "https://fran-project-manager.vercel.app/" }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/web-project-manager"
+      }
+    ],
     "technologies": ["Javascript", "Vue", "Tailwindcss", "Firebase"],
     "isFavorite": false
   },
@@ -370,7 +561,12 @@
     "projectType": "Mobile",
     "description": "E-commerce app backed by Firebase and Typescript programmed.",
     "preview": [],
-    "repository": ["https://github.com/francescoalterio/e-commerce-app"],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/e-commerce-app"
+      }
+    ],
     "technologies": [
       "Typescript",
       "React Native",

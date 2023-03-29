@@ -7,6 +7,7 @@ module.exports = {
         primary: "#ffaf29",
         primaryLight: "#ffc25c",
         primaryHover: "hsla(281, 81%, 36%, 0.33)",
+        purpleBlue: "#5b29ff",
         customGray: {
           100: "#424657",
           200: "#333646",

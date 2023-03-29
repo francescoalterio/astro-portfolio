@@ -1,6 +1,11 @@
 ---
 import projects from "../../../db/projects.json";
+import Section from "../../components/Section.astro";
+import { Picture } from "@astrojs/image/components";
 import { Project } from "../../types";
+import projectTypes from "../../../db/projectTypes.json";
+import { Icon } from "astro-icon";
+import RolPill from "../../components/RolPill.astro";
 export function getStaticPaths() {
   const toReturn = projects.map(({ id }) => {
     return {
@@ -23,10 +28,64 @@ const {
   projectType,
   description,
   preview,
-  app,
   repository,
   technologies,
 } = projects.find((x) => Number(projectID) === x.id) as Project;
 ---
 
-<div>{name}</div>
+<header
+  class="bg-customGray-300 px-6 sm:px-12 md:px-16 lg:px-28 flex justify-center py-36"
+>
+  <h1 class="text-6xl text-primaryLight font-semibold">{name}</h1>
+</header>
+
+<main class="text-white">
+  <Section background="dark" className="flex flex-col gap-8 pb-8">
+    <Picture
+      src={`/assets/projects/${fileName}`}
+      widths={[1920]}
+      aspectRatio="16:9"
+      sizes="1920px"
+      alt={alt}
+    />
+    <div class="flex">
+      <RolPill bgColor={projectTypes[projectType.toLowerCase()].color}>
+        <Icon name={projectTypes[projectType.toLowerCase()].icon} class="w-5" />
+        {projectType}
+      </RolPill>
+    </div>
+    <p class="text-gray-400">{description}</p>
+    <div class="flex gap-2">
+      {
+        technologies.map((x) => (
+          <div class=" bg-customGray-100 whitespace-nowrap px-3 py-1 rounded-sm text-xs">
+            {x}
+          </div>
+        ))
+      }
+    </div>
+    {
+      preview && (
+        <div class="flex gap-5">
+          {preview?.map((x) => (
+            <BorderedAnchor href={x.url}>{x.name}</BorderedAnchor>
+          ))}
+        </div>
+      )
+    }
+    <div class="flex gap-5">
+      {
+        repository.map((x) => (
+          <a
+            href={x.url}
+            target=""
+            class="px-4 py-2  text-white flex rounded-md border border-white items-center gap-2 transition-all hover:bg-opacity-10 hover:bg-white"
+          >
+            <Icon name="mdi:github" class="w-7" />
+            {x.name}
+          </a>
+        ))
+      }
+    </div>
+  </Section>
+</main>
