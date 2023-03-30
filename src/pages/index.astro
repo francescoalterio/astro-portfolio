@@ -12,11 +12,13 @@ import PresentationCard from "../components/PresentationCard.astro";
 import PersonalDataCard from "../components/PersonalDataCard.astro";
 import { NumberOfRepos } from "../components/NumberOfRepos";
 import Section from "../components/Section.astro";
+import HomeNav from "../components/HomeNav.astro";
 
 const allSkills = getAllSkillsInOneArray();
 ---
 
 <BaseLayout>
+  <HomeNav />
   <header
     class="backgroundPer px-6 sm:px-12 md:px-16 lg:px-28 flex flex-col lg:flex-row items-center pt-20"
   >
@@ -46,12 +48,14 @@ const allSkills = getAllSkillsInOneArray();
       src="/assets/presentation.png"
       alt=""
       class="lg:w-[25rem] xl:w-[32rem] 2xl:w-[38rem]"
+      loading="eager"
     />
   </header>
   <main class="">
     <Section
       background="dark"
       className=" pt-36 flex lg:gap-20 xl:gap-32 2xl:gap-48 pb-56"
+      id="about"
     >
       <div class="flex flex-col flex-1 gap-2">
         <PresentationCard
@@ -99,6 +103,7 @@ const allSkills = getAllSkillsInOneArray();
     <Section
       background="light"
       className="relative py-10 flex flex-col gap-16 pt-56"
+      id="projects"
     >
       <div class="absolute top-[-9rem] left-0 flex gap-5 w-full justify-center">
         <PersonalDataCard icon="mdi:github">
@@ -133,12 +138,16 @@ const allSkills = getAllSkillsInOneArray();
       </div>
       <ProjectList projectFilter="isFavorite" />
       <div class="w-full flex">
-        <PrimaryAnchor bgColor={"customGray-100"} href="/projects">
+        <PrimaryAnchor bgColor={"customGray-100"} href="/projects/all">
           See all projects
         </PrimaryAnchor>
       </div>
     </Section>
-    <Section background="dark" className="py-10 flex flex-col gap-10">
+    <Section
+      background="dark"
+      className="py-10 flex flex-col gap-10"
+      id="skills"
+    >
       <h2 class="text-4xl my-5">Skills</h2>
       <div class="flex flex-wrap gap-10 justify-center">
         {

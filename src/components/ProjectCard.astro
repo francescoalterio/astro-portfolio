@@ -14,6 +14,7 @@ interface Props {
   projectType: string;
   technologies: string[];
   isEven: boolean;
+  loading?: "eager" | "lazy";
 }
 
 const {
@@ -25,6 +26,7 @@ const {
   description,
   projectType,
   isEven,
+  loading,
 } = Astro.props;
 const imageURL = `/assets/projects/${fileName}`;
 const firstThreeTechs = technologies.slice(0, 3);
@@ -43,6 +45,7 @@ const shortDescription = description.split(" ").slice(0, 20).join(" ");
       aspectRatio="16:9"
       sizes="1200px"
       alt={alt}
+      loading={loading || "eager"}
     />
   </div>
   <div

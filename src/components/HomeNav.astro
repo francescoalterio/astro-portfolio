@@ -1,31 +1,27 @@
 ---
 import { Icon } from "astro-icon";
+import NavLayout from "../layouts/NavLayout.astro";
+import LogoName from "./LogoName.astro";
 ---
 
-<nav
-  class="bg-customGray-200 flex flex-1 justify-between px-6 pt-6 sm:px-12 sm:pt-10 md:px-16 lg:px-28"
->
-  <a
-    href=""
-    class="flex justify-center items-center md:text-2xl lg:text-xl xl:text-2xl font-bold gap-2"
-    >Francesco <span class="font-normal text-gray-200">Alterio</span></a
-  >
+<NavLayout>
+  <LogoName />
   <div class="hidden lg:flex justify-center items-center gap-6">
     <a
-      href=""
+      href="#about"
+      class="text-customGray-800 hover:text-primaryLight rounded-full py-2 px-4 font-semibold"
+      >About</a
+    >
+    <a
+      href="#projects"
       class="text-customGray-800 hover:text-primaryLight rounded-full py-2 px-4 font-semibold"
       >Projects</a
     >
     <a
-      href=""
+      href="#skills"
       class="text-customGray-800 hover:text-primaryLight rounded-full py-2 px-4 font-semibold"
     >
       Skills</a
-    >
-    <a
-      href=""
-      class="text-customGray-800 hover:text-primaryLight rounded-full py-2 px-4 font-semibold"
-      >About</a
     >
   </div>
   <div class="hidden lg:flex justify-center items-center lg:gap-8 xl:gap-10">
@@ -42,4 +38,4 @@ import { Icon } from "astro-icon";
   <button class="lg:hidden bg-customGray-100 p-3 rounded-full">
     <Icon name="mdi:menu-open" class="w-5 text-primaryLight" />
   </button>
-</nav>
+</NavLayout>

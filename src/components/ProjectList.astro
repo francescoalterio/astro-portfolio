@@ -5,9 +5,10 @@ import ProjectCard from "./ProjectCard.astro";
 
 interface Props {
   projectFilter: projectFilter;
+  loading?: "eager" | "lazy";
 }
 
-const { projectFilter } = Astro.props;
+const { projectFilter, loading } = Astro.props;
 
 const filteredProjects =
   projectFilter === "All"
@@ -31,6 +32,7 @@ const filteredProjects =
           description={project.description}
           projectType={project.projectType}
           isEven={isEven}
+          loading={loading}
         />
       );
     })

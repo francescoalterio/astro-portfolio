@@ -64,6 +64,6 @@ const language = Astro.params.language;
     background="dark"
     className=" flex flex-col gap-16 text-white min-h-[1500px] pb-10"
   >
-    <ProjectList projectFilter={names[language]} />
+    <ProjectList projectFilter={names[language]} loading="lazy" />
   </Section>
 </main>

@@ -6,6 +6,8 @@ import { Project } from "../../types";
 import projectTypes from "../../../db/projectTypes.json";
 import { Icon } from "astro-icon";
 import RolPill from "../../components/RolPill.astro";
+import BorderedAnchor from "../../components/BorderedAnchor.astro";
+import { GoBack } from "../../components/GoBack";
 export function getStaticPaths() {
   const toReturn = projects.map(({ id }) => {
     return {
@@ -34,8 +36,9 @@ const {
 ---
 
 <header
-  class="bg-customGray-300 px-6 sm:px-12 md:px-16 lg:px-28 flex justify-center py-36"
+  class="bg-customGray-300 px-6 sm:px-12 md:px-16 lg:px-28 flex py-36 relative items-center w-full justify-center"
 >
+  <GoBack client:load />
   <h1 class="text-6xl text-primaryLight font-semibold">{name}</h1>
 </header>
 
@@ -78,7 +81,7 @@ const {
         repository.map((x) => (
           <a
             href={x.url}
-            target=""
+            target="_blank"
             class="px-4 py-2  text-white flex rounded-md border border-white items-center gap-2 transition-all hover:bg-opacity-10 hover:bg-white"
           >
             <Icon name="mdi:github" class="w-7" />
