@@ -12,7 +12,6 @@ export function NumberOfRepos() {
         },
       });
       const repos = await resGithub.json();
-      console.log(repos);
       setReposLength(repos.length);
     }
     getReposLength();

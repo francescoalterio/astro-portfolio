@@ -23,47 +23,40 @@ import ProjectList from "../../components/ProjectList.astro";
 import Section from "../../components/Section.astro";
 import { Icon } from "astro-icon";
 import ProjectFilterAnchor from "../../components/ProjectFilterAnchor.astro";
+import NavLayout from "../../layouts/NavLayout.astro";
+import LogoName from "../../components/LogoName.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import NavAnchor from "../../components/NavAnchor.astro";
+import ButtonMenuMobile from "../../components/ButtonMenuMobile.astro";
 
 const language = Astro.params.language;
 ---
 
-<main>
-  <header class="bg-customGray-300 flex flex-col items-center gap-16 py-10">
-    <h1 class="text-white text-5xl font-bold">{names[language]} Projects</h1>
-    <ul
-      class="flex justify-center gap-4 bg-customGray-100 py-2 px-6 rounded-md"
-    >
-      <ProjectFilterAnchor
-        name="all"
-        iconName="ic:baseline-all-inbox"
-        page={language}
-      />
-      <ProjectFilterAnchor
-        name="javascript"
-        iconName="mdi:language-javascript"
-        page={language}
-      />
-      <ProjectFilterAnchor
-        name="typescript"
-        iconName="mdi:language-typescript"
-        page={language}
-      />
-      <ProjectFilterAnchor
-        name="php"
-        iconName="mdi:language-php"
-        page={language}
-      />
-      <ProjectFilterAnchor
-        name="python"
-        iconName="mdi:language-python"
-        page={language}
-      />
-    </ul>
-  </header>
-  <Section
-    background="dark"
-    className=" flex flex-col gap-16 text-white min-h-[1500px] pb-10"
+<BaseLayout>
+  <NavLayout>
+    <LogoName />
+    <div class="hidden lg:flex justify-center items-center gap-6">
+      <NavAnchor href="/projects/all">All</NavAnchor>
+      <NavAnchor href="/projects/javascript">Javascript</NavAnchor>
+      <NavAnchor href="/projects/typescript">Typescript</NavAnchor>
+      <NavAnchor href="/projects/php">PHP</NavAnchor>
+      <NavAnchor href="/projects/python">Python</NavAnchor>
+    </div>
+    <ButtonMenuMobile />
+  </NavLayout>
+  <header
+    class="bg-customGray-200 flex flex-col px-6 sm:px-12 md:px-16 lg:px-28 gap-16 pb-10 pt-20"
   >
-    <ProjectList projectFilter={names[language]} loading="lazy" />
-  </Section>
-</main>
+    <h1 class="text-white text-4xl">
+      {names[language]} Projects
+    </h1>
+  </header>
+  <main>
+    <Section
+      background="light"
+      className=" flex flex-col gap-16 text-white min-h-[1500px] pb-10"
+    >
+      <ProjectList projectFilter={names[language]} loading="lazy" />
+    </Section>
+  </main>
+</BaseLayout>
