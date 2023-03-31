@@ -13,6 +13,7 @@ import PersonalDataCard from "../components/PersonalDataCard.astro";
 import { NumberOfRepos } from "../components/NumberOfRepos";
 import Section from "../components/Section.astro";
 import HomeNav from "../components/HomeNav.astro";
+import Footer from "../components/Footer.astro";
 
 const allSkills = getAllSkillsInOneArray();
 ---
@@ -134,7 +135,12 @@ const allSkills = getAllSkillsInOneArray();
         </PersonalDataCard>
       </div>
       <div class="flex justify-between items-center">
-        <h2 class="text-4xl">My Projects</h2>
+        <h2 class="text-4xl">My Favorite Projects</h2>
+        <div>
+          <PrimaryAnchor bgColor="primaryLight" href="/projects/all">
+            See All
+          </PrimaryAnchor>
+        </div>
       </div>
       <ProjectList projectFilter="isFavorite" />
       <div class="w-full flex">
@@ -162,8 +168,6 @@ const allSkills = getAllSkillsInOneArray();
         }
       </div>
     </Section>
-    <Section background="light">
-      <div></div>
-    </Section>
   </main>
+  <Footer />
 </BaseLayout>
