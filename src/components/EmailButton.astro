@@ -1,0 +1,28 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<button
+  id="email-button"
+  class="bg-customGray-100 p-3 rounded-full transition-all"
+>
+  <Icon name="mdi:email-outline" class="w-7 text-primaryLight" />
+</button>
+
+<script>
+  const $emailButton = document.getElementById("email-button");
+
+  const defaultLogoEmail = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="#ffc25c" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6m-2 0l-8 5l-8-5h16m0 12H4V8l8 5l8-5v10Z"/></svg>`;
+
+  const defaultBackgroundEmail = "#424657";
+
+  $emailButton.addEventListener("click", () => {
+    navigator.clipboard.writeText("francescoalteriog@gmail.com");
+    $emailButton.style.backgroundColor = "#32a852";
+    $emailButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="white" d="M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59L21 7Z"/></svg>`;
+    setTimeout(() => {
+      $emailButton.style.backgroundColor = defaultBackgroundEmail;
+      $emailButton.innerHTML = defaultLogoEmail;
+    }, 3000);
+  });
+</script>
