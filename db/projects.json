@@ -510,7 +510,7 @@
       }
     ],
     "technologies": ["Javascript", "Node.js"],
-    "isFavorite": true
+    "isFavorite": false
   },
   {
     "id": 25,
