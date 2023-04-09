@@ -33,10 +33,18 @@ const language = Astro.params.language;
 <BaseLayout>
   <NavLayout>
     <LogoName />
-    <div class="hidden lg:flex justify-center items-center gap-6">
+    <div
+      class="flex justify-center items-center gap-2 sm:gap-4 md:gap-6 lg:gap-10"
+    >
       <NavAnchor href="/projects/all">All</NavAnchor>
-      <NavAnchor href="/projects/javascript">Javascript</NavAnchor>
-      <NavAnchor href="/projects/typescript">Typescript</NavAnchor>
+      <NavAnchor href="/projects/javascript">
+        <span class="hidden md:inline">Javascript</span><span class="md:hidden"
+          >JS</span>
+      </NavAnchor>
+      <NavAnchor href="/projects/typescript">
+        <span class="hidden md:inline">Typescript</span>
+        <span class="md:hidden">TS</span>
+      </NavAnchor>
       <NavAnchor href="/projects/php">PHP</NavAnchor>
       <NavAnchor href="/projects/python">Python</NavAnchor>
     </div>
