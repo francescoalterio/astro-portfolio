@@ -27,8 +27,6 @@ import NavLayout from "../../layouts/NavLayout.astro";
 import LogoName from "../../components/LogoName.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import NavAnchor from "../../components/NavAnchor.astro";
-import ButtonMenuMobile from "../../components/ButtonMenuMobile.astro";
-
 const language = Astro.params.language;
 ---
 
@@ -42,7 +40,6 @@ const language = Astro.params.language;
       <NavAnchor href="/projects/php">PHP</NavAnchor>
       <NavAnchor href="/projects/python">Python</NavAnchor>
     </div>
-    <ButtonMenuMobile />
   </NavLayout>
   <header
     class="bg-customGray-200 flex flex-col px-6 sm:px-12 md:px-16 lg:px-28 gap-16 pb-10 pt-20"
