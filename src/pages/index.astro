@@ -109,40 +109,41 @@ const allSkills = getAllSkillsInOneArray();
       id="projects"
     >
       <div
-        class="absolute top-[-37.25rem] md:top-[-6.5rem] lg:top-[-9rem] left-0 flex gap-5 w-full flex-col md:flex-row items-center md:justify-center"
+        class="absolute top-[-22.25rem] sm:top-[-28.25rem] md:top-[-6.5rem] lg:top-[-9rem] left-0 flex gap-5 w-full flex-col md:flex-row items-center md:justify-center"
       >
         <PersonalDataCard icon="mdi:github">
-          <p class="text-3xl md:text-lg lg:text-2xl font-semibold">
+          <p class="sm:text-2xl md:text-lg lg:text-2xl font-semibold">
             More than {20 || <NumberOfRepos client:load />} repos
           </p>
           <a
             href="https://github.com/francescoalterio"
             target="_blank"
-            class="text-sm underline text-gray-400">Go to github</a
+            class="text-xs sm:text-sm underline text-gray-400">Go to github</a
           >
         </PersonalDataCard>
         <PersonalDataCard primary icon="mdi:code-braces">
-          <p class="text-3xl md:text-lg lg:text-2xl font-semibold">
+          <p class="sm:text-2xl md:text-lg lg:text-2xl font-semibold">
             More than <span>{projects.length}</span> projects
           </p>
-          <a href="/projects/all" class="text-sm underline font-semibold"
-            >See all</a
+          <a
+            href="/projects/all"
+            class="text-xs sm:text-sm underline font-semibold">See all</a
           >
         </PersonalDataCard>
         <PersonalDataCard icon="mdi:youtube">
-          <p class="text-3xl md:text-lg lg:text-2xl font-semibold">
+          <p class="sm:text-2xl md:text-lg lg:text-2xl font-semibold">
             Youtube channel
           </p>
           <a
             href="https://www.youtube.com/@francescox5989/videos"
             target="_blank"
-            class="text-sm underline text-gray-400">Go to youtube</a
+            class="text-xs sm:text-sm underline text-gray-400">Go to youtube</a
           >
         </PersonalDataCard>
       </div>
-      <div class="flex justify-between items-center">
-        <h2 class="text-4xl">My Favorite Projects</h2>
-        <div>
+      <div class="flex justify-center md:justify-between items-center">
+        <h2 class="text-3xl sm:text-4xl">My Favorite Projects</h2>
+        <div class="hidden md:block">
           <PrimaryAnchor bgColor="primaryLight" href="/projects/all">
             See All
           </PrimaryAnchor>
@@ -157,7 +158,7 @@ const allSkills = getAllSkillsInOneArray();
     </Section>
     <Section
       background="dark"
-      className="py-10 flex flex-col gap-10"
+      className="py-10 flex flex-col gap-10 items-center"
       id="skills"
     >
       <h2 class="text-4xl my-5">Skills</h2>
