@@ -71,12 +71,12 @@
   "styling-and-structuring": [
     {
       "name": "HTML",
-      "fileName": "html.svg",
+      "fileName": "html.png",
       "documentationURL": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
     },
     {
       "name": "CSS",
-      "fileName": "css.svg",
+      "fileName": "css.png",
       "documentationURL": "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
