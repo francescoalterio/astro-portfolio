@@ -41,13 +41,16 @@ const {
     <LogoName />
   </NavLayout>
   <header
-    class="bg-customGray-200 px-6 sm:px-12 md:px-16 lg:px-28 flex py-28 relative items-center w-full justify-center"
+    class="bg-customGray-200 px-6 sm:px-12 md:px-16 lg:px-28 flex py-16 sm:py-20 md:py-28 relative items-center w-full justify-center"
   >
-    <h1 class="text-5xl text-primaryLight font-semibold">{name}</h1>
+    <h1 class="text-4xl sm:text-5xl text-primaryLight font-semibold">{name}</h1>
   </header>
 
   <main class="text-white">
-    <Section background="light" className="flex flex-col gap-8 pb-8">
+    <Section
+      background="light"
+      className="flex flex-col gap-8 pb-8 items-center"
+    >
       <Picture
         src={`/assets/projects/${fileName}`}
         widths={[1920]}
@@ -65,7 +68,7 @@ const {
         </RolPill>
       </div>
       <p class="text-gray-400">{description}</p>
-      <div class="flex gap-2">
+      <div class="flex gap-2 w-full flex-wrap justify-center">
         {
           technologies.map((x) => (
             <div class=" bg-customGray-100 whitespace-nowrap px-3 py-1 rounded-sm text-xs">
