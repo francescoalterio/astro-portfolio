@@ -13,20 +13,22 @@ import NavAnchor from "./NavAnchor.astro";
     <NavAnchor href="#projects">Projects</NavAnchor>
     <NavAnchor href="#skills">Skills</NavAnchor>
   </div>
-  <div class="hidden lg:flex justify-center items-center lg:gap-8 xl:gap-10">
+  <div class="flex justify-center items-center gap-5 lg:gap-8 xl:gap-10">
     <a
       href="https://www.linkedin.com/in/francescoalterio/"
       target="_blank"
       class="flex gap-3 text-gray-300 items-center"
-      ><Icon name="mdi:linkedin" class="w-7 text-white" /> Linkedin</a
-    >
+      ><Icon name="mdi:linkedin" class="w-8 lg:w-7 text-white" />
+      <span class="hidden lg:inline">Linkedin</span>
+    </a>
     <a
       href="https://github.com/francescoalterio"
       target="_blank"
       class="flex gap-3 text-gray-300"
     >
-      <Icon name="mdi:github" class="w-7 text-white" /> Github</a
-    >
+      <Icon name="mdi:github" class="w-8 lg:w-7 text-white" /><span
+        class="hidden lg:inline">Github</span
+      >
+    </a>
   </div>
-  <ButtonMenuMobile />
 </NavLayout>

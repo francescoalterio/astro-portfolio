@@ -10,11 +10,11 @@ const { primary, icon } = Astro.props;
 ---
 
 <div
-  class={`w-72 h-72 ${
+  class={` w-96 h-96 md:w-52 md:h-52 lg:w-72 lg:h-72 ${
     primary ? "bg-primary" : "bg-customGray-100"
-  } flex gap-6 pt-36 p-11 items-start`}
+  } flex gap-6 pt-[12rem] p-12 md:pt-[6.5rem] md:p-6 lg:pt-36 lg:p-11 items-start`}
 >
-  <Icon name={icon} class="w-16" />
+  <Icon name={icon} class="w-20 md:w-12 lg:w-16" />
   <div class="flex flex-col gap-4">
     <slot />
   </div>

@@ -55,7 +55,7 @@ const allSkills = getAllSkillsInOneArray();
   <main class="">
     <Section
       background="dark"
-      className=" pt-36 flex lg:gap-20 xl:gap-32 2xl:gap-48 pb-56"
+      className=" pt-36 flex gap-12 lg:gap-20 xl:gap-32 2xl:gap-48 pb-[45rem] md:pb-56 flex-col lg:flex-row"
       id="about"
     >
       <div class="flex flex-col flex-1 gap-2">
@@ -103,12 +103,14 @@ const allSkills = getAllSkillsInOneArray();
     </Section>
     <Section
       background="light"
-      className="relative py-10 flex flex-col gap-16 pt-56"
+      className="relative py-10 flex flex-col gap-16 pt-[45rem] md:pt-56"
       id="projects"
     >
-      <div class="absolute top-[-9rem] left-0 flex gap-5 w-full justify-center">
+      <div
+        class="absolute top-[-37.25rem] md:top-[-6.5rem] lg:top-[-9rem] left-0 flex gap-5 w-full flex-col md:flex-row items-center md:justify-center"
+      >
         <PersonalDataCard icon="mdi:github">
-          <p class="text-2xl font-semibold">
+          <p class="text-3xl md:text-lg lg:text-2xl font-semibold">
             More than {20 || <NumberOfRepos client:load />} repos
           </p>
           <a
@@ -118,7 +120,7 @@ const allSkills = getAllSkillsInOneArray();
           >
         </PersonalDataCard>
         <PersonalDataCard primary icon="mdi:code-braces">
-          <p class="text-2xl font-semibold">
+          <p class="text-3xl md:text-lg lg:text-2xl font-semibold">
             More than <span>{projects.length}</span> projects
           </p>
           <a href="/projects/all" class="text-sm underline font-semibold"
@@ -126,7 +128,9 @@ const allSkills = getAllSkillsInOneArray();
           >
         </PersonalDataCard>
         <PersonalDataCard icon="mdi:youtube">
-          <p class="text-2xl font-semibold">Youtube channel</p>
+          <p class="text-3xl md:text-lg lg:text-2xl font-semibold">
+            Youtube channel
+          </p>
           <a
             href="https://www.youtube.com/@francescox5989/videos"
             target="_blank"

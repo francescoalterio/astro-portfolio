@@ -11,7 +11,7 @@ const { background, className, id } = Astro.props;
 <section
   class={`${
     background === "light" ? "bg-customGray-200" : "bg-customGray-300"
-  } x-6 sm:px-12 md:px-16 lg:px-28 xl:px-32 2xl:px-40 ${className}`}
+  } px-6 sm:px-12 md:px-16 lg:px-28 xl:px-32 2xl:px-40 ${className}`}
   id={id}
 >
   <slot />
