@@ -105,7 +105,7 @@ const allSkills = getAllSkillsInOneArray();
     </Section>
     <Section
       background="light"
-      className="relative py-10 flex flex-col gap-16 pt-[28rem] sm:pt-[34rem] md:pt-56"
+      className="relative py-10 flex flex-col gap-6 sm:gap-16 pt-[28rem] sm:pt-[34rem] md:pt-56"
       id="projects"
     >
       <div
@@ -142,7 +142,7 @@ const allSkills = getAllSkillsInOneArray();
         </PersonalDataCard>
       </div>
       <div class="flex justify-center md:justify-between items-center">
-        <h2 class="text-3xl sm:text-4xl">My Favorite Projects</h2>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl">My Favorite Projects</h2>
         <div class="hidden md:block">
           <PrimaryAnchor bgColor="primaryLight" href="/projects/all">
             See All
@@ -161,7 +161,7 @@ const allSkills = getAllSkillsInOneArray();
       className="py-10 flex flex-col gap-10 items-center"
       id="skills"
     >
-      <h2 class="text-4xl my-5">Skills</h2>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl my-5">Skills</h2>
       <div class="flex flex-wrap gap-10 justify-center">
         {
           allSkills.map(({ name, fileName, documentationURL, type }) => (

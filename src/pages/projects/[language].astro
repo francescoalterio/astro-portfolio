@@ -39,7 +39,8 @@ const language = Astro.params.language;
       <NavAnchor href="/projects/all">All</NavAnchor>
       <NavAnchor href="/projects/javascript">
         <span class="hidden md:inline">Javascript</span><span class="md:hidden"
-          >JS</span>
+          >JS</span
+        >
       </NavAnchor>
       <NavAnchor href="/projects/typescript">
         <span class="hidden md:inline">Typescript</span>
@@ -50,9 +51,9 @@ const language = Astro.params.language;
     </div>
   </NavLayout>
   <header
-    class="bg-customGray-200 flex flex-col px-6 sm:px-12 md:px-16 lg:px-28 gap-16 pb-10 pt-20"
+    class="bg-customGray-200 flex flex-col px-6 sm:px-12 md:px-16 lg:px-28 xl:px-32 2xl:px-40 gap-16 sm:pb-6 md:pb-10 pt-10 md:pt-20"
   >
-    <h1 class="text-white text-4xl">
+    <h1 class="text-white text-2xl sm:text-3xl md:text-4xl">
       {names[language]} Projects
     </h1>
   </header>

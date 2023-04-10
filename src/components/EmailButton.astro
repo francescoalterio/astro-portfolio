@@ -9,6 +9,13 @@ import { Icon } from "astro-icon";
   <Icon name="mdi:email-outline" class="w-7 text-primaryLight" />
 </button>
 
+<div
+  class="hidden bg-green-600 px-4 py-2 rounded-sm fixed right-4 bottom-4 font-semibold z-50"
+  id="email-copied-alert"
+>
+  <p>Email Copied!</p>
+</div>
+
 <script>
   const $emailButton = document.getElementById("email-button");
 
@@ -17,12 +24,15 @@ import { Icon } from "astro-icon";
   const defaultBackgroundEmail = "#424657";
 
   $emailButton.addEventListener("click", () => {
+    const $emailCopiedAlert = document.getElementById("email-copied-alert");
     navigator.clipboard.writeText("francescoalteriog@gmail.com");
     $emailButton.style.backgroundColor = "#32a852";
     $emailButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="white" d="M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59L21 7Z"/></svg>`;
+    $emailCopiedAlert.classList.toggle("hidden");
     setTimeout(() => {
       $emailButton.style.backgroundColor = defaultBackgroundEmail;
       $emailButton.innerHTML = defaultLogoEmail;
+      $emailCopiedAlert.classList.toggle("hidden");
     }, 3000);
   });
 </script>

@@ -354,7 +354,7 @@
   },
   {
     "id": 17,
-    "name": "Fran Calculator PY",
+    "name": "PY Calculator",
     "fileName": "fran-calculator.png",
     "alt": "img-fran-calculator",
     "projectType": "Desktop",
@@ -371,7 +371,7 @@
   },
   {
     "id": 18,
-    "name": "Fran Testing Library",
+    "name": "Fran Testing",
     "fileName": "fran-testing-library.png",
     "alt": "img-fran-testing-library",
     "projectType": "Library",
@@ -412,7 +412,7 @@
   },
   {
     "id": 20,
-    "name": "Login Form Simulation",
+    "name": "Login Simulation",
     "fileName": "login-form-simulation-php.png",
     "alt": "img-login-simulation-php",
     "projectType": "Fullstack",
@@ -456,7 +456,7 @@
   },
   {
     "id": 22,
-    "name": "Task list CRUD PHP",
+    "name": "Task list CRUD",
     "fileName": "crud-php.png",
     "alt": "img-crud-php",
     "projectType": "Fullstack",
@@ -536,7 +536,7 @@
   },
   {
     "id": 26,
-    "name": "Project Manager Vue",
+    "name": "Vue Manager",
     "fileName": "project-manager-vue.png",
     "alt": "img-project-manager-vue",
     "projectType": "Web",
