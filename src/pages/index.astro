@@ -122,7 +122,7 @@ const allSkills = getAllSkillsInOneArray();
       >
         <PersonalDataCard icon="mdi:github">
           <p class="sm:text-2xl md:text-lg lg:text-2xl font-semibold">
-            More than {20 || <NumberOfRepos client:load />} repos
+            More than {(<NumberOfRepos client:load />)} repos
           </p>
           <a
             href="https://github.com/francescoalterio"
