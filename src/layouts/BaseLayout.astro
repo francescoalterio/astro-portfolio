@@ -1,7 +1,8 @@
 ---
 import "../styles/global.css";
 
-const { Head } = Astro.props;
+const { HeadData } = Astro.props;
+const { title, description, ogTitle, ogDescription, ogURL, ogImage } = HeadData;
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -11,8 +12,21 @@ const { Head } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
 
-    <Head />
-    <title>Portfolio</title>
+    <title>Francesco Alterio | Portfolio</title>
+    <meta
+      name="description"
+      content="All projects and skills of Francesco Alterio | Portfolio"
+    />
+    <meta property="og:title" content="Francesco Alterio | Portfolio" />
+    <meta
+      property="og:description"
+      content="All projects and skills of Francesco Alterio"
+    />
+    <meta property="og:url" content="https://francescoalterio.tech/" />
+    <meta
+      property="og:image"
+      content="https://francescoalterio.tech/presentation.png"
+    />
   </head>
   <body class="text-white bg-customGray-200 min-h-[1080px]">
     <slot />

@@ -31,28 +31,14 @@ const language = Astro.params.language;
 ---
 
 <BaseLayout
-  Head={(
-    <>
-      <title>Francesco Alterio | Projects | Portfolio</title>
-      <meta
-        name="description"
-        content="All projects and skills of Francesco Alterio | Portfolio"
-      />
-      <meta
-        property="og:title"
-        content="Francesco Alterio | Projects | Portfolio"
-      />
-      <meta
-        property="og:description"
-        content="All projects of Francesco Alterio"
-      />
-      <meta property="og:url" content="https://francescoalterio.tech/" />
-      <meta
-        property="og:image"
-        content="https://francescoalterio.tech/presentation.png"
-      />
-    </>
-  )}
+  HeadData={{
+    title: "Francesco Alterio | Projects | Portfolio",
+    description: "All projects of Francesco Alterio | Portfolio",
+    ogTitle: "Francesco Alterio | Projects | Portfolio",
+    ogDescription: "All projects of Francesco Alterio",
+    ogURL: "https://francescoalterio.tech/",
+    ogImage: "https://francescoalterio.tech/presentation.png",
+  }}
 >
   <NavLayout>
     <LogoName />
