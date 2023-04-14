@@ -18,7 +18,27 @@ import Footer from "../components/Footer.astro";
 const allSkills = getAllSkillsInOneArray();
 ---
 
-<BaseLayout>
+<BaseLayout
+  Head={(
+    <>
+      <title>Francesco Alterio | Portfolio</title>
+      <meta
+        name="description"
+        content="All projects and skills of Francesco Alterio | Portfolio"
+      />
+      <meta property="og:title" content="Francesco Alterio | Portfolio" />
+      <meta
+        property="og:description"
+        content="All projects and skills of Francesco Alterio"
+      />
+      <meta property="og:url" content="https://francescoalterio.tech/" />
+      <meta
+        property="og:image"
+        content="https://francescoalterio.tech/presentation.png"
+      />
+    </>
+  )}
+>
   <HomeNav />
   <header
     class="backgroundPer px-6 sm:px-12 md:px-16 lg:px-28 xl:px-32 2xl:px-40 flex flex-col lg:flex-row items-center pt-20"

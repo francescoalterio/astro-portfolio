@@ -36,7 +36,24 @@ const {
 } = projects.find((x) => Number(projectID) === x.id) as Project;
 ---
 
-<BaseLayout>
+<BaseLayout
+  Head={(
+    <>
+      <title>Francesco Alterio | {name} | Portfolio</title>
+      <meta name="description" content={description.slice(0, 10) + "..."} />
+      <meta
+        property="og:title"
+        content={`Francesco Alterio | ${name} | Portfolio`}
+      />
+      <meta
+        property="og:description"
+        content={description.slice(0, 10) + "..."}
+      />
+      <meta property="og:url" content="https://francescoalterio.tech/" />
+      <meta property="og:image" content={`/assets/projects/${fileName}`} />
+    </>
+  )}
+>
   <NavLayout>
     <LogoName />
   </NavLayout>

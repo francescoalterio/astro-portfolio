@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+
+const { Head } = Astro.props;
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -8,6 +10,8 @@ import "../styles/global.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+
+    <Head />
     <title>Portfolio</title>
   </head>
   <body class="text-white bg-customGray-200 min-h-[1080px]">
