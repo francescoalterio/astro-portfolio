@@ -81,7 +81,9 @@ const {
         preview && (
           <div class="flex gap-5">
             {preview?.map((x) => (
-              <BorderedAnchor href={x.url}>{x.name}</BorderedAnchor>
+              <BorderedAnchor href={x.url} blank>
+                {x.name}
+              </BorderedAnchor>
             ))}
           </div>
         )

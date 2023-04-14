@@ -3,9 +3,10 @@ interface Props {
   href: string;
   size?: "small" | "large";
   isFull?: boolean;
+  blank?: boolean;
 }
 
-const { href } = Astro.props;
+const { href, blank } = Astro.props;
 
 const size = Astro.props.size || "small";
 const isFull = Astro.props.isFull || false;
@@ -17,6 +18,7 @@ const fullStyling = isFull ? "w-full" : "";
 <a
   href={href}
   class={`border border-primaryLight rounded-md text-primaryLight px-4 py-2 transition-all hover:bg-opacity-10 hover:bg-primary ${sizeStyling} ${fullStyling} text-center`}
+  target={blank ? "_blank" : "_self"}
 >
   <slot />
 </a>
