@@ -14,7 +14,7 @@
       "name": "PHP",
       "fileName": "php.png",
       "documentationURL": "https://www.php.net/manual/en/intro-whatis.php"
-    },
+    }
     
   ],
   "frameworks-and-libraries": [
