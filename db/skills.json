@@ -15,11 +15,7 @@
       "fileName": "php.png",
       "documentationURL": "https://www.php.net/manual/en/intro-whatis.php"
     },
-    {
-      "name": "Python",
-      "fileName": "python.png",
-      "documentationURL": "https://www.python.org/"
-    }
+    
   ],
   "frameworks-and-libraries": [
     {
