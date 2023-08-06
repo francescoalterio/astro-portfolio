@@ -22,7 +22,7 @@
     "isFavorite": false
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Cryptocurrency List",
     "fileName": "crypto-list.png",
     "alt": "img-crypto-list",
@@ -44,7 +44,7 @@
     "isFavorite": false
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "Money Converter",
     "fileName": "money-converter.png",
     "alt": "img-money-converter",
@@ -66,7 +66,7 @@
     "isFavorite": false
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "Quizz App",
     "fileName": "quizz-app.png",
     "alt": "img-quizz-app",
@@ -88,7 +88,7 @@
     "isFavorite": false
   },
   {
-    "id": 6,
+    "id": 5,
     "name": "Francesco Pomodoro",
     "fileName": "francescopomodoro.png",
     "alt": "img-francescopomodoro",
@@ -107,7 +107,7 @@
     "isFavorite": false
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "API Joke",
     "fileName": "api-joke.png",
     "alt": "img-api-joke",
@@ -129,7 +129,7 @@
     "isFavorite": false
   },
   {
-    "id": 8,
+    "id": 7,
     "name": "Study Panel",
     "fileName": "studypanel.png",
     "alt": "img-studypanel",
@@ -147,7 +147,7 @@
     "isFavorite": true
   },
   {
-    "id": 9,
+    "id": 8,
     "name": "Dualsend",
     "fileName": "dualsend.png",
     "alt": "img-dualsend",
@@ -174,7 +174,7 @@
     "isFavorite": false
   },
   {
-    "id": 10,
+    "id": 9,
     "name": "Project Manager",
     "fileName": "project-manager.png",
     "alt": "img-project-manager",
@@ -202,7 +202,7 @@
     "isFavorite": true
   },
   {
-    "id": 11,
+    "id": 10,
     "name": "PokeBook",
     "fileName": "pokebook.png",
     "alt": "img-pokebook",
@@ -231,7 +231,7 @@
     "isFavorite": false
   },
   {
-    "id": 12,
+    "id": 11,
     "name": "IP Finder",
     "fileName": "ipfinder.png",
     "alt": "img-o",
@@ -253,7 +253,7 @@
     "isFavorite": false
   },
   {
-    "id": 13,
+    "id": 12,
     "name": "Fran Studios",
     "fileName": "fran-studios.png",
     "alt": "img-fran-studios",
@@ -272,7 +272,7 @@
     "isFavorite": true
   },
   {
-    "id": 14,
+    "id": 13,
     "name": "Cocktails Library",
     "fileName": "cocktails-library.png",
     "alt": "img-o",
@@ -300,7 +300,7 @@
     "isFavorite": true
   },
   {
-    "id": 16,
+    "id": 14,
     "name": "Fran Editor",
     "fileName": "franeditor.png",
     "alt": "img-franeditor",
@@ -317,7 +317,7 @@
     "isFavorite": true
   },
   {
-    "id": 19,
+    "id": 15,
     "name": "Gym Timer",
     "fileName": "gym-timer.png",
     "alt": "img-gymtimer",
@@ -336,7 +336,7 @@
     "isFavorite": true
   },
   {
-    "id": 22,
+    "id": 16,
     "name": "Task list CRUD",
     "fileName": "crud-php.png",
     "alt": "img-crud-php",
@@ -358,7 +358,7 @@
     "isFavorite": false
   },
   {
-    "id": 23,
+    "id": 17,
     "name": "Users API",
     "fileName": "users-api-laravel.png",
     "alt": "img-users-api-laravel",
@@ -375,7 +375,7 @@
     "isFavorite": false
   },
   {
-    "id": 24,
+    "id": 18,
     "name": "Skywind",
     "fileName": "skywind.png",
     "alt": "img-skywind",
@@ -394,7 +394,7 @@
     "isFavorite": false
   },
   {
-    "id": 25,
+    "id": 19,
     "name": "Snake Game",
     "fileName": "snakegame.png",
     "alt": "img-snakegame",
@@ -417,7 +417,7 @@
   },
  
   {
-    "id": 26,
+    "id": 20,
     "name": "E-commerce App",
     "fileName": "ecommerceapp.png",
     "alt": "img-ecommerceapp",
