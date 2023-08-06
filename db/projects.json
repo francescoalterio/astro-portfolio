@@ -336,50 +336,6 @@
     "isFavorite": true
   },
   {
-    "id": 20,
-    "name": "Login Simulation",
-    "fileName": "login-form-simulation-php.png",
-    "alt": "img-login-simulation-php",
-    "projectType": "Fullstack",
-    "description": "My first project using PHP and MySQL, is based on a simple but effective login system with a simple and quite minimalist interface.",
-    "preview": [
-      {
-        "name": "Preview",
-        "url": "https://francescoalteriog.000webhostapp.com/login-form-simulation"
-      }
-    ],
-    "repository": [
-      {
-        "name": "Repository",
-        "url": "https://github.com/francescoalterio/login-form-simulation-php"
-      }
-    ],
-    "technologies": ["PHP", "MySQL"],
-    "isFavorite": false
-  },
-  {
-    "id": 21,
-    "name": "PHP Calculator",
-    "fileName": "php-calculator.png",
-    "alt": "img-php-calculator",
-    "projectType": "Web",
-    "description": "Being new to a language I love to make a simple calculator, in order to familiarize myself with the language in the most popular way.",
-    "preview": [
-      {
-        "name": "Preview",
-        "url": "https://francescoalteriog.000webhostapp.com/calculator-php/"
-      }
-    ],
-    "repository": [
-      {
-        "name": "Repository",
-        "url": "https://github.com/francescoalterio/calculator-php"
-      }
-    ],
-    "technologies": ["PHP"],
-    "isFavorite": false
-  },
-  {
     "id": 22,
     "name": "Task list CRUD",
     "fileName": "crud-php.png",
