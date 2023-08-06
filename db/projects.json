@@ -534,27 +534,9 @@
     "technologies": ["Typescript", "HTML"],
     "isFavorite": false
   },
+ 
   {
     "id": 26,
-    "name": "Vue Manager",
-    "fileName": "project-manager-vue.png",
-    "alt": "img-project-manager-vue",
-    "projectType": "Web",
-    "description": "Simple task list and first project using Vue.js. Created with the goal of learning new frameworks and libraries and improve skills like Firebase and Tailwindcss. ",
-    "preview": [
-      { "name": "Preview", "url": "https://fran-project-manager.vercel.app/" }
-    ],
-    "repository": [
-      {
-        "name": "Repository",
-        "url": "https://github.com/francescoalterio/web-project-manager"
-      }
-    ],
-    "technologies": ["Javascript", "Vue", "Tailwindcss", "Firebase"],
-    "isFavorite": false
-  },
-  {
-    "id": 27,
     "name": "E-commerce App",
     "fileName": "ecommerceapp.png",
     "alt": "img-ecommerceapp",
