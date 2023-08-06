@@ -317,28 +317,6 @@
     "isFavorite": true
   },
   {
-    "id": 18,
-    "name": "Fran Testing",
-    "fileName": "fran-testing-library.png",
-    "alt": "img-fran-testing-library",
-    "projectType": "Library",
-    "description": "When studying something new I love to know a little bit about how the technologies work and I decided to create a very small testing library with Node.js.",
-    "preview": [
-      {
-        "name": "Preview",
-        "url": "https://www.npmjs.com/package/fran-testing-library?activeTab=readme"
-      }
-    ],
-    "repository": [
-      {
-        "name": "Repository",
-        "url": "https://github.com/francescoalterio/fran-testing-library"
-      }
-    ],
-    "technologies": ["Javascript", "Node.js"],
-    "isFavorite": false
-  },
-  {
     "id": 19,
     "name": "Gym Timer",
     "fileName": "gym-timer.png",
