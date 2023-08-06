@@ -9,13 +9,7 @@
       "name": "Typescript",
       "fileName": "typescript.png",
       "documentationURL": "https://www.typescriptlang.org/"
-    },
-    {
-      "name": "PHP",
-      "fileName": "php.png",
-      "documentationURL": "https://www.php.net/manual/en/intro-whatis.php"
     }
-    
   ],
   "frameworks-and-libraries": [
     {
@@ -57,11 +51,6 @@
       "name": "Astro",
       "fileName": "astro.png",
       "documentationURL": "https://astro.build/"
-    },
-    {
-      "name": "Vue",
-      "fileName": "vue.png",
-      "documentationURL": "https://vuejs.org/"
     }
   ],
   "styling-and-structuring": [
@@ -82,16 +71,6 @@
     }
   ],
   "testing": [
-    {
-      "name": "Jest",
-      "fileName": "jest-logo.png",
-      "documentationURL": "https://jestjs.io/"
-    },
-    {
-      "name": "React Testing Library",
-      "fileName": "testing-library.png",
-      "documentationURL": "https://testing-library.com/docs/react-testing-library/intro/"
-    }
   ],
   "databases": [
     {
