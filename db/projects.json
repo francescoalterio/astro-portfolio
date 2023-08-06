@@ -22,25 +22,6 @@
     "isFavorite": false
   },
   {
-    "id": 2,
-    "name": "React Calculator",
-    "fileName": "react-calculator.png",
-    "alt": "img-react-calculator",
-    "projectType": "Web",
-    "description": "From my first projects using React, a simple calculator with basic operations and a minimalist interface, using only React and Tailwindcss.",
-    "preview": [
-      { "name": "Preview", "url": "https://react-calculator-fran.netlify.app" }
-    ],
-    "repository": [
-      {
-        "name": "Repository",
-        "url": "https://github.com/francescoalterio/react-calculator"
-      }
-    ],
-    "technologies": ["Javascript", "React.js", "Tailwindcss"],
-    "isFavorite": false
-  },
-  {
     "id": 3,
     "name": "Cryptocurrency List",
     "fileName": "crypto-list.png",
@@ -319,23 +300,6 @@
     "isFavorite": true
   },
   {
-    "id": 15,
-    "name": "Login APP",
-    "fileName": "login-api.png",
-    "alt": "img-loginapi",
-    "projectType": "Fullstack",
-    "description": "Login APP is my first backend project with Typescript, it is a study project where I learned to use a relational database such as SQLite and an ORM as prism, I also wanted to improve my knowledge in typescript. The app is based on a simple login/register with a home where you can create and delete posts, the curious thing about the app is that it has a session cookie so you don't have to log in every time you enter the app.",
-    "preview": [],
-    "repository": [
-      {
-        "name": "Repository",
-        "url": "https://github.com/francescoalterio/login-api-express-typescript"
-      }
-    ],
-    "technologies": ["Typescript", "Express", "SQLite", "Prisma"],
-    "isFavorite": false
-  },
-  {
     "id": 16,
     "name": "Fran Editor",
     "fileName": "franeditor.png",
@@ -351,23 +315,6 @@
     ],
     "technologies": ["Javascript", "React.js", "CSS"],
     "isFavorite": true
-  },
-  {
-    "id": 17,
-    "name": "PY Calculator",
-    "fileName": "fran-calculator.png",
-    "alt": "img-fran-calculator",
-    "projectType": "Desktop",
-    "description": "When I started studying Python I wanted to create my first project and I decided to create a simple calculator created with the TKinter library.",
-    "preview": [],
-    "repository": [
-      {
-        "name": "Repository",
-        "url": "https://github.com/francescoalterio/fran-calculator-python"
-      }
-    ],
-    "technologies": ["Python", "TKinter"],
-    "isFavorite": false
   },
   {
     "id": 18,
