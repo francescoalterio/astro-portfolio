@@ -11,6 +11,23 @@
       "documentationURL": "https://www.typescriptlang.org/"
     }
   ],
+   "styling-and-structuring": [
+    {
+      "name": "HTML",
+      "fileName": "html.png",
+      "documentationURL": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+    },
+    {
+      "name": "CSS",
+      "fileName": "css.png",
+      "documentationURL": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "name": "Tailwindcss",
+      "fileName": "tailwindcss.png",
+      "documentationURL": "https://tailwindcss.com/"
+    }
+  ],
   "frameworks-and-libraries": [
     {
       "name": "Node.js",
@@ -53,23 +70,7 @@
       "documentationURL": "https://astro.build/"
     }
   ],
-  "styling-and-structuring": [
-    {
-      "name": "HTML",
-      "fileName": "html.png",
-      "documentationURL": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
-    },
-    {
-      "name": "CSS",
-      "fileName": "css.png",
-      "documentationURL": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-    },
-    {
-      "name": "Tailwindcss",
-      "fileName": "tailwindcss.png",
-      "documentationURL": "https://tailwindcss.com/"
-    }
-  ],
+ 
   "testing": [
   ],
   "databases": [
