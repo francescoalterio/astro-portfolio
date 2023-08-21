@@ -337,45 +337,6 @@
   },
   {
     "id": 16,
-    "name": "Task list CRUD",
-    "fileName": "crud-php.png",
-    "alt": "img-crud-php",
-    "projectType": "Fullstack",
-    "description": "Basic task list created with PHP, MySQL and Bootstrap that aimed to improve CRUD skills using the PHP language.",
-    "preview": [
-      {
-        "name": "Preview",
-        "url": "https://francescoalteriog.000webhostapp.com/crud-php/"
-      }
-    ],
-    "repository": [
-      {
-        "name": "Repository",
-        "url": "https://github.com/francescoalterio/CRUD-PHP"
-      }
-    ],
-    "technologies": ["PHP", "MySQL", "Bootstrap"],
-    "isFavorite": false
-  },
-  {
-    "id": 17,
-    "name": "Users API",
-    "fileName": "users-api-laravel.png",
-    "alt": "img-users-api-laravel",
-    "projectType": "API",
-    "description": "Public Web API built with Laravel PHP, it is based on a random user API for rapid application development or testing much like JSON Placeholder.",
-    "preview": [{ "name": "Preview", "url": "https://users-api.fly.dev/" }],
-    "repository": [
-      {
-        "name": "Repository",
-        "url": "https://github.com/francescoalterio/users-api-php"
-      }
-    ],
-    "technologies": ["PHP", "Laravel", "Bootstrap"],
-    "isFavorite": false
-  },
-  {
-    "id": 18,
     "name": "Skywind",
     "fileName": "skywind.png",
     "alt": "img-skywind",
@@ -394,7 +355,7 @@
     "isFavorite": false
   },
   {
-    "id": 19,
+    "id": 17,
     "name": "Snake Game",
     "fileName": "snakegame.png",
     "alt": "img-snakegame",
@@ -417,7 +378,7 @@
   },
  
   {
-    "id": 20,
+    "id": 18,
     "name": "E-commerce App",
     "fileName": "ecommerceapp.png",
     "alt": "img-ecommerceapp",
