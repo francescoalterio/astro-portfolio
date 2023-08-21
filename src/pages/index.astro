@@ -29,37 +29,39 @@ const allSkills = getAllSkillsInOneArray();
   }}
 >
   <HomeNav />
-  <header
-    class="backgroundPer px-6 sm:px-12 md:px-16 lg:px-28 xl:px-32 2xl:px-40 flex flex-col lg:flex-row items-center pt-20"
-  >
+  <header class="backgroundPer">
     <div
-      class="flex flex-col gap-5 flex-1 items-center text-center lg:items-start lg:text-start"
+      class="px-6 sm:px-12 md:px-16 flex flex-col lg:flex-row items-center pt-20 max-w-screen-xl mx-auto"
     >
-      <div class="flex">
-        <RolPill>
-          <Icon name="mdi:xml" class="w-4" />
-          Fullstack Developer
-        </RolPill>
+      <div
+        class="flex flex-col gap-5 flex-1 items-center text-center lg:items-start lg:text-start"
+      >
+        <div class="flex">
+          <RolPill>
+            <Icon name="mdi:xml" class="w-4" />
+            Fullstack Developer
+          </RolPill>
+        </div>
+        <h1
+          class="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold"
+        >
+          Hi, my name is Francesco Alterio
+        </h1>
+        <div class="h-2 w-16 bg-primaryLight"></div>
+        <p
+          class="text-gray-300 text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl"
+        >
+          I am a Fullstack developer currently based in Cumaná, Venezuela.
+        </p>
+        <div class="flex gap-2"></div>
       </div>
-      <h1
-        class="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold"
-      >
-        Hi, my name is Francesco Alterio
-      </h1>
-      <div class="h-2 w-16 bg-primaryLight"></div>
-      <p
-        class="text-gray-300 text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl"
-      >
-        I am a Fullstack developer currently based in Cumaná, Venezuela.
-      </p>
-      <div class="flex gap-2"></div>
+      <img
+        src="/assets/presentation.webp"
+        alt=""
+        class="lg:w-[25rem] xl:w-[32rem] 2xl:w-[38rem]"
+        loading="eager"
+      />
     </div>
-    <img
-      src="/assets/presentation.webp"
-      alt=""
-      class="lg:w-[25rem] xl:w-[32rem] 2xl:w-[38rem]"
-      loading="eager"
-    />
   </header>
   <main class="">
     <Section
