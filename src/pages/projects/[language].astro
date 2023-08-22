@@ -43,10 +43,14 @@ const language = Astro.params.language;
     >
       <NavAnchor href="/projects/all">All</NavAnchor>
       <NavAnchor href="/projects/javascript">
-        <span class="">Javascript</span>
+         <span class="hidden md:inline">Javascript</span><span class="md:hidden"
+          >JS</span
+        >
       </NavAnchor>
       <NavAnchor href="/projects/typescript">
-        <span class="">Typescript</span>
+         <span class="hidden md:inline">Typescript</span><span class="md:hidden"
+          >TS</span
+        >
       </NavAnchor>
     </div>
   </NavLayout>
