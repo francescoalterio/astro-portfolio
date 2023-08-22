@@ -10,6 +10,7 @@ import BorderedAnchor from "../../components/BorderedAnchor.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import NavLayout from "../../layouts/NavLayout.astro";
 import LogoName from "../../components/LogoName.astro";
+
 export function getStaticPaths() {
   const toReturn = projects.map(({ id }) => {
     return {
@@ -49,68 +50,71 @@ const {
   <NavLayout>
     <LogoName />
   </NavLayout>
-  <header
-    class="bg-customGray-200 px-6 sm:px-12 md:px-16 lg:px-28 flex py-16 sm:py-20 md:py-28 relative items-center w-full justify-center"
+  <div
+    class="px-6 sm:px-12 md:px-16 flex max-w-screen-xl mx-auto gap-10 mt-5 relative flex-col lg:flex-row"
   >
-    <h1 class="text-4xl sm:text-5xl text-primaryLight font-semibold">{name}</h1>
-  </header>
-
-  <main class="text-white">
-    <Section
-      background="light"
-      className="flex flex-col gap-8 pb-8 items-center"
-    >
+    <div class="flex-1">
       <Picture
         src={`/assets/projects/${fileName}`}
         widths={[1920]}
         aspectRatio="16:9"
         sizes="1920px"
         alt={alt}
+        class="lg:sticky lg:top-[92px]"
       />
-      <div class="flex">
-        <RolPill bgColor={projectTypes[projectType.toLowerCase()].color}>
-          <Icon
-            name={projectTypes[projectType.toLowerCase()].icon}
-            class="w-5"
-          />
-          {projectType}
-        </RolPill>
-      </div>
-      <p class="text-gray-400 text-center">{description}</p>
-      <div class="flex gap-2 w-full flex-wrap justify-center">
+    </div>
+
+    <main class="text-white flex-1 flex flex-col gap-8">
+      <h1 class="text-4xl sm:text-5xl text-primaryLight font-semibold">
+        {name}
+      </h1>
+      <section class="flex flex-col gap-8 pb-8">
+        <div class="flex">
+          <RolPill bgColor={projectTypes[projectType.toLowerCase()].color}>
+            <Icon
+              name={projectTypes[projectType.toLowerCase()].icon}
+              class="w-5"
+            />
+            {projectType}
+          </RolPill>
+        </div>
+        <p class="text-gray-400 text-sm">{description}</p>
+
+        <div class="flex gap-2 w-full flex-wrap">
+          {
+            technologies.map((x) => (
+              <div class=" bg-customGray-100 whitespace-nowrap px-3 py-1 rounded-sm text-xs">
+                {x}
+              </div>
+            ))
+          }
+        </div>
         {
-          technologies.map((x) => (
-            <div class=" bg-customGray-100 whitespace-nowrap px-3 py-1 rounded-sm text-xs">
-              {x}
+          preview && (
+            <div class="flex gap-5 flex-col">
+              {preview?.map((x) => (
+                <BorderedAnchor href={x.url} isFull blank>
+                  {x.name}
+                </BorderedAnchor>
+              ))}
             </div>
-          ))
+          )
         }
-      </div>
-      {
-        preview && (
-          <div class="flex gap-5">
-            {preview?.map((x) => (
-              <BorderedAnchor href={x.url} blank>
+        <div class="flex gap-5 flex-col">
+          {
+            repository.map((x) => (
+              <a
+                href={x.url}
+                target="_blank"
+                class="px-4 py-2  text-white flex rounded-md border border-white items-center gap-2 transition-all hover:bg-opacity-10 hover:bg-white w-full justify-center"
+              >
+                <Icon name="mdi:github" class="w-7" />
                 {x.name}
-              </BorderedAnchor>
-            ))}
-          </div>
-        )
-      }
-      <div class="flex gap-5">
-        {
-          repository.map((x) => (
-            <a
-              href={x.url}
-              target="_blank"
-              class="px-4 py-2  text-white flex rounded-md border border-white items-center gap-2 transition-all hover:bg-opacity-10 hover:bg-white"
-            >
-              <Icon name="mdi:github" class="w-7" />
-              {x.name}
-            </a>
-          ))
-        }
-      </div>
-    </Section>
-  </main>
+              </a>
+            ))
+          }
+        </div>
+      </section>
+    </main>
+  </div>
 </BaseLayout>
