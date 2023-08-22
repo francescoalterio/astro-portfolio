@@ -5,8 +5,6 @@ export function getStaticPaths() {
     { params: { language: "all" } },
     { params: { language: "javascript" } },
     { params: { language: "typescript" } },
-    { params: { language: "php" } },
-    { params: { language: "python" } },
   ];
 }
 
@@ -15,8 +13,6 @@ const names = {
   all: "All",
   javascript: "Javascript",
   typescript: "Typescript",
-  php: "PHP",
-  python: "Python",
 };
 
 import ProjectList from "../../components/ProjectList.astro";
@@ -45,16 +41,15 @@ const language = Astro.params.language;
     >
       <NavAnchor href="/projects/all">All</NavAnchor>
       <NavAnchor href="/projects/javascript">
-        <span class="hidden md:inline">Javascript</span><span class="md:hidden"
+         <span class="hidden md:inline">Javascript</span><span class="md:hidden"
           >JS</span
         >
       </NavAnchor>
       <NavAnchor href="/projects/typescript">
-        <span class="hidden md:inline">Typescript</span>
-        <span class="md:hidden">TS</span>
+         <span class="hidden md:inline">Typescript</span><span class="md:hidden"
+          >TS</span
+        >
       </NavAnchor>
-      <NavAnchor href="/projects/php">PHP</NavAnchor>
-      <NavAnchor href="/projects/python">Python</NavAnchor>
     </div>
   </NavLayout>
   <header
