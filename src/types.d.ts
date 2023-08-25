@@ -43,7 +43,8 @@ export type projectType =
   | "Library"
   | "Framework"
   | "API"
-  | "Desktop";
+  | "Desktop"
+  | "Terminal";
 
 export type technologyType =
   | "languages"

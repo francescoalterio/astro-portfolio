@@ -5,5 +5,6 @@
   "library": { "icon": "mdi:library", "color": "#ff298d" },
   "framework": { "icon": "mdi:semantic-web", "color": "#ff298d" },
   "api": { "icon": "mdi:server", "color": "#29ffad" },
-  "desktop": { "icon": "mdi:remote-desktop", "color": "#ff3e29" }
+  "desktop": { "icon": "mdi:remote-desktop", "color": "#ff3e29" },
+  "terminal": { "icon": "mdi:console", "color": "#219419" }
 }

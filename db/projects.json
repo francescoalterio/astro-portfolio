@@ -375,5 +375,24 @@
       "Firebase"
     ],
     "isFavorite": false
+  },
+  {
+    "id": 18,
+    "name": "ModuleKill",
+    "fileName": "modulekill.png",
+    "alt": "img-modulekill",
+    "projectType": "Terminal",
+    "description": "Free up your space by deleting the node_modules directories. With ModuleKill you can delete only the node_modules folders of the projects you want without deleting the project itself.",
+    "preview": [
+      { "name": "Preview", "url": "https://www.npmjs.com/package/modulekill" }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/modulekill"
+      }
+    ],
+    "technologies": ["Typescript", "Node.js"],
+    "isFavorite": true
   }
 ]
