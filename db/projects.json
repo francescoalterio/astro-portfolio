@@ -1,28 +1,6 @@
 [
   {
     "id": 1,
-    "name": "Smite Filter",
-    "fileName": "smitefilter.png",
-    "alt": "img-smitefilter",
-    "projectType": "Web",
-    "description": "Website based on the video game Smite Battleground of the gods where you can filter the selectable characters in the game by letters or role. ",
-    "preview": [
-      {
-        "name": "Preview",
-        "url": "https://francescoalterio.github.io/smitefilter/"
-      }
-    ],
-    "repository": [
-      {
-        "name": "Repository",
-        "url": "https://github.com/francescoalterio/smitefilter"
-      }
-    ],
-    "technologies": ["Javascript", "HTML", "CSS"],
-    "isFavorite": false
-  },
-  {
-    "id": 2,
     "name": "Cryptocurrency List",
     "fileName": "crypto-list.png",
     "alt": "img-crypto-list",
@@ -44,7 +22,7 @@
     "isFavorite": false
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Money Converter",
     "fileName": "money-converter.png",
     "alt": "img-money-converter",
@@ -66,7 +44,7 @@
     "isFavorite": false
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "Quizz App",
     "fileName": "quizz-app.png",
     "alt": "img-quizz-app",
@@ -88,7 +66,7 @@
     "isFavorite": false
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "Francesco Pomodoro",
     "fileName": "francescopomodoro.png",
     "alt": "img-francescopomodoro",
@@ -107,7 +85,7 @@
     "isFavorite": false
   },
   {
-    "id": 6,
+    "id": 5,
     "name": "API Joke",
     "fileName": "api-joke.png",
     "alt": "img-api-joke",
@@ -129,7 +107,7 @@
     "isFavorite": false
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "Study Panel",
     "fileName": "studypanel.png",
     "alt": "img-studypanel",
@@ -147,7 +125,7 @@
     "isFavorite": true
   },
   {
-    "id": 8,
+    "id": 7,
     "name": "Dualsend",
     "fileName": "dualsend.png",
     "alt": "img-dualsend",
@@ -174,7 +152,7 @@
     "isFavorite": false
   },
   {
-    "id": 9,
+    "id": 8,
     "name": "Project Manager",
     "fileName": "project-manager.png",
     "alt": "img-project-manager",
@@ -202,7 +180,7 @@
     "isFavorite": true
   },
   {
-    "id": 10,
+    "id": 9,
     "name": "PokeBook",
     "fileName": "pokebook.png",
     "alt": "img-pokebook",
@@ -231,7 +209,7 @@
     "isFavorite": false
   },
   {
-    "id": 11,
+    "id": 10,
     "name": "IP Finder",
     "fileName": "ipfinder.png",
     "alt": "img-o",
@@ -253,7 +231,7 @@
     "isFavorite": false
   },
   {
-    "id": 12,
+    "id": 11,
     "name": "Fran Studios",
     "fileName": "fran-studios.png",
     "alt": "img-fran-studios",
@@ -272,7 +250,7 @@
     "isFavorite": true
   },
   {
-    "id": 13,
+    "id": 12,
     "name": "Cocktails Library",
     "fileName": "cocktails-library.png",
     "alt": "img-o",
@@ -300,7 +278,7 @@
     "isFavorite": true
   },
   {
-    "id": 14,
+    "id": 13,
     "name": "Fran Editor",
     "fileName": "franeditor.png",
     "alt": "img-franeditor",
@@ -317,7 +295,7 @@
     "isFavorite": true
   },
   {
-    "id": 15,
+    "id": 14,
     "name": "Gym Timer",
     "fileName": "gym-timer.png",
     "alt": "img-gymtimer",
@@ -336,7 +314,7 @@
     "isFavorite": true
   },
   {
-    "id": 16,
+    "id": 15,
     "name": "Skywind",
     "fileName": "skywind.png",
     "alt": "img-skywind",
@@ -355,7 +333,7 @@
     "isFavorite": false
   },
   {
-    "id": 17,
+    "id": 16,
     "name": "Snake Game",
     "fileName": "snakegame.png",
     "alt": "img-snakegame",
@@ -378,7 +356,7 @@
   },
  
   {
-    "id": 18,
+    "id": 17,
     "name": "E-commerce App",
     "fileName": "ecommerceapp.png",
     "alt": "img-ecommerceapp",
