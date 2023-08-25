@@ -292,7 +292,7 @@
       }
     ],
     "technologies": ["Javascript", "React.js", "CSS"],
-    "isFavorite": true
+    "isFavorite": false
   },
   {
     "id": 14,
