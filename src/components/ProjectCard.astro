@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon";
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import RolPill from "./RolPill.astro";
 import projectTypes from "../../db/projectTypes.json";
 import BorderedAnchor from "./BorderedAnchor.astro";
@@ -38,10 +38,10 @@ const shortDescription = description.split(" ").slice(0, 25).join(" ");
   class={`flex relative min-w-full md:min-w-[290px] lg:min-w-[300px] xl:min-w-[300px]  flex-1 justify-between flex-col `}
 >
   <div class="rounded-md">
-    <Picture
+    <Image
       src={imageURL}
-      widths={[1200]}
-      aspectRatio="16:9"
+      width={1200}
+      height={675}
       sizes="1200px"
       alt={alt}
       loading={loading || "eager"}

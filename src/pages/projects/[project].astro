@@ -1,8 +1,8 @@
 ---
 import projects from "../../../db/projects.json";
 import Section from "../../components/Section.astro";
-import { Picture } from "@astrojs/image/components";
-import { Project } from "../../types";
+import { Image } from "astro:assets";
+import { type Project } from "../../types";
 import projectTypes from "../../../db/projectTypes.json";
 import { Icon } from "astro-icon";
 import RolPill from "../../components/RolPill.astro";
@@ -54,10 +54,10 @@ const {
     class="px-6 sm:px-12 md:px-16 flex max-w-screen-xl mx-auto gap-10 mt-10 relative flex-col lg:flex-row"
   >
     <div class="flex-1">
-      <Picture
+      <Image
         src={`/assets/projects/${fileName}`}
-        widths={[1920]}
-        aspectRatio="16:9"
+        width={1920}
+        height={1080}
         sizes="1920px"
         alt={alt}
         class="lg:sticky lg:top-6"

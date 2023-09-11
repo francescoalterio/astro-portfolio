@@ -1,5 +1,5 @@
 import Skills from "../../db/skills.json";
-import { TechnologyWithType } from "../types";
+import { type TechnologyWithType } from "../types.d";
 
 export function getAllSkillsInOneArray(): TechnologyWithType[] {
   let allSkills = [];

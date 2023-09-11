@@ -1,7 +1,7 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import { Icon } from "astro-icon";
-import { Technology, technologyType } from "../types";
+import { type Technology, type technologyType } from "../types";
 import RolPill from "./RolPill.astro";
 import technologyTypes from "../../db/technologyTypes.json";
 import { capitalizeText } from "../utils/capitalizeText";
@@ -20,10 +20,10 @@ const formattingTypeName = capitalizeText(type);
   class="flex flex-col gap-5 items-center w-56 cursor-pointer py-5 transition-all hover:bg-customGray-100 hover:rounded-md"
   target="_blank"
 >
-  <Picture
+  <Image
     src={`/assets/technologies/${fileName}`}
-    widths={[112]}
-    aspectRatio="1:1"
+    width={112}
+    height={112}
     sizes="112px"
     alt={`${name}-logo`}
   />
