@@ -14,6 +14,7 @@ import { NumberOfRepos } from "../components/NumberOfRepos";
 import Section from "../components/Section.astro";
 import HomeNav from "../components/HomeNav.astro";
 import Footer from "../components/Footer.astro";
+import CourseList from "../components/CourseList.astro";
 
 const allSkills = getAllSkillsInOneArray();
 ---
@@ -39,7 +40,7 @@ const allSkills = getAllSkillsInOneArray();
         <div class="flex">
           <RolPill>
             <Icon name="mdi:xml" class="w-4" />
-            Frontend Developer
+             Frontend Developer
           </RolPill>
         </div>
         <h1
@@ -185,6 +186,15 @@ const allSkills = getAllSkillsInOneArray();
           ))
         }
       </div>
+    </Section>
+    <Section
+      background="light"
+      className="flex flex-col items-center gap-10 py-10"
+    >
+      <h2 class="text-2xl sm:text-3xl md:text-4xl my-5">
+        Official Online Courses
+      </h2>
+      <CourseList />
     </Section>
   </main>
   <Footer />

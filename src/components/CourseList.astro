@@ -1,0 +1,33 @@
+---
+import courses from "../../db/courses.json";
+import type { Course } from "../types";
+import CourseCard from "./CourseCard.astro";
+---
+
+<div id="courses-container" class="flex gap-6 justify-center flex-wrap">
+  {
+    courses.map(
+      ({
+        title,
+        id,
+        porcentage,
+        logo,
+        url,
+        certificationUrl,
+        platform,
+      }: Course) => (
+        <CourseCard
+          title={title}
+          id={id}
+          porcentage={porcentage}
+          logo={logo}
+          url={url}
+          certificationUrl={certificationUrl}
+          platform={platform}
+        />
+      )
+    )
+  }
+  <div class="min-w-[19rem] sm:min-w-[25rem] max-w-[35rem] flex-1 p-3 sm:p-5">
+  </div>
+</div>

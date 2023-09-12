@@ -1,0 +1,73 @@
+---
+import { Icon } from "astro-icon";
+import { type Course } from "../types";
+import { Image } from "astro:assets";
+import ProgressBar from "./ProgressBar.astro";
+
+interface Props extends Course {}
+
+const { title, logo, porcentage, url, certificationUrl, platform } =
+  Astro.props;
+
+const imgPath = `/assets/courses/${logo}`;
+const alt = logo.split(".")[0];
+console.log(alt);
+---
+
+<div
+  class="min-w-[19rem] sm:min-w-[25rem] max-w-[35rem] flex-1 bg-customGray-300 rounded-lg flex flex-col p-3 sm:p-5 gap-4 justify-between"
+>
+  <div class="flex gap-4 items-center">
+    <div class="min-w-[75px] min-h-[75px]">
+      <Image
+        src={imgPath}
+        width={75}
+        height={75}
+        alt={alt}
+        class="w-[75px] h-[75px] object-contain"
+      />
+    </div>
+    <div class="flex flex-col gap-2">
+      <h6 class="text-xs sm:text-base">{platform}</h6>
+      <h4 class="text-sm sm:text-lg font-bold">{title}</h4>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-1">
+      <div class="flex items-center justify-between">
+        <h6 class="font-semibold text-xs sm:text-base">Course progress</h6>
+        <span class="text-gray-400 text-sm sm:text-base">
+          {
+            porcentage < 100 ? (
+              `${porcentage}%`
+            ) : (
+              <Icon
+                name="mdi:checkbox-marked-circle"
+                class="w-5 text-primaryLight"
+              />
+            )
+          }
+        </span>
+      </div>
+      <ProgressBar porcentage={porcentage} color="primaryLight" />
+    </div>
+
+    <div class="flex justify-between gap-4">
+      <a
+        href={url}
+        target="_blank"
+        class="text-primaryLight font-semibold flex items-center text-xs sm:text-base"
+        >Visit course <span
+          ><Icon name="mdi:chevron-right" class="w-6 inline-block" /></span
+        >
+      </a>
+      <a
+        href={certificationUrl}
+        target="_blank"
+        class="border border-white rounded-md px-4 py-1 text-xs sm:text-base"
+        >Certification</a
+      >
+    </div>
+  </div>
+</div>

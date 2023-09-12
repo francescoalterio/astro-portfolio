@@ -1,0 +1,12 @@
+---
+interface Props {
+  porcentage: number;
+  color: "primary" | "primaryLight";
+}
+const { porcentage, color } = Astro.props;
+const porcentageFormatted = `width: ${porcentage}%`;
+---
+
+<div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+  <div class=`bg-${color} h-2 rounded-full` style={porcentageFormatted}></div>
+</div>
