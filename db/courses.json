@@ -9,12 +9,12 @@
         "url": "https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/"
     },
     {
-        "certificationUrl": "https://learn.microsoft.com/es-es/training/achievements/learn.language.build-javascript-applications-typescript.trophy?username=FrancescoAlterio-0899&sharingId=4DBE74A1982691AF",
+        "certificationUrl": "https://learn.microsoft.com/en-us/training/achievements/learn.language.build-javascript-applications-typescript.trophy?username=FrancescoAlterio-0899&sharingId=4DBE74A1982691AF",
         "id": 2,
         "logo": "build-javascript-applications-typescript.svg",
         "platform": "Microsoft",
         "porcentage": 100,
-        "title": "Compilación de aplicaciones JavaScript con TypeScript",
-        "url": "https://learn.microsoft.com/es-es/training/paths/build-javascript-applications-typescript/"
+        "title": "Build JavaScript applications using TypeScript",
+        "url": "https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/"
     }
 ]
