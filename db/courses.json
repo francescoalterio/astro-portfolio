@@ -1,20 +1,29 @@
 [
-    {
-        "certificationUrl": "https://www.udemy.com/certificate/UC-9a9b4e29-6d9a-4302-b8c6-110244a76a2a/",
-        "id": 1,
-        "logo": "udemy.png",
-        "platform": "Udemy",
-        "porcentage": 100,
-        "title": "JavaScript Moderno Guía Definitiva +15 Proyectos",
-        "url": "https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/"
-    },
-    {
-        "certificationUrl": "https://learn.microsoft.com/en-us/training/achievements/learn.language.build-javascript-applications-typescript.trophy?username=FrancescoAlterio-0899&sharingId=4DBE74A1982691AF",
-        "id": 2,
-        "logo": "build-javascript-applications-typescript.svg",
-        "platform": "Microsoft",
-        "porcentage": 100,
-        "title": "Build JavaScript applications using TypeScript",
-        "url": "https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/"
-    }
+  {
+    "certificationUrl": "https://www.udemy.com/certificate/UC-9a9b4e29-6d9a-4302-b8c6-110244a76a2a/",
+    "id": 1,
+    "logo": "udemy.png",
+    "platform": "Udemy",
+    "porcentage": 100,
+    "title": "JavaScript Moderno Guía Definitiva +15 Proyectos",
+    "url": "https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/"
+  },
+  {
+    "certificationUrl": "https://learn.microsoft.com/en-us/training/achievements/learn.language.build-javascript-applications-typescript.trophy?username=FrancescoAlterio-0899&sharingId=4DBE74A1982691AF",
+    "id": 2,
+    "logo": "build-javascript-applications-typescript.svg",
+    "platform": "Microsoft",
+    "porcentage": 100,
+    "title": "Build JavaScript applications using TypeScript",
+    "url": "https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/"
+  },
+  {
+    "certificationUrl": "https://learn.microsoft.com/en-us/training/achievements/learn.beginner-python.trophy?username=FrancescoAlterio-0899&sharingId=4DBE74A1982691AF",
+    "id": 3,
+    "logo": "python-for-beginners.svg",
+    "platform": "Microsoft",
+    "porcentage": 100,
+    "title": "Python for beginners",
+    "url": "https://learn.microsoft.com/en-us/training/paths/beginner-python/"
+  }
 ]
