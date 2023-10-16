@@ -11,11 +11,11 @@ const { title, logo, porcentage, url, certificationUrl, platform } =
 
 const imgPath = `/assets/courses/${logo}`;
 const alt = logo.split(".")[0];
-console.log(alt);
 ---
 
 <div
-  class="min-w-[19rem] sm:min-w-[25rem] max-w-[35rem] flex-1 bg-customGray-300 rounded-lg flex flex-col p-3 sm:p-5 gap-4 justify-between"
+  class="min-w-[19rem] sm:w-[25rem] md:w-[35rem] flex-1 bg-customGray-300 rounded-lg flex flex-col p-3 sm:p-5 gap-4 justify-between sm:hidden"
+  id="course-card"
 >
   <div class="flex gap-4 items-center">
     <div class="min-w-[75px] min-h-[75px]">
