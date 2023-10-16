@@ -2,32 +2,96 @@
 import courses from "../../db/courses.json";
 import type { Course } from "../types";
 import CourseCard from "./CourseCard.astro";
+import { Icon } from "astro-icon";
 ---
 
-<div id="courses-container" class="flex gap-6 justify-center flex-wrap">
-  {
-    courses.map(
-      ({
-        title,
-        id,
-        porcentage,
-        logo,
-        url,
-        certificationUrl,
-        platform,
-      }: Course) => (
-        <CourseCard
-          title={title}
-          id={id}
-          porcentage={porcentage}
-          logo={logo}
-          url={url}
-          certificationUrl={certificationUrl}
-          platform={platform}
-        />
-      )
-    )
-  }
-  <div class="min-w-[19rem] sm:min-w-[25rem] max-w-[35rem] flex-1 p-3 sm:p-5">
+<article>
+  <div class="flex items-center gap-5 sm:gap-10">
+    <button
+      id="prev-course"
+      class="bg-customGray-300 rounded-full p-3 hidden sm:block"
+      ><Icon
+        name="mdi:arrow-left"
+        class="w-7 inline-block text-white"
+      /></button
+    >
+    <div id="courses-container" class="flex gap-6 justify-center flex-wrap">
+      {
+        courses.map(
+          ({
+            title,
+            id,
+            porcentage,
+            logo,
+            url,
+            certificationUrl,
+            platform,
+          }: Course) => (
+            <CourseCard
+              title={title}
+              id={id}
+              porcentage={porcentage}
+              logo={logo}
+              url={url}
+              certificationUrl={certificationUrl}
+              platform={platform}
+            />
+          )
+        )
+      }
+    </div>
+    <button
+      id="next-course"
+      class="bg-customGray-300 rounded-full p-3 hidden sm:block"
+      ><Icon
+        name="mdi:arrow-right"
+        class="w-7 inline-block text-white"
+      /></button
+    >
   </div>
-</div>
+  <div class="gap-2 justify-center mt-5 hidden sm:flex">
+    {
+      courses.map(() => (
+        <div id="circle-index" class=" w-2 h-2 rounded-full bg-white" />
+      ))
+    }
+  </div>
+</article>
+<script>
+  const $courseCards = document.querySelectorAll("#course-card");
+  const $circles = document.querySelectorAll("#circle-index");
+  const $btnPrevCourse = document.getElementById("prev-course");
+  const $btnNextCourse = document.getElementById("next-course");
+
+  let cardIndex = 0;
+
+  const newCard = () => {
+    $courseCards.forEach((card, index) => {
+      if (index === cardIndex) card.classList.remove("sm:hidden");
+      else card.classList.add("sm:hidden");
+    });
+  };
+
+  const setCircle = () => {
+    $circles.forEach((card, index) => {
+      if (index === cardIndex) card.classList.remove("bg-slate-500");
+      else card.classList.add("bg-slate-500");
+    });
+  };
+
+  newCard();
+  setCircle();
+  $btnPrevCourse.addEventListener("click", () => {
+    if (cardIndex === 0) cardIndex = $courseCards.length - 1;
+    else cardIndex--;
+    newCard();
+    setCircle();
+  });
+
+  $btnNextCourse.addEventListener("click", () => {
+    if (cardIndex === $courseCards.length - 1) cardIndex = 0;
+    else cardIndex++;
+    newCard();
+    setCircle();
+  });
+</script>

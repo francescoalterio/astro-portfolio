@@ -5,7 +5,7 @@
     "logo": "udemy.png",
     "platform": "Udemy",
     "porcentage": 100,
-    "title": "JavaScript Moderno Guía Definitiva +15 Proyectos",
+    "title": "Modern JavaScript Definitive Guide +15 Projects",
     "url": "https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/"
   },
   {
@@ -34,5 +34,14 @@
     "porcentage": 100,
     "title": "Build real world applications with Python",
     "url": "https://learn.microsoft.com/en-us/training/paths/python-language/"
+  },
+  {
+    "certificationUrl": "https://www.mastermind.ac/certificates/1fefd6d464ef420f8fe8e2fa3fd9023c",
+    "id": 5,
+    "logo": "mastermind.png",
+    "platform": "Mastermind",
+    "porcentage": 100,
+    "title": "Programming fundamentals with Node.js",
+    "url": "https://www.mastermind.ac/courses/fundamentos-de-programacion-con-javascript"
   }
 ]
