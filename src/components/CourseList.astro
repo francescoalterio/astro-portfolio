@@ -52,7 +52,7 @@ import { Icon } from "astro-icon";
   <div class="gap-2 justify-center mt-5 hidden sm:flex">
     {
       courses.map(() => (
-        <div id="circle-index" class=" w-2 h-2 rounded-full bg-white" />
+        <div id="circle-index" class=" w-2 h-2 rounded-full bg-slate-500" />
       ))
     }
   </div>
@@ -74,8 +74,12 @@ import { Icon } from "astro-icon";
 
   const setCircle = () => {
     $circles.forEach((card, index) => {
-      if (index === cardIndex) card.classList.remove("bg-slate-500");
-      else card.classList.add("bg-slate-500");
+      if (index === cardIndex) {
+        card.classList.add("bg-white");
+        card.classList.remove("bg-slate-500");
+      } else {
+        card.classList.add("bg-white");
+      }
     });
   };
 
