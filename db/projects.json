@@ -413,5 +413,49 @@
     ],
     "technologies": ["Typescript", "Next.js", "Tailwindcss"],
     "isFavorite": false
+  },
+  {
+    "id": 20,
+    "name": "CRUD PHP",
+    "fileName": "crudphp.png",
+    "alt": "img-crudphp",
+    "projectType": "Web",
+    "description": "Simple crud with php on a task liste counter for any text.",
+    "preview": [
+      {
+        "name": "Preview",
+        "url": "https://francescoalteriog.000webhostapp.com/crud-php/"
+      }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/crud-php"
+      }
+    ],
+    "technologies": ["PHP", "MySQL", "HTML", "CSS"],
+    "isFavorite": false
+  },
+  {
+    "id": 21,
+    "name": "English World",
+    "fileName": "englishworld.png",
+    "alt": "img-englishworld",
+    "projectType": "Web",
+    "description": "Do you want to learn and practice your translation of English words? English World is a simple word translation game in rounds that improves your language learning.",
+    "preview": [
+      {
+        "name": "Preview",
+        "url": "http://englishworld.kesug.com/index.php"
+      }
+    ],
+    "repository": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/francescoalterio/english-world"
+      }
+    ],
+    "technologies": ["PHP", "MySQL", "HTML", "CSS", "Javascript"],
+    "isFavorite": false
   }
 ]
