@@ -43,5 +43,14 @@
     "porcentage": 100,
     "title": "Programming fundamentals with Node.js",
     "url": "https://www.mastermind.ac/courses/fundamentos-de-programacion-con-javascript"
+  },
+  {
+    "certificationUrl": "https://www.mastermind.ac/certificates/b765ac1db60d45ee9712621e75acf43f",
+    "id": 6,
+    "logo": "mastermind.png",
+    "platform": "Mastermind",
+    "porcentage": 100,
+    "title": "Everything about the web with PHP",
+    "url": "https://www.mastermind.ac/courses/php-y-la-web-desde-cero"
   }
 ]
