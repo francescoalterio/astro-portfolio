@@ -9,9 +9,14 @@
       "name": "Typescript",
       "fileName": "typescript.png",
       "documentationURL": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "PHP",
+      "fileName": "php.png",
+      "documentationURL": "https://www.php.net/manual/en/intro-whatis.php"
     }
   ],
-   "styling-and-structuring": [
+  "styling-and-structuring": [
     {
       "name": "HTML",
       "fileName": "html.png",
@@ -70,9 +75,7 @@
       "documentationURL": "https://astro.build/"
     }
   ],
- 
-  "testing": [
-  ],
-  "databases": [
-  ]
+
+  "testing": [],
+  "databases": []
 }
