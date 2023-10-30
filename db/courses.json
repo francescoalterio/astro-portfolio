@@ -52,5 +52,14 @@
     "porcentage": 100,
     "title": "Everything about the web with PHP",
     "url": "https://www.mastermind.ac/courses/php-y-la-web-desde-cero"
+  },
+  {
+    "certificationUrl": "https://www.mastermind.ac/certificates/7438cce3054f47809e0cedc9029bcc2b",
+    "id": 7,
+    "logo": "mastermind.png",
+    "platform": "Mastermind",
+    "porcentage": 100,
+    "title": "Creating an API with Node.js",
+    "url": "https://www.mastermind.ac/courses/desde-0-hasta-maestro-creando-el-backend-con-la-pokeapi"
   }
 ]
