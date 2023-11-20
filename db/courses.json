@@ -61,5 +61,14 @@
     "porcentage": 100,
     "title": "Creating an API with Node.js",
     "url": "https://www.mastermind.ac/courses/desde-0-hasta-maestro-creando-el-backend-con-la-pokeapi"
+  },
+  {
+    "certificationUrl": "https://www.mastermind.ac/certificates/52c10dcf0b5c4fe69f9fbb769f58b641",
+    "id": 8,
+    "logo": "mastermind.png",
+    "platform": "Mastermind",
+    "porcentage": 100,
+    "title": "Linux: from Noob to Pro in 9 hours!",
+    "url": "https://www.mastermind.ac/courses/linux-de-noob-a-pro-en-nueve-horas"
   }
 ]
