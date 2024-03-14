@@ -1,18 +1,23 @@
 ---
 import { Image } from "astro:assets";
 import { Icon } from "astro-icon";
-import { type Technology, type technologyType } from "../types";
+import type {
+  Technology,
+  technologyType,
+  technologyTypeSpanish,
+} from "../types";
 import RolPill from "./RolPill.astro";
 import technologyTypes from "../../db/technologyTypes.json";
 import { capitalizeText } from "../utils/capitalizeText";
 
 interface Props extends Technology {
   type: technologyType;
+  spanishType: technologyTypeSpanish;
 }
 
-const { name, fileName, documentationURL, type } = Astro.props;
+const { name, fileName, documentationURL, type, spanishType } = Astro.props;
 
-const formattingTypeName = capitalizeText(type);
+const formattingTypeName = capitalizeText(spanishType);
 ---
 
 <a
