@@ -54,11 +54,8 @@ export type technologyType =
   | 'databases'
 
 export interface Course {
-  id: number
   title: string
   logo: string
-  url: string
   certificationUrl: string
   platform: string
-  porcentage: number
 }

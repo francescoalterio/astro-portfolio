@@ -6,8 +6,7 @@ import BorderedAnchor from "./BorderedAnchor.astro";
 
 interface Props extends Course {}
 
-const { title, logo, porcentage, url, certificationUrl, platform } =
-  Astro.props;
+const { title, logo, certificationUrl, platform } = Astro.props;
 
 const imgPath = `/assets/courses/${logo}`;
 const alt = logo.split(".")[0];
@@ -26,7 +25,7 @@ const alt = logo.split(".")[0];
   </div>
 
   <div class="flex flex-col gap-4 items-center">
-    <BorderedAnchor href={certificationUrl} isFull size="small"
+    <BorderedAnchor href={certificationUrl} isFull size="small" blank
       >Certification</BorderedAnchor
     >
   </div>
