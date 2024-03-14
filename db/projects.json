@@ -5,16 +5,16 @@
     "fileName": "crypto-list.png",
     "alt": "img-crypto-list",
     "projectType": "Web",
-    "description": "Web project based on a list of the most famous cryptocurrencies. This project was build on top of the CryptoCompare API using React.",
+    "description": "Proyecto web basado en una lista de las criptomonedas más famosas. Este proyecto se creó sobre la API CryptoCompare usando React.",
     "preview": [
       {
-        "name": "Preview",
+        "name": "Visualizar",
         "url": "https://stackblitz.com/edit/cryptocurrencylist?file=fileName%2FApp.js"
       }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/react-cryptocurrencylist"
       }
     ],
@@ -27,16 +27,16 @@
     "fileName": "money-converter.png",
     "alt": "img-money-converter",
     "projectType": "Web",
-    "description": "Web to convert the value of one currency to another. The main goal of the project was to improve the use of APIs using React.",
+    "description": "Web para convertir el valor de una moneda a otra. El objetivo principal del proyecto era mejorar el uso de API utilizando React.",
     "preview": [
       {
-        "name": "Preview",
+        "name": "Visualizar",
         "url": "https://stackblitz.com/edit/react-e9kmsj?file=README.md"
       }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/money-converter"
       }
     ],
@@ -49,16 +49,16 @@
     "fileName": "quizz-app.png",
     "alt": "img-quizz-app",
     "projectType": "Web",
-    "description": "Web game based on a Quizz, is to answer questions with several options where only one is correct and at the end know our final score.",
+    "description": "Juego web basado en un Quiz, consiste en responder preguntas con varias opciones donde solo una es correcta y al final saber nuestra puntuación final.",
     "preview": [
       {
-        "name": "Preview",
+        "name": "Visualizar",
         "url": "https://stackblitz.com/edit/react-scdye8?file=README.md"
       }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/quiz-app"
       }
     ],
@@ -73,11 +73,11 @@
     "projectType": "Web",
     "description": "La técnica Pomodoro es un método para mejorar la administración del tiempo dedicado a una actividad. Fue creado por Francesco Cirillo a fines de la década de 1980.",
     "preview": [
-      { "name": "Preview", "url": "https://francescopomodoro.netlify.app/" }
+      { "name": "Visualizar", "url": "https://francescopomodoro.netlify.app/" }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/pomodoro-timer"
       }
     ],
@@ -90,16 +90,16 @@
     "fileName": "api-joke.png",
     "alt": "img-api-joke",
     "projectType": "Web",
-    "description": "Web project based on a joke API, The main goal of the project was to improve the use of APIs using React and Javascript.",
+    "description": "Proyecto web basado en una API de broma. El objetivo principal del proyecto es mejorar el uso de las API utilizando React y Javascript.",
     "preview": [
       {
-        "name": "Preview",
+        "name": "Visualizar",
         "url": "https://stackblitz.com/edit/react-e6wwrx?file=README.md"
       }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/react-API-Joke"
       }
     ],
@@ -112,11 +112,13 @@
     "fileName": "studypanel.png",
     "alt": "img-studypanel",
     "projectType": "Web",
-    "description": "Study panel for Web programming. It has a user system using Firebase and stores each of the technologies that you are learning and those learned.",
-    "preview": [{ "name": "Preview", "url": "https://studypanel.vercel.app/" }],
+    "description": "Panel de estudio para programación Web. Tiene un sistema de usuario usando Firebase y almacena cada una de las tecnologías que vas aprendiendo y las aprendidas.",
+    "preview": [
+      { "name": "Visualizar", "url": "https://studypanel.vercel.app/" }
+    ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/react-study-panel"
       }
     ],
@@ -130,7 +132,7 @@
     "fileName": "dualsend.png",
     "alt": "img-dualsend",
     "projectType": "Fullstack",
-    "description": "Program that allows you to send files of any type between a PC and a mobile. You only need to start the server on the machine which has the core of the entire ecosystem, the app being the client with which to interact.",
+    "description": "Programa que permite enviar archivos de cualquier tipo entre una PC y un móvil. Sólo necesitas iniciar el servidor en la máquina que tiene el núcleo de todo el ecosistema, siendo la aplicación el cliente con el que interactuar.",
     "preview": [],
     "repository": [
       {
@@ -157,16 +159,16 @@
     "fileName": "project-manager.png",
     "alt": "img-project-manager",
     "projectType": "Mobile",
-    "description": "Manage and manage your projects and tasks in an easy and fast way. The app is the easiest and fastest way to manage your projects and tasks, from simple tasks to important tasks, speeding up your work and increasing your productivity. 1. Creation of projects 2. Task creation 3. Increased productivity 4. Acceleration of work 5. Daily organization 6. Detailed description of tasks and projects 7. Completion of projects and tasks.",
+    "description": "Gestiona y gestiona tus proyectos y tareas de una forma fácil y rápida. La aplicación es la forma más fácil y rápida de gestionar tus proyectos y tareas, desde tareas simples hasta tareas importantes, acelerando tu trabajo y aumentando tu productividad. 1. Creación de proyectos 2. Creación de tareas 3. Aumento de productividad 4. Aceleración del trabajo 5. Organización diaria 6. Descripción detallada de tareas y proyectos 7. Finalización de proyectos y tareas.",
     "preview": [
       {
-        "name": "View app",
+        "name": "Visualizar app",
         "url": "https://play.google.com/store/apps/details?id=com.francescox5.projectmanager"
       }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/project-manager"
       }
     ],
@@ -185,16 +187,16 @@
     "fileName": "pokebook.png",
     "alt": "img-pokebook",
     "projectType": "Mobile",
-    "description": "The application has information on each existing Pokemon in all the games of the main saga. Pokedex: A pokedex has a source of accurate and detailed information on each of the pokemon and their abilities, all in one place. Features: PokeBook has a specific search section to easily find the pokemon or ability you want to search for! Have a pokemon filter using their types (Fire, Water, ...etc). The pokedex stores your last searches to avoid forgetting and easy access to previously found pokemon. - Skill Dex - Learn all the information about the skills - Look what pokemon has what abilities - You don't have to worry about forgetting the names of the skills, PokeBook will save it for you - Dex of Types - Filter pokemons by their types to learn more in depth.",
+    "description": "La aplicación dispone de información de cada Pokémon existente en todos los juegos de la saga principal. Pokedex: una pokedex tiene una fuente de información precisa y detallada sobre cada uno de los Pokémon y sus habilidades, todo en un solo lugar. Características: ¡PokeBook tiene una sección de búsqueda específica para encontrar fácilmente el Pokémon o la habilidad que deseas buscar! Tener un filtro de Pokémon usando sus tipos (Fuego, Agua, ...etc). La pokedex almacena tus últimas búsquedas para evitar olvidos y acceder fácilmente a los Pokémon encontrados anteriormente. - Skill Dex - Aprende toda la información sobre las habilidades - Mira qué pokemon tiene qué habilidades - No tienes que preocuparte por olvidar los nombres de las habilidades, PokeBook los guardará para ti - Dex de tipos - Filtra pokemons por sus tipos para aprender más en profundidad.",
     "preview": [
       {
-        "name": "View app",
+        "name": "Visualizar app",
         "url": "https://play.google.com/store/apps/details?id=com.franstudios.pokebook"
       }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/pokebook"
       }
     ],
@@ -214,16 +216,16 @@
     "fileName": "ipfinder.png",
     "alt": "img-o",
     "projectType": "Mobile",
-    "description": "IP Finder app allows you to locate the IP location of any IP address.IP Finder allows you to locate and search any IP anywhere in the world for free. The app provides you with a lot of information about the located IP such as location, time zone, etc.",
+    "description": "La aplicación IP Finder le permite localizar la ubicación IP de cualquier dirección IP. IP Finder le permite localizar y buscar cualquier IP en cualquier parte del mundo de forma gratuita. La aplicación te proporciona mucha información sobre la IP localizada, como ubicación, zona horaria, etc.",
     "preview": [
       {
-        "name": "View app",
+        "name": "Visualizar app",
         "url": "https://play.google.com/store/apps/details?id=com.franstudios.ipfinder"
       }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/ip-finder"
       }
     ],
@@ -236,13 +238,13 @@
     "fileName": "fran-studios.png",
     "alt": "img-fran-studios",
     "projectType": "Web",
-    "description": "Fran Studios was born from the idea of creating a personal brand on mobile application development. Simple, pleasant apps that solve user problems directly, whether they are tools or entertainment.",
+    "description": "Fran Studios nace de la idea de crear una marca personal en el desarrollo de aplicaciones móviles. Apps sencillas, agradables y que solucionan directamente los problemas del usuario, ya sean herramientas o entretenimiento.",
     "preview": [
-      { "name": "Preview", "url": "https://franstudios.vercel.app/" }
+      { "name": "Visualizar", "url": "https://franstudios.vercel.app/" }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/fran-studios"
       }
     ],
@@ -258,13 +260,13 @@
     "description": "Cocktail Recipe App es una aplicación móvil que te ayuda a encontrar recetas de cócteles y recetas de bebidas. Esta aplicación está disponible para dispositivos Android. La aplicación ofrece una amplia gama de recetas de cócteles con la ayuda de las últimas tendencias en bebidas. Estos incluyen tanto cócteles clásicos como nuevos. La aplicación tiene una función de búsqueda que le permite encontrar las bebidas que se adapten a su gusto. Puede guardar sus bebidas favoritas para que pueda acceder a ellas fácilmente cuando sea necesario sin tener que buscar. La aplicación tiene una interfaz simple y limpia. Tiene una barra de búsqueda en la parte superior para encontrar tu bebida favorita. Las bebidas se clasifican por sus ingredientes, el tipo de bebida y el contenido de alcohol. También presenta recetas de bebidas de algunos de los cantineros más reconocidos del mundo, así como muchas otras que seguramente complacerán a cualquiera que disfrute de los cócteles. Esta aplicación es una forma nueva y maravillosa de encontrar rápidamente bebidas perfectas para cualquier ocasión. Es extremadamente fácil de usar. Simplemente escriba algunas palabras clave que describan lo que está buscando. La aplicación de recetas de cócteles es la aplicación perfecta para las personas que aman beber. Es imprescindible para cualquiera que ame beber cócteles y quiera explorar nuevas bebidas. Tiene una enorme base de datos de recetas de cócteles, por lo que nunca te quedarás sin opciones.",
     "preview": [
       {
-        "name": "View app",
+        "name": "Visualizar app",
         "url": "https://play.google.com/store/apps/details?id=com.franstudios.cocktaillibrary"
       }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/cocktails-app"
       }
     ],
@@ -283,11 +285,13 @@
     "fileName": "franeditor.png",
     "alt": "img-franeditor",
     "projectType": "Web",
-    "description": "Fran Editor is a Javascript code editor on a web. The code is executed every time a change is made without the need to save and each console.log is reflected in a console on the right side of the editor. The app is built with Monaco Editor, the same editor that VS Code uses",
-    "preview": [{ "name": "Preview", "url": "https://franeditor.vercel.app/" }],
+    "description": "Fran Editor es un editor de código Javascript en una web. El código se ejecuta cada vez que se realiza un cambio sin necesidad de guardar y cada console.log se refleja en una consola en el lado derecho del editor. La aplicación está construida con Monaco Editor, el mismo editor que usa VS Code",
+    "preview": [
+      { "name": "Visualizar", "url": "https://franeditor.vercel.app/" }
+    ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/fran-editor"
       }
     ],
@@ -300,13 +304,13 @@
     "fileName": "gym-timer.png",
     "alt": "img-gymtimer",
     "projectType": "Web",
-    "description": "Web timer for exercise, with which you can establish simple routines and much more complex with the series nesting system.",
+    "description": "Temporizador web para ejercicio, con el que podrás establecer rutinas sencillas y mucho más complejas con el sistema nesting de la serie.",
     "preview": [
-      { "name": "Preview", "url": "https://fran-gym-timer.netlify.app/" }
+      { "name": "Visualizar", "url": "https://fran-gym-timer.netlify.app/" }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/gym-timer"
       }
     ],
@@ -319,13 +323,13 @@
     "fileName": "skywind.png",
     "alt": "img-skywind",
     "projectType": "Framework",
-    "description": "Skywind makes it easy to create web pages with Server Side Rendering and Javascript. Its simplicity and low dependencies allow it to be run on any node server. Skywind allows you to granulate your pages into small components that can be reused anywhere on your website.It has a very intuitive, powerful and easy to learn routing system, it also allows you to create APIs using node's HTTP module.",
+    "description": "Skywind facilita la creación de páginas web con Server Side Rendering y Javascript. Su simplicidad y bajas dependencias permiten ejecutarlo en cualquier servidor de node. Skywind le permite granular sus páginas en pequeños componentes que pueden reutilizarse en cualquier lugar de su sitio web. Tiene un sistema de enrutamiento muy intuitivo, potente y fácil de aprender, también le permite crear API utilizando el módulo HTTP de node.",
     "preview": [
-      { "name": "Preview", "url": "https://www.npmjs.com/package/skywind" }
+      { "name": "Visualizar", "url": "https://www.npmjs.com/package/skywind" }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/skywind"
       }
     ],
@@ -338,16 +342,16 @@
     "fileName": "snakegame.png",
     "alt": "img-snakegame",
     "projectType": "Web",
-    "description": "Classic snake game programmed using Object Oriented Programming, Typescript and pure CSS for a more Vanilla experience.",
+    "description": "Clásico juego de serpientes programado con programación orientada a objetos, Typescript y CSS puro para una experiencia más básica.",
     "preview": [
       {
-        "name": "Preview",
+        "name": "Visualizar",
         "url": "https://fran-snake-game.netlify.app/"
       }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/snake-game"
       }
     ],
@@ -360,11 +364,11 @@
     "fileName": "ecommerceapp.png",
     "alt": "img-ecommerceapp",
     "projectType": "Mobile",
-    "description": "Fully functional E-commerce app using Typescript and Firebase. Minimalist design and easy to use. Perfect and ready to use for your online store.",
+    "description": "Aplicación de comercio electrónico completamente funcional que utiliza Typecript y Firebase. Diseño minimalista y fácil de usar. Perfecto y listo para usar en tu tienda online.",
     "preview": [],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/e-commerce-app"
       }
     ],
@@ -382,13 +386,16 @@
     "fileName": "modulekill.png",
     "alt": "img-modulekill",
     "projectType": "Terminal",
-    "description": "Free up your space by deleting the node_modules directories. With ModuleKill you can delete only the node_modules folders of the projects you want without deleting the project itself.",
+    "description": "Libere su espacio eliminando los directorios node_modules. Con ModuleKill puedes eliminar solo las carpetas node_modules de los proyectos que desees sin eliminar el proyecto en sí.",
     "preview": [
-      { "name": "Preview", "url": "https://www.npmjs.com/package/modulekill" }
+      {
+        "name": "Visualizar",
+        "url": "https://www.npmjs.com/package/modulekill"
+      }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/modulekill"
       }
     ],
@@ -401,13 +408,13 @@
     "fileName": "wordcounter.png",
     "alt": "img-wordcounter",
     "projectType": "Web",
-    "description": "Word, character, paragraph and sentence counter for any text.",
+    "description": "Contador de palabras, caracteres, párrafos y oraciones para cualquier texto.",
     "preview": [
-      { "name": "Preview", "url": "https://fran-word-counter.vercel.app/" }
+      { "name": "Visualizar", "url": "https://fran-word-counter.vercel.app/" }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/word-counter"
       }
     ],
@@ -420,16 +427,16 @@
     "fileName": "crudphp.png",
     "alt": "img-crudphp",
     "projectType": "Web",
-    "description": "Simple crud with php on a task liste counter for any text.",
+    "description": "CRUD simple con php",
     "preview": [
       {
-        "name": "Preview",
+        "name": "Visualizar",
         "url": "https://francescoalteriog.000webhostapp.com/crud-php/"
       }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/crud-php"
       }
     ],
@@ -442,16 +449,16 @@
     "fileName": "englishworld.png",
     "alt": "img-englishworld",
     "projectType": "Web",
-    "description": "Do you want to learn and practice your translation of English words? English World is a simple word translation game in rounds that improves your language learning.",
+    "description": "¿Quieres aprender y practicar tu traducción de palabras en inglés? English World es un sencillo juego de traducción de palabras en rondas que mejora tu aprendizaje de idiomas.",
     "preview": [
       {
-        "name": "Preview",
+        "name": "Visualizar",
         "url": "http://englishworld.kesug.com/index.php"
       }
     ],
     "repository": [
       {
-        "name": "Repository",
+        "name": "Repositorio",
         "url": "https://github.com/francescoalterio/english-world"
       }
     ],
