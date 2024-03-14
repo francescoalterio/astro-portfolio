@@ -26,6 +26,7 @@ export interface Technology {
 
 export interface TechnologyWithType extends Technology {
   type: technologyType
+  spanishType: technologyTypeSpanish
 }
 
 export type projectFilter =
@@ -52,6 +53,8 @@ export type technologyType =
   | 'styling-and-structuring'
   | 'testing'
   | 'databases'
+
+export type technologyTypeSpanish = 'lenguajes' | 'frameworks-y-librerias' | 'estilos-y-estructurado' | 'testing' | 'bases-de-datos'
 
 export interface Course {
   title: string

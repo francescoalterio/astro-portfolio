@@ -40,19 +40,20 @@ const allSkills = getAllSkillsInOneArray();
         <div class="flex">
           <RolPill>
             <Icon name="mdi:xml" class="w-4" />
-            Frontend Developer
+            Desarrollador Fullstack
           </RolPill>
         </div>
         <h1
           class="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold"
         >
-          Hi, my name is Francesco Alterio
+          Hola, mi nombre es Francesco Alterio.
         </h1>
         <div class="h-2 w-16 bg-primaryLight"></div>
         <p
           class="text-gray-300 text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl"
         >
-          I am a Fullstack developer currently based in Cumaná, Venezuela.
+          Soy un desarrollador Fullstack actualmente radicado en Cumaná,
+          Venezuela.
         </p>
         <div class="flex gap-2"></div>
       </div>
@@ -72,20 +73,20 @@ const allSkills = getAllSkillsInOneArray();
     >
       <div class="flex flex-col flex-1 gap-2">
         <PresentationCard
-          title="Teamwork"
-          description="Teamwork is essential for greater business and personal achievement."
+          title="Trabajo en equipo"
+          description="El trabajo en equipo es esencial para un mayor logro empresarial y personal."
           secondDescription="Francesco Alterio"
           icon="ri:team-fill"
         />
         <PresentationCard
-          title="Love for learning"
-          description="The love of learning is what makes a true programmer."
+          title="Amor por aprender"
+          description="El amor por aprender es lo que hace a un verdadero programador."
           secondDescription="Francesco Alterio"
           icon="ic:outline-menu-book"
         />
         <PresentationCard
-          title="Adaptability"
-          description="Adapting to new environments is easy if you love what you do."
+          title="Adaptabilidad"
+          description="Adaptarse a nuevos entornos es fácil si amas lo que haces."
           secondDescription="Francesco Alterio"
           icon="ic:outline-work"
         />
@@ -93,24 +94,24 @@ const allSkills = getAllSkillsInOneArray();
       <div
         class="flex-1 flex flex-col text-center lg:text-left gap-4 lg:gap-8 xl:gap-10"
       >
-        <p class="text-xs text-gray-400">Introduce</p>
+        <p class="text-xs text-gray-400">Introducción</p>
         <h2 class="lg:text-5xl xl:text-6xl font-semibold">
-          Hi, welcome to my portfolio
+          Hola, bienvenido a mi portafolio.
         </h2>
-        <p class="text-2xl italic">Every dream begins with a story</p>
+        <p class="text-2xl italic">Cada sueño comienza con una historia.</p>
         <div class="flex flex-col gap-2">
           <p class="text-gray-400 text-sm leading-7">
-            My name is Francesco Alterio and I'm a Fullstack developer. I
-            started in the Web programming world at the beginning of 2021 and
-            since then I have created more than 20 projects with different
-            technologies. When I discovered software development I found my
-            great passion, a world full of wonderful possibilities.
+            Mi nombre es Francesco Alterio y soy desarrollador Fullstack.
+            Comencé en el mundo de la programación Web a principios de 2021 y
+            desde entonces he creado más de 20 proyectos con diferentes
+            tecnologías. Cuando descubrí el desarrollo de software encontré mi
+            gran pasión, un mundo lleno de maravillosas posibilidades.
           </p>
           <p class="text-gray-400 text-sm leading-7">
-            My first encounter with programming was in 2020 when I decided to
-            get into video game programming as a hobby, a year later I wanted to
-            take software development professionally, choosing web programming
-            as my starting point.
+            Mi primer encuentro con la programación fue en el año 2020 cuando
+            decidí incursionar en la programación de videojuegos como hobby, un
+            año después quise llevar el desarrollo de software de manera
+            profesional, eligiendo la programación web como punto de partida.
           </p>
         </div>
       </div>
@@ -125,46 +126,48 @@ const allSkills = getAllSkillsInOneArray();
       >
         <PersonalDataCard icon="mdi:github">
           <p class="sm:text-2xl md:text-lg lg:text-2xl font-semibold">
-            More than {(<NumberOfRepos client:load />)} repos
+            Más de {(<NumberOfRepos client:load />)} repos
           </p>
           <a
             href="https://github.com/francescoalterio"
             target="_blank"
-            class="text-xs sm:text-sm underline text-gray-400">Go to github</a
+            class="text-xs sm:text-sm underline text-gray-400">Ir a github</a
           >
         </PersonalDataCard>
         <PersonalDataCard primary icon="mdi:code-braces">
           <p class="sm:text-2xl md:text-lg lg:text-2xl font-semibold">
-            More than <span>{projects.length}</span> projects
+            Más de <span>{projects.length}</span> proyectos
           </p>
           <a
             href="/projects/all"
-            class="text-xs sm:text-sm underline font-semibold">See all</a
+            class="text-xs sm:text-sm underline font-semibold">Ver Todos</a
           >
         </PersonalDataCard>
         <PersonalDataCard icon="mdi:youtube">
           <p class="sm:text-2xl md:text-lg lg:text-2xl font-semibold">
-            Youtube channel
+            Canal de Youtube
           </p>
           <a
             href="https://www.youtube.com/@francescox5989/videos"
             target="_blank"
-            class="text-xs sm:text-sm underline text-gray-400">Go to youtube</a
+            class="text-xs sm:text-sm underline text-gray-400">Ir a youtube</a
           >
         </PersonalDataCard>
       </div>
       <div class="flex justify-center md:justify-between items-center">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl">My Favorite Projects</h2>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl">
+          Mis Proyectos Favoritos
+        </h2>
         <div class="hidden md:block">
           <PrimaryAnchor bgColor="primaryLight" href="/projects/all">
-            See All
+            Ver Todos
           </PrimaryAnchor>
         </div>
       </div>
       <ProjectList projectFilter="isFavorite" />
       <div class="w-full flex">
         <PrimaryAnchor bgColor={"customGray-100"} href="/projects/all">
-          See all projects
+          Ver todos los proyectos
         </PrimaryAnchor>
       </div>
     </Section>
@@ -173,23 +176,26 @@ const allSkills = getAllSkillsInOneArray();
       className="py-10 flex flex-col gap-10 items-center"
       id="skills"
     >
-      <h2 class="text-2xl sm:text-3xl md:text-4xl my-5">Skills</h2>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl my-5">Habilidades</h2>
       <div class="flex flex-wrap gap-10 justify-center">
         {
-          allSkills.map(({ name, fileName, documentationURL, type }) => (
-            <Skill
-              name={name}
-              fileName={fileName}
-              documentationURL={documentationURL}
-              type={type}
-            />
-          ))
+          allSkills.map(
+            ({ name, fileName, documentationURL, type, spanishType }) => (
+              <Skill
+                name={name}
+                fileName={fileName}
+                documentationURL={documentationURL}
+                type={type}
+                spanishType={spanishType}
+              />
+            )
+          )
         }
       </div>
     </Section>
     <Section background="light" className=" flex flex-col items-center py-10">
       <h2 class="text-2xl sm:text-3xl md:text-4xl mt-5 mb-16">
-        Official Online Courses
+        Certificaciones Oficiales
       </h2>
       <CourseList />
     </Section>
