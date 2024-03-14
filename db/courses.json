@@ -1,74 +1,124 @@
 [
   {
     "certificationUrl": "https://www.udemy.com/certificate/UC-9a9b4e29-6d9a-4302-b8c6-110244a76a2a/",
-    "id": 1,
     "logo": "udemy.png",
     "platform": "Udemy",
-    "porcentage": 100,
     "title": "Modern JavaScript Definitive Guide +15 Projects",
     "url": "https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/"
   },
   {
     "certificationUrl": "https://learn.microsoft.com/en-us/training/achievements/learn.language.build-javascript-applications-typescript.trophy?username=FrancescoAlterio-0899&sharingId=4DBE74A1982691AF",
-    "id": 2,
     "logo": "build-javascript-applications-typescript.svg",
     "platform": "Microsoft",
-    "porcentage": 100,
-    "title": "Build JavaScript applications using TypeScript",
-    "url": "https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/"
+    "title": "Build JavaScript applications using TypeScript"
   },
   {
     "certificationUrl": "https://learn.microsoft.com/en-us/training/achievements/learn.beginner-python.trophy?username=FrancescoAlterio-0899&sharingId=4DBE74A1982691AF",
-    "id": 3,
     "logo": "python-for-beginners.svg",
     "platform": "Microsoft",
-    "porcentage": 100,
-    "title": "Python for beginners",
-    "url": "https://learn.microsoft.com/en-us/training/paths/beginner-python/"
+    "title": "Python for beginners"
   },
   {
     "certificationUrl": "https://learn.microsoft.com/en-us/training/achievements/learn.languages.python-apps.trophy?username=FrancescoAlterio-0899&sharingId=4DBE74A1982691AF",
-    "id": 4,
     "logo": "build-real-world-applications-with-python.svg",
     "platform": "Microsoft",
-    "porcentage": 100,
-    "title": "Build real world applications with Python",
-    "url": "https://learn.microsoft.com/en-us/training/paths/python-language/"
+    "title": "Build real world applications with Python"
   },
   {
     "certificationUrl": "https://www.mastermind.ac/certificates/1fefd6d464ef420f8fe8e2fa3fd9023c",
-    "id": 5,
     "logo": "mastermind.png",
     "platform": "Mastermind",
-    "porcentage": 100,
-    "title": "Programming fundamentals with Node.js",
-    "url": "https://www.mastermind.ac/courses/fundamentos-de-programacion-con-javascript"
+    "title": "Programming fundamentals with Node.js"
   },
   {
     "certificationUrl": "https://www.mastermind.ac/certificates/b765ac1db60d45ee9712621e75acf43f",
-    "id": 6,
     "logo": "mastermind.png",
     "platform": "Mastermind",
-    "porcentage": 100,
-    "title": "Everything about the web with PHP",
-    "url": "https://www.mastermind.ac/courses/php-y-la-web-desde-cero"
+    "title": "Everything about the web with PHP"
   },
   {
     "certificationUrl": "https://www.mastermind.ac/certificates/7438cce3054f47809e0cedc9029bcc2b",
-    "id": 7,
     "logo": "mastermind.png",
     "platform": "Mastermind",
-    "porcentage": 100,
-    "title": "Creating an API with Node.js",
-    "url": "https://www.mastermind.ac/courses/desde-0-hasta-maestro-creando-el-backend-con-la-pokeapi"
+    "title": "Creating an API with Node.js"
   },
   {
     "certificationUrl": "https://www.mastermind.ac/certificates/52c10dcf0b5c4fe69f9fbb769f58b641",
-    "id": 8,
     "logo": "mastermind.png",
     "platform": "Mastermind",
-    "porcentage": 100,
-    "title": "Linux: from Noob to Pro in 9 hours!",
-    "url": "https://www.mastermind.ac/courses/linux-de-noob-a-pro-en-nueve-horas"
+    "title": "Linux: from Noob to Pro in 9 hours!"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/3996-taller-elementos-trabajo/diploma/detalle/",
+    "logo": "ingles-trabajo.webp",
+    "platform": "Platzi",
+    "title": "Taller de Inglés Básico sobre Elementos de Trabajo"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/2005-taller-descripciones-personales/diploma/detalle/",
+    "logo": "ingles-personal.webp",
+    "platform": "Platzi",
+    "title": "Taller de Inglés Básico para Descripciones Personales"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/3093-ingles-basico-principiantes/diploma/detalle/",
+    "logo": "ingles-principiante-a1.webp",
+    "platform": "Platzi",
+    "title": "Curso de Inglés Básico A1 para Principiantes"
+  },
+  {
+    "certificationUrl": "Curso de Pensamiento Lógico: Algoritmos y Diagramas de Flujo",
+    "logo": "pensamiento-algoritmos.webp",
+    "platform": "Platzi",
+    "title": "Curso de Pensamiento Lógico: Algoritmos y Diagramas de Flujo"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/3222-pensamiento-logico-estructuras/diploma/detalle/",
+    "logo": "pensamiento-estructuras.webp",
+    "platform": "Platzi",
+    "title": "Curso de Pensamiento Lógico: Manejo de Datos, Estructuras y Funciones"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/2467-frontend-developer/diploma/detalle/",
+    "logo": "frontend-developer.webp",
+    "platform": "Platzi",
+    "title": "Curso de Frontend Developer"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/2477-frontend-developer-practico/diploma/detalle/",
+    "logo": "practico-frontend-developer.webp",
+    "platform": "Platzi",
+    "title": "Curso Práctico de Frontend Developer"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/2008-html-css/diploma/detalle/",
+    "logo": "definitivo-html-css.webp",
+    "platform": "Platzi",
+    "title": "Curso Definitivo de HTML y CSS"
+  },
+
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/8617-javascript-fundamentos/diploma/detalle/",
+    "logo": "javascript-desde-cero.webp",
+    "platform": "Platzi",
+    "title": "Curso de JavaScript Desde Cero"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/2332-javascript-poo/diploma/detalle/",
+    "logo": "poo-javascript-basico.webp",
+    "platform": "Platzi",
+    "title": "Curso Básico de Programación Orientada a Objetos con JavaScript"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/3086-csharp/diploma/detalle/",
+    "logo": "basico-csharp.webp",
+    "platform": "Platzi",
+    "title": "Curso Básico de Programación con C#"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/8036-c-sharp-poo/diploma/detalle/",
+    "logo": "poo-csharp.webp",
+    "platform": "Platzi",
+    "title": "Curso de Programación Orientada a Objetos con C#"
   }
 ]
