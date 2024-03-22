@@ -6,14 +6,16 @@ import CourseCard from "./CourseCard.astro";
 
 <div class="flex justify-evenly w-full flex-wrap gap-3">
   {
-    courses.map(({ title, logo, certificationUrl, platform }: Course) => (
-      <CourseCard
-        title={title}
-        logo={logo}
-        certificationUrl={certificationUrl}
-        platform={platform}
-      />
-    ))
+    courses
+      .toReversed()
+      .map(({ title, logo, certificationUrl, platform }: Course) => (
+        <CourseCard
+          title={title}
+          logo={logo}
+          certificationUrl={certificationUrl}
+          platform={platform}
+        />
+      ))
   }
   <div class="min-w-[19rem] sm:w-[25rem] md:w-[35rem] flex-1 h-0 px-3 sm:px-5">
   </div>

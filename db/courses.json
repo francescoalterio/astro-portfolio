@@ -79,6 +79,18 @@
     "title": "Curso de Pensamiento Lógico: Manejo de Datos, Estructuras y Funciones"
   },
   {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/3086-csharp/diploma/detalle/",
+    "logo": "basico-csharp.webp",
+    "platform": "Platzi",
+    "title": "Curso Básico de Programación con C#"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/8036-c-sharp-poo/diploma/detalle/",
+    "logo": "poo-csharp.webp",
+    "platform": "Platzi",
+    "title": "Curso de Programación Orientada a Objetos con C#"
+  },
+  {
     "certificationUrl": "https://platzi.com/p/francescox4/curso/2467-frontend-developer/diploma/detalle/",
     "logo": "frontend-developer.webp",
     "platform": "Platzi",
@@ -108,17 +120,5 @@
     "logo": "poo-javascript-basico.webp",
     "platform": "Platzi",
     "title": "Curso Básico de Programación Orientada a Objetos con JavaScript"
-  },
-  {
-    "certificationUrl": "https://platzi.com/p/francescox4/curso/3086-csharp/diploma/detalle/",
-    "logo": "basico-csharp.webp",
-    "platform": "Platzi",
-    "title": "Curso Básico de Programación con C#"
-  },
-  {
-    "certificationUrl": "https://platzi.com/p/francescox4/curso/8036-c-sharp-poo/diploma/detalle/",
-    "logo": "poo-csharp.webp",
-    "platform": "Platzi",
-    "title": "Curso de Programación Orientada a Objetos con C#"
   }
 ]
