@@ -20,7 +20,7 @@ const filteredProjects =
 
 <div class="flex flex-wrap justify-between gap-x-12 mt-10">
   {
-    filteredProjects.reverse().map((project, index) => {
+    filteredProjects.toReversed().map((project, index) => {
       const isEven = index % 2 === 0;
       return (
         <ProjectCard
