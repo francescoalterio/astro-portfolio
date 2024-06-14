@@ -15,6 +15,7 @@ import Section from "../components/Section.astro";
 import HomeNav from "../components/HomeNav.astro";
 import Footer from "../components/Footer.astro";
 import CourseList from "../components/CourseList.astro";
+import RoundedAnchor from "../components/RoundedAnchor.astro";
 
 const allSkills = getAllSkillsInOneArray();
 ---
@@ -37,12 +38,6 @@ const allSkills = getAllSkillsInOneArray();
       <div
         class="flex flex-col gap-5 flex-1 items-center text-center lg:items-start lg:text-start"
       >
-        <div class="flex">
-          <RolPill>
-            <Icon name="mdi:xml" class="w-4" />
-            Desarrollador Fullstack
-          </RolPill>
-        </div>
         <h1
           class="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold"
         >
@@ -55,7 +50,17 @@ const allSkills = getAllSkillsInOneArray();
           Soy un desarrollador Fullstack actualmente radicado en Cumaná,
           Venezuela.
         </p>
-        <div class="flex gap-2"></div>
+        <div class="flex gap-3">
+          <RoundedAnchor href="">
+            <Icon name="mdi:github" class="w-7 h-7 inline-block text-white" />
+          </RoundedAncho>
+          <RoundedAnchor href="">
+            <Icon name="mdi:linkedin" class="w-7 h-7 inline-block text-white" />
+          </RoundedAncho>
+          <RoundedAnchor href="">
+            <Icon name="mdi:twitter" class="w-7 h-7 inline-block text-white" />
+          </RoundedAncho>
+        </div>
       </div>
       <img
         src="/assets/presentation.webp"
