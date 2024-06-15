@@ -4,6 +4,8 @@ import { Image } from "astro:assets";
 import RolPill from "./RolPill.astro";
 import projectTypes from "../../db/projectTypes.json";
 import BorderedAnchor from "./BorderedAnchor.astro";
+import {capitalizeText} from "../utils/capitalizeText";
+import {textToKebabCase} from "../utils/textToKebabCase";
 
 interface Props {
   id: number;
@@ -55,9 +57,9 @@ const shortDescription = description.split(" ").slice(0, 25).join(" ");
     </p>
     <div class="flex w-full justify-between">
       <h4 class="text-2xl font-semibold">{name}</h4>
-      <RolPill bgColor={projectTypes[projectType.toLowerCase()].color}>
-        <Icon name={projectTypes[projectType.toLowerCase()].icon} class="w-5" />
-        {projectType}
+      <RolPill bgColor={projectTypes[projectType.toLowerCase()]?.color}>
+        <Icon name={projectTypes[projectType.toLowerCase()]?.icon} class="w-5" />
+        {capitalizeText(projectTypes[projectType.toLowerCase()]?.es)}
       </RolPill>
     </div>
 
@@ -77,6 +79,6 @@ const shortDescription = description.split(" ").slice(0, 25).join(" ");
         )
       }
     </div>
-    <BorderedAnchor href={`/projects/${id}`} isFull>Leer Más</BorderedAnchor>
+    <BorderedAnchor href={`/projects/${textToKebabCase(name)}`} isFull>Leer Más</BorderedAnchor>
   </div>
 </div>

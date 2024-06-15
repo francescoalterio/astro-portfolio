@@ -1,10 +1,16 @@
 ---
+interface Props {
+  HeaderClassName?: string;
+  NavClassName?: string;
+}
+
+const { HeaderClassName, NavClassName } = Astro.props;
 ---
 
-<nav class="bg-customGray-200">
-  <div
-    class="flex flex-1 justify-between px-6 pt-6 sm:px-12 sm:pt-10 md:px-16 max-w-screen-xl mx-auto"
+<header class={`bg-customGray-200 ${HeaderClassName}`}>
+  <nav
+    class={`flex flex-1 justify-between px-6 pt-6 sm:px-12 sm:pt-10 md:px-16 max-w-screen-xl mx-auto ${NavClassName}`}
   >
     <slot />
-  </div>
-</nav>
+  </nav>
+</header>

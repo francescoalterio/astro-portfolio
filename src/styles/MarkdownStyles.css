@@ -1,0 +1,42 @@
+.markdown h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+.markdown h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+.markdown p {
+  margin: 1em 0;
+}
+
+.markdown a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+.markdown code {
+  font-family: monospace;
+  margin: 0;
+  border-radius: 6px;
+}
+
+.markdown pre {
+  font-family: monospace;
+  background-color: #252734;
+  padding: 1em;
+  margin: 1em 0;
+  overflow: auto;
+  border-radius: 6px;
+}

@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 
-const { HeadData } = Astro.props;
+const { HeadData, className } = Astro.props;
 const { title, description, ogTitle, ogDescription, ogURL, ogImage } = HeadData;
 ---
 
@@ -28,7 +28,7 @@ const { title, description, ogTitle, ogDescription, ogURL, ogImage } = HeadData;
     />
     <link rel="icon" href="/assets/favicon-yo.ico" />
   </head>
-  <body class="text-white bg-customGray-200 min-h-screen">
+  <body class=`text-white bg-customGray-200 min-h-screen ${className}`>
     <slot />
   </body>
 </html>
