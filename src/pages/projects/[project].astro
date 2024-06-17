@@ -13,6 +13,8 @@ import LogoName from "../../components/LogoName.astro";
 import { capitalizeText } from "../../utils/capitalizeText";
 import { textToKebabCase } from "../../utils/textToKebabCase";
 import ReadmeOfRepo from "../../components/ReadmeOfRepo.tsx";
+import { getAllSkillsInOneArray } from "../../utils/getAllSkillsInOneArray";
+import Skill from "../../components/Skill.astro";
 
 export function getStaticPaths() {
   const toReturn = projects.map(({ name }) => {
@@ -38,6 +40,11 @@ const {
   repository,
   technologies,
 } = projects.find((x) => projectName === textToKebabCase(x.name)) as Project;
+
+const allSkills = getAllSkillsInOneArray();
+const projectSkills = allSkills.filter(({ name }) =>
+  technologies.includes(name)
+);
 ---
 
 <BaseLayout
@@ -51,78 +58,93 @@ const {
   }}
   className=" bg-customGray-300"
 >
-  <NavLayout HeaderClassName="bg-customGray-300">
+  <NavLayout HeaderClassName="bg-customGray-200">
     <LogoName />
   </NavLayout>
-  <main
-    class="px-6 sm:px-12 md:px-16 flex flex-col max-w-screen-xl mx-auto mt-10"
-  >
-    <div class="flex relative flex-col lg:flex-row gap-4 lg:gap-2">
-      <picture class="flex-1 bg-customGray-200 p-4 rounded-lg">
+  <!-- <ReadmeOfRepo client:load repositoryURL={repository.url} /> -->
+  <main class="">
+    <Section
+      background="light"
+      className="flex flex-col lg:flex-row items-center gap-10 py-10"
+    >
+      <div class="flex flex-col items-start flex-1 gap-4">
+        <RolPill bgColor={projectTypes[projectType.toLowerCase()].color}>
+          <Icon
+            name={projectTypes[projectType.toLowerCase()].icon}
+            class="w-5"
+          />
+          {capitalizeText(projectTypes[projectType.toLowerCase()].es)}
+        </RolPill>
+        <h1 class="text-5xl font-bold">{name}</h1>
+        <p class="text-gray-400 text-sm">{description}</p>
+        <div class="flex items-center gap-2">
+          {
+            preview && (
+              <BorderedAnchor href={preview.url}>Ver demo</BorderedAnchor>
+            )
+          }
+          <a
+            class="rounded-md text-white bg-zinc-800 px-4 py-2 flex items-center border border-zinc-800"
+            href={repository.url}
+          >
+            <Icon name="mdi:github" class="w-6 mr-2" />
+            Ver repositorio
+          </a>
+        </div>
+      </div>
+      <picture class="flex-1 rounded-lg">
         <Image
           src={`/assets/projects/${fileName}`}
           width={1920}
           height={1080}
           sizes="1920px"
           alt={alt}
-          class="lg:sticky lg:top-6"
+          class="lg:sticky lg:top-6 rounded-lg object-cover w-full h-full"
         />
       </picture>
-      <section
-        class="flex flex-col justify-between text-white bg-customGray-200 flex-1 p-4 rounded-lg"
-      >
-        <div class="flex flex-col gap-4">
-          <h1 class="text-4xl sm:text-4xl text-primaryLight font-semibold">
-            {name}
-          </h1>
-          <div class="flex">
-            <RolPill bgColor={projectTypes[projectType.toLowerCase()].color}>
-              <Icon
-                name={projectTypes[projectType.toLowerCase()].icon}
-                class="w-5"
-              />
-              {capitalizeText(projectTypes[projectType.toLowerCase()].es)}
-            </RolPill>
-          </div>
-
-          <div class="flex gap-2 w-full flex-wrap">
-            {
-              technologies.map((x) => (
-                <div class=" bg-customGray-100 whitespace-nowrap px-3 py-1 rounded-sm text-xs">
-                  {x}
-                </div>
-              ))
-            }
-          </div>
-        </div>
-        <div class="flex gap-2 flex-col mt-4">
-          <BorderedAnchor href={preview.url} isFull blank>
-            {preview.name}
-          </BorderedAnchor>
-          <a
-            href={repository.url}
-            target="_blank"
-            class="px-4 py-2 text-white flex rounded-md border border-white items-center gap-2 transition-all hover:bg-opacity-10 hover:bg-white w-full justify-center"
-          >
-            <Icon name="mdi:github" class="w-7" />
-            {repository.name}
-          </a>
-        </div>
-      </section>
-    </div>
-    <div
-      class="flex relative flex-col-reverse lg:flex-row gap-4 lg:gap-2 mt-4 lg:mt-2"
+    </Section>
+    <Section
+      background="dark"
+      className="py-10 flex flex-col gap-10 items-center"
+      id="skills"
     >
-      <section class="flex-1 bg-customGray-200 p-2 rounded-lg">
-        <h2 class="text-2xl">README</h2>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl my-5 font-bold">
+        Tecnologias Utilizadas
+      </h2>
+      <div class="flex flex-wrap gap-10 justify-center">
+        {
+          projectSkills.map(
+            ({ name, fileName, documentationURL, type, spanishType }) => (
+              <Skill
+                name={name}
+                fileName={fileName}
+                documentationURL={documentationURL}
+                type={type}
+                spanishType={spanishType}
+              />
+            )
+          )
+        }
+      </div>
+    </Section>
+    <Section
+      background="light"
+      className="flex flex-col lg:flex-row py-16 gap-10"
+    >
+      <div class="flex-1 flex flex-col gap-4">
+        <h2 class="text-4xl font-bold">README del Proyecto</h2>
+        <p class="text-gray-400 text-sm">
+          Explore el archivo README del proyecto, que proporciona información
+          detallada sobre las funciones, el uso y las instrucciones de
+          configuración. Aprenda cómo integrar rápidamente estos componentes de
+          alta calidad en su aplicación y descubra las amplias opciones de
+          personalización disponibles para garantizar una adaptación perfecta a
+          su marca y sistema de diseño.
+        </p>
+      </div>
+      <div class="flex-1 bg-customGray-300 p-6 rounded-lg">
         <ReadmeOfRepo client:load repositoryURL={repository.url} />
-      </section>
-      <section
-        class="flex-1 bg-customGray-200 p-2 rounded-lg lg:min-h-56 flex flex-col gap-4"
-      >
-        <h2 class="text-2xl">Descripción</h2>
-        <p class="text-gray-400 text-sm">{description}</p>
-      </section>
-    </div>
+      </div>
+    </Section>
   </main>
 </BaseLayout>

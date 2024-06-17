@@ -9,5 +9,5 @@
     "color": "#ff298d"
   },
   "testing": { "icon": "carbon:chemistry", "color": "#ff3e29" },
-  "databases": { "icon": "mdi:database", "color": "#ffc25c" }
+  "databases": { "icon": "mdi:database", "color": "#ff8c00" }
 }

@@ -13,7 +13,7 @@
       "name": "Repositorio",
       "url": "https://github.com/francescoalterio/react-cryptocurrencylist"
     },
-    "technologies": ["Javascript", "React.js", "CSS"],
+    "technologies": ["Javascript", "React", "CSS"],
     "isFavorite": false
   },
   {
@@ -30,7 +30,7 @@
       "name": "Repositorio",
       "url": "https://github.com/francescoalterio/money-converter"
     },
-    "technologies": ["Javascript", "React.js", "CSS"],
+    "technologies": ["Javascript", "React", "CSS"],
     "isFavorite": false
   },
   {
@@ -47,7 +47,7 @@
       "name": "Repositorio",
       "url": "https://github.com/francescoalterio/quiz-app"
     },
-    "technologies": ["Javascript", "React.js", "CSS"],
+    "technologies": ["Javascript", "React", "CSS"],
     "isFavorite": false
   },
   {
@@ -64,7 +64,7 @@
       "name": "Repositorio",
       "url": "https://github.com/francescoalterio/pomodoro-timer"
     },
-    "technologies": ["Javascript", "React.js", "CSS"],
+    "technologies": ["Javascript", "React", "CSS"],
     "isFavorite": false
   },
   {
@@ -81,7 +81,7 @@
       "name": "Repositorio",
       "url": "https://github.com/francescoalterio/react-API-Joke"
     },
-    "technologies": ["Javascript", "React.js", "CSS"],
+    "technologies": ["Javascript", "React", "CSS"],
     "isFavorite": false
   },
   {
@@ -98,7 +98,7 @@
       "name": "Repositorio",
       "url": "https://github.com/francescoalterio/react-study-panel"
     },
-    "technologies": ["Javascript", "React.js", "Tailwindcss", "Firebase"],
+    "technologies": ["Javascript", "React", "Tailwindcss", "Firebase"],
 
     "isFavorite": true
   },
@@ -221,7 +221,7 @@
       "name": "Repositorio",
       "url": "https://github.com/francescoalterio/fran-editor"
     },
-    "technologies": ["Javascript", "React.js", "CSS"],
+    "technologies": ["Javascript", "React", "CSS"],
     "isFavorite": false
   },
   {
@@ -238,7 +238,7 @@
       "name": "Repositorio",
       "url": "https://github.com/francescoalterio/gym-timer"
     },
-    "technologies": ["Javascript", "React.js", "Tailwindcss"],
+    "technologies": ["Javascript", "React", "Tailwindcss"],
     "isFavorite": true
   },
   {

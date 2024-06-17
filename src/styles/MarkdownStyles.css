@@ -15,6 +15,9 @@
 
 .markdown p {
   margin: 1em 0;
+  word-wrap: break-word; /* Permite que las palabras largas se rompan y pasen a la siguiente línea */
+  overflow-wrap: break-word; /* Similar a word-wrap, pero es la versión moderna */
+  hyphens: auto; /* Añade guiones automáticamente cuando una palabra se rompe y pasa a la siguiente línea */
 }
 
 .markdown a {

@@ -77,5 +77,11 @@
   ],
 
   "testing": [],
-  "databases": []
+  "databases": [
+    {
+      "name": "Firebase",
+      "fileName": "firebase.png",
+      "documentationURL": "https://firebase.google.com/"
+    }
+  ]
 }
