@@ -4,22 +4,16 @@ import { Icon } from "astro-icon";
 interface Props {
   title: string;
   description: string;
-  secondDescription: string;
   icon: string;
 }
 
-const { title, description, secondDescription, icon } = Astro.props;
+const { title, description, icon } = Astro.props;
 ---
 
 <div
-  class="bg-customGray-200 rounded-md flex flex-col p-6 sm:p-10 lg:p-6 xl:p-10 gap-1 lg:flex-1"
+  class="flex flex-col items-center p-6 px-10 sm:p-6 lg:p-6 xl:p-10 gap-1 bg-customGray-200 rounded-md w-full h-full"
 >
-  <div class="flex flex-1 justify-between">
-    <p class="text-xl sm:text-2xl text-primaryLight">{title}</p>
-    <Icon name={icon} class="w-6 sm:w-7 text-primaryLight" />
-  </div>
-  <div class="flex flex-col justify-between gap-6 w-4/5 flex-1">
-    <p class="text-gray-300 text-xs sm:text-sm">{description}</p>
-    <p class="text-xs sm:text-sm">{secondDescription}</p>
-  </div>
+  <Icon name={icon} class="w-10 text-primaryLight" />
+  <h3 class="text-xl font-semibold">{title}</h3>
+  <p class="text-gray-400 text-sm">{description}</p>
 </div>

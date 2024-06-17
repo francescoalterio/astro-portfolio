@@ -79,51 +79,50 @@ const allSkills = getAllSkillsInOneArray();
     </section>
     <Section
       background="dark"
-      className=" pt-10 sm:pt-12 md:pt-16 lg:pt-36 flex gap-12 lg:gap-20 xl:gap-32 2xl:gap-48 pb-[28rem] sm:pb-[34rem] md:pb-56 flex-col lg:flex-row"
+      className=" pt-10 sm:pt-12 md:pt-16 flex gap-12 lg:gap-20 xl:gap-32 2xl:gap-48 pb-[28rem] sm:pb-[34rem] md:pb-56 flex-col lg:flex-row"
       id="about"
     >
-      <div class="flex flex-col flex-1 gap-2">
-        <PresentationCard
-          title="Trabajo en equipo"
-          description="El trabajo en equipo es esencial para un mayor logro empresarial y personal."
-          secondDescription="Francesco Alterio"
-          icon="ri:team-fill"
-        />
-        <PresentationCard
-          title="Amor por aprender"
-          description="El amor por aprender es lo que hace a un verdadero programador."
-          secondDescription="Francesco Alterio"
-          icon="ic:outline-menu-book"
-        />
-        <PresentationCard
-          title="Adaptabilidad"
-          description="Adaptarse a nuevos entornos es fácil si amas lo que haces."
-          secondDescription="Francesco Alterio"
-          icon="ic:outline-work"
-        />
-      </div>
       <div
-        class="flex-1 flex flex-col text-center lg:text-left gap-4 lg:gap-8 xl:gap-10"
+        class="w-full flex flex-col items-center text-center gap-4 lg:gap-8 xl:gap-10"
       >
-        <p class="text-xs text-gray-400">Introducción</p>
-        <h2 class="lg:text-5xl xl:text-6xl font-semibold">
-          Hola, bienvenido a mi portafolio.
-        </h2>
-        <p class="text-2xl italic">Cada sueño comienza con una historia.</p>
-        <div class="flex flex-col gap-2">
-          <p class="text-gray-400 text-sm leading-7">
+        <div class="max-w-2xl flex flex-col gap-3">
+          <p class="text-xs text-gray-400">Introducción</p>
+          <h2 class="lg:text-5xl xl:text-6xl font-semibold">
+            Hola, bienvenido a mi portafolio.
+          </h2>
+          <p class="text-2xl italic">Cada sueño comienza con una historia.</p>
+          <p class="text-gray-400 text-sm leading-7 text-start">
             Mi nombre es Francesco Alterio y soy desarrollador Fullstack.
             Comencé en el mundo de la programación Web a principios de 2021 y
             desde entonces he creado más de 20 proyectos con diferentes
             tecnologías. Cuando descubrí el desarrollo de software encontré mi
             gran pasión, un mundo lleno de maravillosas posibilidades.
           </p>
-          <p class="text-gray-400 text-sm leading-7">
+          <p class="text-gray-400 text-sm leading-7 text-start">
             Mi primer encuentro con la programación fue en el año 2020 cuando
             decidí incursionar en la programación de videojuegos como hobby, un
             año después quise llevar el desarrollo de software de manera
             profesional, eligiendo la programación web como punto de partida.
           </p>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center"
+        >
+          <PresentationCard
+            title="Trabajo en equipo"
+            description="En el mundo de la programación, la colaboración y la sinergia son claves para alcanzar grandes resultados. "
+            icon="mdi:people-outline"
+          />
+          <PresentationCard
+            title="Amor por aprender"
+            description="En el mundo de la tecnología, el conocimiento es un activo invaluable y en constante evolución. "
+            icon="mdi:lightbulb-outline"
+          />
+          <PresentationCard
+            title="Innovacion"
+            description="En el competitivo mundo de la programación, la innovación es el motor que impulsa el progreso y marca la diferencia. "
+            icon="mdi:rocket-launch-outline"
+          />
         </div>
       </div>
     </Section>
