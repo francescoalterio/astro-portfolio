@@ -11,21 +11,12 @@ const { title, description, ogTitle, ogDescription, ogURL, ogImage } = HeadData;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
 
-    <title>Francesco Alterio | Portafolio</title>
-    <meta
-      name="description"
-      content="Todos los proyectos y habilidades de Francesco Alterio | Portafolio"
-    />
-    <meta property="og:title" content="Francesco Alterio | Portafolio" />
-    <meta
-      property="og:description"
-      content="Todos los proyectos y habilidades de Francesco Alterio"
-    />
-    <meta property="og:url" content="https://francescoalterio.com/" />
-    <meta
-      property="og:image"
-      content="https://francescoalterio.com/presentation.png"
-    />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:url" content={ogURL} />
+    <meta property="og:image" content={ogImage} />
     <link rel="icon" href="/assets/favicon-yo.ico" />
   </head>
   <body class=`text-white bg-customGray-200 min-h-screen ${className}`>
