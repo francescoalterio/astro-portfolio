@@ -1,7 +1,5 @@
 ---
 import { Icon } from "astro-icon";
-import ProjectList from "../components/ProjectList.astro";
-import RolPill from "../components/RolPill.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import projects from "../../db/projects.json";
 
@@ -16,6 +14,7 @@ import HomeNav from "../components/HomeNav.astro";
 import Footer from "../components/Footer.astro";
 import CourseList from "../components/CourseList.astro";
 import RoundedAnchor from "../components/RoundedAnchor.astro";
+import ProjectCard from "../components/ProjectCard.tsx";
 
 const allSkills = getAllSkillsInOneArray();
 ---
@@ -31,7 +30,7 @@ const allSkills = getAllSkillsInOneArray();
   }}
 >
   <HomeNav />
-  
+
   <main class="">
     <section class="backgroundPer">
       <div
@@ -55,13 +54,19 @@ const allSkills = getAllSkillsInOneArray();
           <div class="flex gap-3">
             <RoundedAnchor href="">
               <Icon name="mdi:github" class="w-7 h-7 inline-block text-white" />
-            </RoundedAncho>
+            </RoundedAnchor>
             <RoundedAnchor href="">
-              <Icon name="mdi:linkedin" class="w-7 h-7 inline-block text-white" />
-            </RoundedAncho>
+              <Icon
+                name="mdi:linkedin"
+                class="w-7 h-7 inline-block text-white"
+              />
+            </RoundedAnchor>
             <RoundedAnchor href="">
-              <Icon name="mdi:twitter" class="w-7 h-7 inline-block text-white" />
-            </RoundedAncho>
+              <Icon
+                name="mdi:twitter"
+                class="w-7 h-7 inline-block text-white"
+              />
+            </RoundedAnchor>
           </div>
         </div>
         <img
@@ -144,9 +149,8 @@ const allSkills = getAllSkillsInOneArray();
           <p class="sm:text-2xl md:text-lg lg:text-2xl font-semibold">
             Más de <span>{projects.length}</span> proyectos
           </p>
-          <a
-            href="/projects/all"
-            class="text-xs sm:text-sm underline font-semibold">Ver Todos</a
+          <a href="/projects" class="text-xs sm:text-sm underline font-semibold"
+            >Ver Todos</a
           >
         </PersonalDataCard>
         <PersonalDataCard icon="mdi:youtube">
@@ -165,14 +169,42 @@ const allSkills = getAllSkillsInOneArray();
           Mis Proyectos Favoritos
         </h2>
         <div class="hidden md:block">
-          <PrimaryAnchor bgColor="customGray-100" href="/projects/all">
+          <PrimaryAnchor bgColor="customGray-100" href="/projects">
             Ver Todos
           </PrimaryAnchor>
         </div>
       </div>
-      <ProjectList projectFilter="isFavorite" />
+      <div class="flex flex-wrap justify-between gap-x-12 mt-10">
+        {
+          projects
+            .filter((x) => x.isFavorite)
+            .toReversed()
+            .map((project) => {
+              return (
+                <ProjectCard
+                  name={project.name}
+                  fileName={project.fileName}
+                  alt={project.alt}
+                  technologies={project.technologies}
+                  description={project.description}
+                  projectType={project.projectType}
+                  loading={"lazy"}
+                />
+              );
+            })
+        }
+        <div
+          class="flex relative min-w-full md:min-w-[290px] lg:min-w-[300px] xl:min-w-[300px] flex-1 justify-between flex-col"
+        >
+        </div>
+        <div
+          class="flex relative min-w-full md:min-w-[290px] lg:min-w-[300px] xl:min-w-[300px] flex-1 justify-between flex-col"
+        >
+        </div>
+      </div>
+
       <div class="w-full flex">
-        <PrimaryAnchor bgColor={"customGray-100"} href="/projects/all">
+        <PrimaryAnchor bgColor={"customGray-100"} href="/projects">
           Ver todos los proyectos
         </PrimaryAnchor>
       </div>

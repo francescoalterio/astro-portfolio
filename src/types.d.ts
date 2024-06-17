@@ -29,14 +29,6 @@ export interface TechnologyWithType extends Technology {
   spanishType: technologyTypeSpanish;
 }
 
-export type projectFilter =
-  | "isFavorite"
-  | "All"
-  | "Javascript"
-  | "Typescript"
-  | "PHP"
-  | "Python";
-
 export type projectType =
   | "Web"
   | "Mobile"

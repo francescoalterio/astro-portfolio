@@ -1,0 +1,30 @@
+---
+import ProjectList from "../../components/ProjectList.tsx";
+import Section from "../../components/Section.astro";
+import NavLayout from "../../layouts/NavLayout.astro";
+import LogoName from "../../components/LogoName.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  HeadData={{
+    title: "Francesco Alterio | Projects | Portafolio",
+    description: "Todos los proyectos de Francesco Alterio | Portafolio",
+    ogTitle: "Francesco Alterio | Projects | Portafolio",
+    ogDescription: "Todos los proyectos de Francesco Alterio",
+    ogURL: "https://francescoalterio.com/",
+    ogImage: "https://francescoalterio.tech/presentation.png",
+  }}
+>
+  <NavLayout>
+    <LogoName />
+  </NavLayout>
+  <main>
+    <Section
+      background="light"
+      className=" flex flex-col gap-16 text-white min-h-[1500px] pb-10"
+    >
+      <ProjectList client:load />
+    </Section>
+  </main>
+</BaseLayout>

@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 import { type Project } from "../../types";
 import projectTypes from "../../../db/projectTypes.json";
 import { Icon } from "astro-icon";
-import RolPill from "../../components/RolPill.astro";
+import RolPill from "../../components/RolPill.tsx";
 import BorderedAnchor from "../../components/BorderedAnchor.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import NavLayout from "../../layouts/NavLayout.astro";
@@ -69,10 +69,6 @@ const projectSkills = allSkills.filter(({ name }) =>
     >
       <div class="flex flex-col items-center lg:items-start flex-1 gap-4">
         <RolPill bgColor={projectTypes[projectType.toLowerCase()].color}>
-          <Icon
-            name={projectTypes[projectType.toLowerCase()].icon}
-            class="w-5"
-          />
           {capitalizeText(projectTypes[projectType.toLowerCase()].es)}
         </RolPill>
         <h1 class="text-center w-full lg:text-start text-5xl font-bold">
