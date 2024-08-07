@@ -82,12 +82,13 @@ const projectSkills = allSkills.filter(({ name }) =>
         >
           {
             preview && (
-              <BorderedAnchor href={preview.url}>Ver demo</BorderedAnchor>
+              <BorderedAnchor href={preview.url} blank>Ver demo</BorderedAnchor>
             )
           }
           <a
             class="rounded-md text-white bg-zinc-800 px-4 py-2 flex items-center border border-zinc-800"
             href={repository.url}
+            target="__blank"
           >
             <Icon name="mdi:github" class="w-6 mr-2" />
             Ver repositorio
