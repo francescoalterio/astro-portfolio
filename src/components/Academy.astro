@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  name: string;
+  fileName: string;
+  url: string;
+}
+
+const { name, fileName, url } = Astro.props;
+---
+
+<a
+  href={url}
+  class="flex flex-col gap-5 items-center w-56 cursor-pointer py-5 transition-all hover:bg-customGray-100 hover:rounded-md"
+  target="_blank"
+>
+  <Image
+    src={`/assets/academies/${fileName}`}
+    width={112}
+    height={112}
+    sizes="112px"
+    alt={`${name}-logo`}
+  />
+  <p class="text-lg font-semibold">
+    {name}
+  </p>
+</a>
+<style>
+  img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+</style>

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Platzi",
+    "fileName": "platzi.webp",
+    "url": "https://platzi.com/"
+  },
+  {
+    "name": "Mastermind",
+    "fileName": "mastermind.png",
+    "url": "https://mastermind.ac/"
+  },
+  {
+    "name": "Udemy",
+    "fileName": "udemy.png",
+    "url": "https://www.udemy.com/"
+  },
+  {
+    "name": "Microsoft Learn",
+    "fileName": "microsoft.png",
+    "url": "https://learn.microsoft.com/es-es/training/"
+  }
+]
