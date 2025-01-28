@@ -14,7 +14,7 @@
       "url": "https://github.com/francescoalterio/pomodoro-timer"
     },
     "technologies": ["Javascript", "React", "CSS"],
-    "isFavorite": false
+    "isFavorite": true
   },
   {
     "name": "Fran Editor",
@@ -48,7 +48,7 @@
       "url": "https://github.com/francescoalterio/skywind"
     },
     "technologies": ["Javascript", "Node.js"],
-    "isFavorite": false
+    "isFavorite": true
   },
   {
     "name": "ModuleKill",
@@ -82,6 +82,6 @@
       "url": "https://github.com/francescoalterio/word-counter"
     },
     "technologies": ["Typescript", "Next.js", "Tailwindcss"],
-    "isFavorite": false
+    "isFavorite": true
   }
 ]
