@@ -120,5 +120,71 @@
     "logo": "poo-javascript-basico.webp",
     "platform": "Platzi",
     "title": "Curso Básico de Programación Orientada a Objetos con JavaScript"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/2985-course/diploma/detalle/",
+    "logo": "api-rest-javascript-fundamentos.webp",
+    "platform": "Platzi",
+    "title": "Curso de API REST con Javascript: Fundamentos"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/2942-course/diploma/detalle/",
+    "logo": "curso-profesional-consumo-api-rest-javascript.webp",
+    "platform": "Platzi",
+    "title": "Curso de API REST con Javascript: Performance y Usabilidad"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/2986-course/diploma/detalle/",
+    "logo": "api-rest-apis-reales.webp",
+    "platform": "Platzi",
+    "title": "Curso de API REST con Javascript: Ejemplos con APIs reales"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/2485-course/diploma/detalle/",
+    "logo": "badge-backend-nodejs-apirest-expressjs.webp",
+    "platform": "Platzi",
+    "title": "Curso de Backend con Node.js: API REST con Express.js"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/2372-course/diploma/detalle/",
+    "logo": "badges-curso-c-basico.webp",
+    "platform": "Platzi",
+    "title": "Curso de C++ Básico"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/3213-course/diploma/detalle/",
+    "logo": "badge-piezas-clousures-scope-javascript.webp",
+    "platform": "Platzi",
+    "title": "Curso de Closures y Scope en JavaScript"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/10135-course/diploma/detalle/",
+    "logo": "badge-javascript-dom.webp",
+    "platform": "Platzi",
+    "title": "Curso de JavaScript: Manipulación del DOM"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/2199-course/diploma/detalle/",
+    "logo": "web-comps-vanilla-js.webp",
+    "platform": "Platzi",
+    "title": "Curso de JavaScript: Web Components"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/3223-course/diploma/detalle/",
+    "logo": "piezas_pensamiento-lenguajes-programacion.webp",
+    "platform": "Platzi",
+    "title": "Curso de Pensamiento Lógico: Lenguajes de Programación"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/2030-course/diploma/detalle/",
+    "logo": "badge-responsive-design-mobile.webp",
+    "platform": "Platzi",
+    "title": "Curso de Responsive Design: Maquetación Mobile First"
+  },
+  {
+    "certificationUrl": "https://platzi.com/p/francescox4/curso/1758-course/diploma/detalle/",
+    "logo": "badge-practico-html-css.webp",
+    "platform": "Platzi",
+    "title": "Curso Práctico de HTML y CSS"
   }
 ]
