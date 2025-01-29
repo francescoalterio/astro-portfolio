@@ -40,6 +40,11 @@
       "documentationURL": "https://react.dev/"
     },
     {
+      "name": "Next.js",
+      "fileName": "next.png",
+      "documentationURL": "https://nextjs.org/"
+    },
+    {
       "name": "React Native",
       "fileName": "react.png",
       "documentationURL": "https://reactnative.dev/"
