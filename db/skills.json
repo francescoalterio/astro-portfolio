@@ -45,6 +45,11 @@
       "documentationURL": "https://reactnative.dev/"
     },
     {
+      "name": "Expo",
+      "fileName": "Expo-logo.png",
+      "documentationURL": "https://expo.dev/"
+    },
+    {
       "name": "Express",
       "fileName": "express.png",
       "documentationURL": "https://expressjs.com/"
