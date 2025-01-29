@@ -1,5 +1,22 @@
 [
   {
+    "name": "API Joke",
+    "fileName": "api-joke.png",
+    "alt": "img-api-joke",
+    "projectType": "Web",
+    "description": "Proyecto web basado en una API de broma. El objetivo principal del proyecto es mejorar el uso de las API utilizando React y Javascript.",
+    "preview": {
+      "name": "Visualizar",
+      "url": "https://stackblitz.com/edit/react-e6wwrx?file=README.md"
+    },
+    "repository": {
+      "name": "Repositorio",
+      "url": "https://github.com/francescoalterio/react-API-Joke"
+    },
+    "technologies": ["Javascript", "React", "CSS"],
+    "isFavorite": false
+  },
+  {
     "name": "Francesco Pomodoro",
     "fileName": "francescopomodoro.png",
     "alt": "img-francescopomodoro",
@@ -82,6 +99,37 @@
       "url": "https://github.com/francescoalterio/word-counter"
     },
     "technologies": ["Typescript", "Next.js", "Tailwindcss"],
+    "isFavorite": true
+  },
+  {
+    "name": "Blog",
+    "fileName": "blog.png",
+    "alt": "img-blog",
+    "projectType": "Web",
+    "description": "Un blog personal donde comparto mis conocimientos y experiencias sobre desarrollo web, programación y tecnología. Aquí encontrarás tutoriales, guías y artículos sobre las últimas tendencias y mejores prácticas en el mundo del desarrollo de software.",
+    "preview": {
+      "name": "Visualizar",
+      "url": "https://blog.francescoalterio.com/"
+    },
+    "repository": {
+      "name": "Repositorio",
+      "url": "https://github.com/francescoalterio/blog"
+    },
+    "technologies": ["Typescript", "Astro", "Tailwindcss"],
+    "isFavorite": true
+  },
+  {
+    "name": "Cocktails Library",
+    "fileName": "cocktails-library.png",
+    "alt": "img-cocktails-library",
+    "projectType": "Web",
+    "description": "Cocktails Library es una aplicación móvil desarrollada con React Native que te permite explorar y descubrir una amplia variedad de recetas de cócteles. Puedes guardar tus recetas favoritas para acceder a ellas fácilmente. La aplicación también ofrece instrucciones paso a paso y una lista de ingredientes detallada para que puedas preparar tus cócteles favoritos en casa.",
+
+    "repository": {
+      "name": "Repositorio",
+      "url": "https://github.com/francescoalterio/cocktails-app"
+    },
+    "technologies": ["React Native", "Expo", "Javascript", "React Navigation"],
     "isFavorite": true
   }
 ]
