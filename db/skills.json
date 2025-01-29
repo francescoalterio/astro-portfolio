@@ -66,6 +66,17 @@
     }
   ],
 
-  "testing": [],
+  "testing": [
+    {
+      "name": "Jest",
+      "fileName": "jest-js-icon.webp",
+      "documentationURL": "https://jestjs.io/"
+    },
+    {
+      "name": "Vitest",
+      "fileName": "vitest.png",
+      "documentationURL": "https://vitest.dev/"
+    }
+  ],
   "databases": []
 }
