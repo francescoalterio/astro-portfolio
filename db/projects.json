@@ -54,7 +54,7 @@
     "name": "Cocktails Library",
     "fileName": "cocktails-library.png",
     "alt": "img-cocktails-library",
-    "projectType": "Web",
+    "projectType": "Mobile",
     "description": "Cocktails Library es una aplicación móvil desarrollada con React Native que te permite explorar y descubrir una amplia variedad de recetas de cócteles. Puedes guardar tus recetas favoritas para acceder a ellas fácilmente. La aplicación también ofrece instrucciones paso a paso y una lista de ingredientes detallada para que puedas preparar tus cócteles favoritos en casa.",
 
     "repository": {
