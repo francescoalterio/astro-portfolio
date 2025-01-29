@@ -51,6 +51,20 @@
     "isFavorite": false
   },
   {
+    "name": "Cocktails Library",
+    "fileName": "cocktails-library.png",
+    "alt": "img-cocktails-library",
+    "projectType": "Web",
+    "description": "Cocktails Library es una aplicación móvil desarrollada con React Native que te permite explorar y descubrir una amplia variedad de recetas de cócteles. Puedes guardar tus recetas favoritas para acceder a ellas fácilmente. La aplicación también ofrece instrucciones paso a paso y una lista de ingredientes detallada para que puedas preparar tus cócteles favoritos en casa.",
+
+    "repository": {
+      "name": "Repositorio",
+      "url": "https://github.com/francescoalterio/cocktails-app"
+    },
+    "technologies": ["React Native", "Expo", "Javascript", "React Navigation"],
+    "isFavorite": true
+  },
+  {
     "name": "Skywind",
     "fileName": "skywind.png",
     "alt": "img-skywind",
@@ -116,20 +130,6 @@
       "url": "https://github.com/francescoalterio/blog"
     },
     "technologies": ["Typescript", "Astro", "Tailwindcss"],
-    "isFavorite": true
-  },
-  {
-    "name": "Cocktails Library",
-    "fileName": "cocktails-library.png",
-    "alt": "img-cocktails-library",
-    "projectType": "Web",
-    "description": "Cocktails Library es una aplicación móvil desarrollada con React Native que te permite explorar y descubrir una amplia variedad de recetas de cócteles. Puedes guardar tus recetas favoritas para acceder a ellas fácilmente. La aplicación también ofrece instrucciones paso a paso y una lista de ingredientes detallada para que puedas preparar tus cócteles favoritos en casa.",
-
-    "repository": {
-      "name": "Repositorio",
-      "url": "https://github.com/francescoalterio/cocktails-app"
-    },
-    "technologies": ["React Native", "Expo", "Javascript", "React Navigation"],
     "isFavorite": true
   }
 ]
